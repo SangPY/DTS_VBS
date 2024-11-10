@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dts_cashier.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,22 +9,22 @@ namespace dts_cashier.ViewModelMediator
 {
     public sealed class Mediator
     {
-        //private readonly MultiDictionary<string, BaseModel> internalList = new MultiDictionary<string, BaseModel>();
+        private readonly MultiDictionary<string, BaseModel> internalList = new MultiDictionary<string, BaseModel>();
 
-        //static Mediator()
-        //{
-        //}
+        static Mediator()
+        {
+        }
 
-        //private Mediator()
-        //{
-        //}
+        private Mediator()
+        {
+        }
 
-        //public static Mediator Instance { get; } = new Mediator();
+        public static Mediator Instance { get; } = new Mediator();
 
-        //public void Register(BaseModel viewModel, string message)
-        //{
-        //    internalList.AddValue(message, viewModel);
-        //}
+        public void Register(BaseModel viewModel, string message)
+        {
+            internalList.AddValue(message, viewModel);
+        }
 
         //public void UnRegister(BaseModel viewModel, string message)
         //{

@@ -30,7 +30,8 @@ namespace dts_cashier.Cache
         //public static string UserName = string.Empty;
         //public static string Password = string.Empty;
         //public static string CashierSessionID = string.Empty;
-        //public static bool UseLocalDB = false;
+        public static bool UseLocalDB = false;
+
         //public static string BranchID = string.Empty;
         //public static string BranchName = string.Empty;
         //public static string MacAddress = string.Empty;
@@ -46,11 +47,12 @@ namespace dts_cashier.Cache
         //public static string ResourcesDirectory =
         //    Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"\..\..\VBS Resources\";
 
-        //public static string Version = "VBS v1.0.0.0";
+        public static string Version = "DTS v1.0.0.0";
+
         //public static bool IsHideShiftStatus = false;
         //public static bool IsShowAddOtherExpense = true;
         //public static bool IsEShopSellingDisabled = false;
-        //public static string LanguageSelected = string.Empty;
+        public static string LanguageSelected = string.Empty;
 
         //public static SalesRatesDataModel PCStationRates = new SalesRatesDataModel();
         //public static List<PaymentProviderDataModel> PaymentProviders = new List<PaymentProviderDataModel>();

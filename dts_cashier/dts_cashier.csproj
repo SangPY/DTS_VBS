@@ -68,22 +68,38 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Cache\DataCacheContext.cs" />
+    <Compile Include="Components\Base\AbstractViewModel.cs" />
+    <Compile Include="Components\Base\Database\DbContextViewModelBase.cs" />
     <Compile Include="Components\Container\CashierRightControl.xaml.cs">
       <DependentUpon>CashierRightControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Components\Container\CashierRightControlViewModel.cs" />
+    <Compile Include="Components\Login\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Login\LoginWindowViewModel.cs" />
     <Compile Include="Components\Navigation\CashierLeftControl.xaml.cs">
       <DependentUpon>CashierLeftControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Components\Navigation\CashierLeftControlViewModel.cs" />
+    <Compile Include="Helper\IViewHelper\IView.cs" />
+    <Compile Include="Helper\IViewHelper\IViewService.cs" />
+    <Compile Include="Helper\IViewHelper\ViewService.cs" />
     <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\LanguageModel.cs" />
+    <Compile Include="Model\LoginModel.cs" />
     <Compile Include="ViewModelMediator\Mediator.cs" />
+    <Compile Include="ViewModelMediator\Messages.cs" />
     <Compile Include="ViewModelMediator\MultiDictionary.cs" />
     <Page Include="Components\Container\CashierMainControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Components\Container\CashierRightControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\Login\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,7 +162,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\Login\" />
+    <Folder Include="Components\Login\Data\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\WindowsIcons-license.txt" />
@@ -155,6 +171,10 @@
     <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\dts_database.dataaccess\dts_database.dataaccess.csproj">
+      <Project>{b5c9e1f7-7dba-4f4f-83fc-c9d57d57c862}</Project>
+      <Name>dts_database.dataaccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\dts_template_resource\dts_template_resource.csproj">
       <Project>{4f3dad9b-e293-47e4-a190-df3f7a92fdba}</Project>
       <Name>dts_template_resource</Name>
