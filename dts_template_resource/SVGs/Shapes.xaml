@@ -1,0 +1,185 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../SVGs/Icons.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <PathGeometry x:Key="aaaa">
+        M0 19.36C0.08 18.96 0.24 18.48 0.32 18.08C0.56 17.04 0.8 15.92 1.04 14.88C2.4 16.24 3.68 17.52 5.04 18.88C4.72 18.96 4.32 19.04 3.92 19.12C2.88 19.36 1.76 19.6 0.72 19.92C0.32 20 0.24 19.92 0 19.6C0 19.6 0 19.44 0 19.36Z
+        M12.4802 3.44006C13.8402 4.80006 15.1202 6.08006 16.4802 7.44006C13.0402 10.8801 9.60016 14.3201 6.16016 17.7601C4.80016 16.4001 3.44016 15.1201 2.16016 13.7601C5.60016 10.3201 9.04016 6.88006 12.4802 3.44006Z
+        M13.5996 2.32C14.2396 1.68 14.7996 1.04 15.4396 0.400002C16.0796 -0.159998 17.1196 -0.159998 17.7596 0.480002C18.4796 1.12 19.1196 1.76 19.7596 2.48C20.2396 2.96 20.2396 3.76 19.8396 4.24C19.1196 4.96 18.3196 5.6 17.5996 6.32C16.3196 4.96 14.9596 3.6 13.5996 2.32Z
+    </PathGeometry>
+
+
+    <!--  NotificationPanel Icon  -->
+    <Style x:Key="NotificationPanel" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Viewbox
+                        Width="{TemplateBinding Width}"
+                        Height="{TemplateBinding Height}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Stretch="Fill">
+                        <Grid>
+
+                            <!--<Path Fill="{StaticResource IconFGColor4}" Data="M333.892 18.1925L323.5 2L313.108 18.1925H6C3.23858 18.1925 1 20.4311 1 23.1925V427C1 429.761 3.23858 432 6 432H356C358.761 432 361 429.761 361 427V23.1925C361 20.431 358.761 18.1925 356 18.1925H333.892Z"/>-->
+                            <Path Data="M333.892 18.1925L323.5 2L313.108 18.1925H6C3.23858 18.1925 1 20.4311 1 23.1925V427C1 429.761 3.23858 432 6 432H356C358.761 432 361 429.761 361 427V23.1925C361 20.431 358.761 18.1925 356 18.1925H333.892Z" Fill="{StaticResource PanelBGColor3}" />
+                            <Path Data="M323.5 2L324.342 1.45987L323.5 0.148584L322.658 1.45987L323.5 2ZM333.892 18.1925L333.051 18.7326L333.346 19.1925H333.892V18.1925ZM313.108 18.1925V19.1925H313.654L313.949 18.7326L313.108 18.1925ZM322.658 2.54013L333.051 18.7326L334.734 17.6523L324.342 1.45987L322.658 2.54013ZM313.949 18.7326L324.342 2.54013L322.658 1.45987L312.266 17.6523L313.949 18.7326ZM6 19.1925H313.108V17.1925H6V19.1925ZM2 23.1925C2 20.9833 3.79086 19.1925 6 19.1925V17.1925C2.68629 17.1925 0 19.8788 0 23.1925H2ZM2 427V23.1925H0V427H2ZM6 431C3.79086 431 2 429.209 2 427H0C0 430.314 2.68629 433 6 433V431ZM356 431H6V433H356V431ZM360 427C360 429.209 358.209 431 356 431V433C359.314 433 362 430.314 362 427H360ZM360 23.1925V427H362V23.1925H360ZM356 19.1925C358.209 19.1925 360 20.9833 360 23.1925H362C362 19.8788 359.314 17.1925 356 17.1925V19.1925ZM333.892 19.1925H356V17.1925H333.892V19.1925Z" Fill="White" />
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top" />
+                        </Grid>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ToolTipPanel" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Viewbox
+                        Width="{TemplateBinding Width}"
+                        Height="{TemplateBinding Height}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Stretch="Fill">
+                        <Grid Background="Transparent">
+                            <Border
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Margin="0,10,0,0"
+                                Background="White"
+                                CornerRadius="5"
+                                Opacity=".9">
+                                <ContentPresenter
+                                    Margin="5"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center" />
+                            </Border>
+                            <Path
+                                Grid.Row="5"
+                                Grid.Column="3"
+                                Width="20"
+                                Height="20"
+                                Margin="30,0,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Data="{StaticResource ArrowUp1}"
+                                Fill="{StaticResource Colour3}"
+                                Opacity=".9"
+                                Stretch="Uniform" />
+                        </Grid>
+                    </Viewbox>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Visibility" Value="Visible">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="0"
+                                            To="1"
+                                            Duration="0:0:0:0.3" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="1"
+                                            To="0"
+                                            Duration="0:0:0:0.3" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ToolTipPanel2" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Viewbox
+                        Width="{TemplateBinding Width}"
+                        Height="{TemplateBinding Height}"
+                        VerticalAlignment="Top">
+                        <Grid Background="Transparent">
+                            <Border
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Margin="0,10,0,0"
+                                Background="{StaticResource Colour7}"
+                                BorderBrush="{StaticResource Colour3}"
+                                BorderThickness="1"
+                                CornerRadius="5">
+                                <ContentPresenter
+                                    Margin="10"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center" />
+                            </Border>
+                            <ContentControl
+                                Grid.Row="5"
+                                Grid.Column="3"
+                                Width="10"
+                                Height="10"
+                                Margin="15,3,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Opacity="1"
+                                Style="{StaticResource ArrowWithBorder}" />
+                        </Grid>
+                    </Viewbox>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Visibility" Value="Visible">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="0"
+                                            To="1"
+                                            Duration="0:0:0:0.3" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  PC Icon  -->
+    <Style x:Key="PCIcon" TargetType="ContentControl">
+        <Setter Property="Foreground" Value="{StaticResource PCAvailable}" />
+        <Setter Property="Background" Value="{StaticResource PCRegular}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Viewbox
+                        Width="{TemplateBinding Width}"
+                        Height="{TemplateBinding Height}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Stretch="Fill">
+                        <Grid>
+                            <Path Data="M51.4002 4.7H4.2002V36H51.4002V4.7Z" Fill="{TemplateBinding Foreground}" />
+                            <Path Data="M52.2 0H3.4C1.5 0 0 1.5 0 3.4V38.5C0 40.4 1.5 41.9 3.4 41.9H52.3C54.2 41.9 55.7 40.4 55.7 38.5V3.4C55.6 1.5 54.1 0 52.2 0ZM51.4 36H4.2V4.7H51.4V36Z" Fill="{TemplateBinding Background}" />
+                            <Path Data="M21.5002 43.5L15.2002 50H40.6002L34.2002 43.5H21.5002Z" Fill="{TemplateBinding Background}" />
+                        </Grid>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

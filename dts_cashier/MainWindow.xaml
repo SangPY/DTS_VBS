@@ -1,0 +1,47 @@
+﻿<mahapps:MetroWindow
+        x:Class="dts_cashier.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dts_cashier"
+        xmlns:mahapps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+         AllowsTransparency="True"
+         BorderBrush="Transparent"
+         IsWindowDraggable="False"
+         ResizeMode="NoResize"
+         UseNoneWindowStyle="True"
+         WindowStartupLocation="CenterOwner"
+         WindowState="Maximized"
+         WindowStyle="None"
+        Title="MainWindow">
+
+    <mahapps:MetroWindow.Background>
+        <SolidColorBrush Color="Transparent" />
+    </mahapps:MetroWindow.Background>
+
+    <Viewbox Stretch="Fill">
+        <Grid Width="1920" Height="1080">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Background="{StaticResource ButtonBGColor1}">
+                <Grid HorizontalAlignment="Left"
+                        Background="Transparent"
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        RenderOptions.EdgeMode="Aliased">
+                </Grid>
+                <TextBlock Margin="20,0,0,0"
+                         VerticalAlignment="Center"
+                         Foreground="{StaticResource TextFGColor2}"
+                         Style="{StaticResource HeaderText3}">
+                         <Run Text="{Binding CurrentBranch}" />
+                         <Run Text="|" />
+                         <Run Text="{Binding CurrentDateTime}" />
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</mahapps:MetroWindow>

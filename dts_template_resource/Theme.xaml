@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <ResourceDictionary.MergedDictionaries>
+        <!--  This Resources are alphabetically arrange by xaml  -->
+        <ResourceDictionary Source="BitmapGraphics/ImageResources.xaml" />
+        <ResourceDictionary Source="Fonts/FontResources.xaml" />
+        <ResourceDictionary Source="SVGs/Icons.xaml" />
+        <ResourceDictionary Source="SVGs/Shapes.xaml" />
+        <ResourceDictionary Source="Colors/Default.xaml" />
+
+        <!--<ResourceDictionary Source="Styles/WindowStyle.xaml" />-->
+        <ResourceDictionary Source="Styles/Animation.xaml" />
+        <ResourceDictionary Source="Styles/BorderStyle.xaml" />
+        <ResourceDictionary Source="Styles/TextBlockStyle.xaml" />
+        <ResourceDictionary Source="Styles/TextBlockTemplate.xaml" />
+        <ResourceDictionary Source="Styles/TextBoxStyle.xaml" />
+        <ResourceDictionary Source="Styles/ButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/ButtonTemplate.xaml" />
+        <ResourceDictionary Source="Styles/CheckBoxStyle.xaml" />
+        <ResourceDictionary Source="Styles/DataGridStyle.xaml" />
+        <ResourceDictionary Source="Styles/DatePickerStyle.xaml" />
+        <ResourceDictionary Source="Styles/RepeatButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/RadioButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/ComboBoxStyle.xaml" />
+        <ResourceDictionary Source="Styles/CustomStyle.xaml" />
+        <ResourceDictionary Source="Styles/ContentControlStyle.xaml" />
+
+        <!--<ResourceDictionary Source="DataTemplates/GenericDialog.xaml" />-->
+        <!--<ResourceDictionary Source="DataTemplates/BubbleChat.xaml" />-->
+        <!--  OLD  -->
+        <ResourceDictionary Source="Styles/LabelStyle.xaml" />
+        <ResourceDictionary Source="Styles/ScrollBarStyle.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

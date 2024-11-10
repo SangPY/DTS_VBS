@@ -1,0 +1,284 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  GENERIC COLORS  -->
+    <LinearGradientBrush x:Key="ColourGradient1" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0" Color="#FF7F00" />
+        <GradientStop Offset="0.8515" Color="#E7A708" />
+        <GradientStop Offset="1" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ColourGradientSmall1" StartPoint="0.02,0.05" EndPoint="0.1,3">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="Colour1" Color="#FF7F00" />
+    <SolidColorBrush x:Key="Colour2" Color="#BB4430" />
+    <SolidColorBrush x:Key="Colour3" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="Colour4" Color="#90C23E" />
+    <SolidColorBrush x:Key="Colour5" Color="#E3AE09" />
+    <SolidColorBrush x:Key="Colour6" Color="#0A100D" />
+    <SolidColorBrush x:Key="Colour7" Color="#333232" />
+    <SolidColorBrush x:Key="Colour8" Color="#000000" />
+    <SolidColorBrush x:Key="Colour9" Color="#D91C4B" />
+    <SolidColorBrush x:Key="Colour10" Color="#0FACF3" />
+    <SolidColorBrush x:Key="Colour11" Color="#252525" />
+    <SolidColorBrush x:Key="Colour12" Color="#383838" />
+    <SolidColorBrush x:Key="Colour13" Color="#121212" />
+
+    <SolidColorBrush x:Key="ThemeBGColor1" Color="#1A1A1A" />
+    <SolidColorBrush x:Key="ThemeFGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ThemeBGColor2" Color="#0A100D" />
+    <SolidColorBrush x:Key="ThemeBGColor3" Color="#000000" />
+    <SolidColorBrush x:Key="ThemeBGColor4" Color="#333232" />
+
+    <!--  BUTTON COLORS  -->
+
+    <LinearGradientBrush x:Key="AcceptButtonBGColor" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="RejectButtonBGColor" Color="#BB4430" />
+    <SolidColorBrush x:Key="DisabledButtonBGColor" Color="#000000" />
+    <SolidColorBrush x:Key="NormalButtonFGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="NormalButtonFGColor2" Color="#000000" />
+    <SolidColorBrush x:Key="DisabledButtonFGColor" Color="#404040" />
+
+    <LinearGradientBrush x:Key="ButtonBGColor1" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ButtonBGColor2" Color="#E3AE09" />
+    <SolidColorBrush x:Key="ButtonBGColor3" Color="#000000" />
+    <SolidColorBrush x:Key="ButtonBGColor4" Color="#FFFFFF" />
+
+    <LinearGradientBrush x:Key="ButtonBGColor5" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ButtonBGColor6" Color="#FF7F00" />
+    <SolidColorBrush x:Key="ButtonBGColor7" Color="#333232" />
+
+
+    <LinearGradientBrush x:Key="GameLauncherBGButton1" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="GameLauncherFGButton1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="GameLauncherBorderBrushColor1" Color="#FFFFFF" />
+
+    <!--  TEXTBLOCK / LABEL COLORS  -->
+
+    <SolidColorBrush x:Key="TextFGColor1" Color="#E3AE09" />
+    <SolidColorBrush x:Key="TextFGColor2" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TextFGColor3" Color="#8c8c8c" />
+    <SolidColorBrush x:Key="TextFGColor4" Color="#D91C4B" />
+    <SolidColorBrush x:Key="TextFGColor5" Color="#BB4430" />
+
+    <SolidColorBrush x:Key="VoucherFGText1" Color="#20396D" />
+
+    <SolidColorBrush x:Key="VoucherBGText1" Color="#FFFFFF" />
+
+    <!--  TEXTBOX COLORS  -->
+
+    <SolidColorBrush x:Key="TextBoxBGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TextBoxFGColor1" Color="#000000" />
+    <SolidColorBrush x:Key="TextBoxHintColor1" Color="#CEDFE8" />
+
+    <SolidColorBrush x:Key="TextBoxBGColor2" Color="Transparent" />
+    <SolidColorBrush x:Key="TextBoxFGColor2" Color="#000000" />
+    <SolidColorBrush x:Key="TextBoxHintColor2" Color="#CEDFE8" />
+
+    <SolidColorBrush x:Key="TextBoxFGColor3" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="TextBoxSearchBGColor1" Color="#000000" />
+    <SolidColorBrush x:Key="TextBoxSearchFGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TextBoxSearchHintColor1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="TextBoxSearchBGColor2" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TextBoxSearchFGColor2" Color="#C4C4C4" />
+    <SolidColorBrush x:Key="TextBoxSearchHintColor2" Color="#C4C4C4" />
+
+
+
+    <!--  ICON COLORS  -->
+    <SolidColorBrush x:Key="IconFGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="IconFGColor2" Color="#D91C4B" />
+    <SolidColorBrush x:Key="IconFGColor3" Color="#5A6570" />
+    <SolidColorBrush x:Key="IconFGColor4" Color="#FF7F00" />
+    <SolidColorBrush x:Key="IconFGColor5" Color="#D91C4B" />
+    <SolidColorBrush x:Key="IconFGColor6" Color="#CEDFE8" />
+    <SolidColorBrush x:Key="IconFGColor7" Color="#20396D" />
+    <SolidColorBrush x:Key="IconFGColor8" Color="#e2547e" />
+    <SolidColorBrush x:Key="IconFGColor9" Color="#90C23E" />
+    <SolidColorBrush x:Key="IconFGColor10" Color="#BB4430" />
+
+    <SolidColorBrush x:Key="WhatsNewIconBG1" Color="#C1272D" />
+    <SolidColorBrush x:Key="WhatsNewIconFG1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="WhatsHotIconBG1" Color="#F7931E" />
+    <SolidColorBrush x:Key="WhatsHotIconBG2" Color="#FCEE21" />
+    <SolidColorBrush x:Key="WhatsHotIconFG1" Color="#FCEE21" />
+
+    <SolidColorBrush x:Key="CompletedIconBGColorMain" Color="#90C23E" />
+    <SolidColorBrush x:Key="PendingIconBGColorMain" Color="#333333" />
+    <SolidColorBrush x:Key="ErrorIconBGColorMain" Color="#BB4430" />
+    <SolidColorBrush
+        x:Key="IconBGColorShadow"
+        Opacity="0.15"
+        Color="Black" />
+
+    <SolidColorBrush x:Key="NormalStatusIconFGColorMain" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="WarningStatusIconFGColorMain" Color="#FEDE32" />
+    <SolidColorBrush x:Key="WarningStatusIconFGColorShadow" Color="#FDBB33" />
+    <SolidColorBrush x:Key="WarningStatusIconFGColorOutline" Color="#4A5A79" />
+    <SolidColorBrush x:Key="WarningStatusIconFGColorOutlineShadow" Color="#42516D" />
+
+    <SolidColorBrush x:Key="TrashStatusIconFGColorLidMain" Color="#000000" />
+    <SolidColorBrush x:Key="TrashStatusIconFGColorBodyMain" Color="#BB4430" />
+    <SolidColorBrush x:Key="TrashStatusIconFGColorBodyEngrave" Color="#C4C4C4" />
+
+    <SolidColorBrush x:Key="DefaultImageIconFGColor1" Color="#313131" />
+
+    <!--  PANEL COLORS  -->
+    <SolidColorBrush x:Key="PanelBGColor1" Color="#E3AE09" />
+    <SolidColorBrush x:Key="PanelBGColor2" Color="#FF7F00" />
+    <SolidColorBrush x:Key="PanelBGColor3" Color="#333333" />
+    <SolidColorBrush x:Key="PanelBGColor4" Color="#F1F1F1" />
+    <SolidColorBrush x:Key="PanelBGColor5" Color="#D91C4B" />
+    <SolidColorBrush x:Key="PanelBGColor6" Color="#000000" />
+    <SolidColorBrush x:Key="PanelBGColor7" Color="#6F86D6" />
+    <SolidColorBrush x:Key="PanelBGColor8" Color="#90C23E" />
+    <SolidColorBrush x:Key="PanelBGColor9" Color="#BB4430" />
+    <SolidColorBrush x:Key="PanelBGColor10" Color="#0A100D" />
+
+    <!--  TITLE BAR COLORS  -->
+    <LinearGradientBrush x:Key="TitleBarBGColor1" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <!--  LOGIN DESIGN COLORS  -->
+    <LinearGradientBrush x:Key="LoginDesignColor1" StartPoint="0.15,0.15" EndPoint="1,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+    <!--  NOTIFICATION POP UP COLORS  -->
+
+    <SolidColorBrush x:Key="PopUpBGColor1" Color="#243861" />
+
+
+
+    <!--  SCROLLBAR COLORS  -->
+
+    <SolidColorBrush x:Key="ScrollBarThumbColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ScrollBarBGColor1" Color="Transparent" />
+
+    <!--  PROGRESSBAR COLORS  -->
+
+    <SolidColorBrush x:Key="ProgressBarBGColor1" Color="#333333" />
+    <SolidColorBrush x:Key="ProgressBarFGColor1" Color="#6F86D6" />
+
+    <SolidColorBrush x:Key="ProgressBarBGColor2" Color="#000000" />
+    <LinearGradientBrush x:Key="ProgressBarFGColor2" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0.1" Color="#FF7F00" />
+        <GradientStop Offset="1.0" Color="#E3AE09" />
+    </LinearGradientBrush>
+
+
+    <!--  DATEPICKER COLORS  -->
+    <SolidColorBrush x:Key="DatePickerBGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="DatePickerFGColor1" Color="#E3AE09" />
+
+    <SolidColorBrush x:Key="DatePickerBGColor2" Color="Transparent" />
+    <SolidColorBrush x:Key="DatePickerFGColor2" Color="#FFFFFF" />
+
+    <!--  COMBOBOX COLORS  -->
+    <SolidColorBrush x:Key="ComboBoxBGColor1" Color="Transparent" />
+    <SolidColorBrush x:Key="ComboBoxBGColor2" Color="#E3AE09" />
+
+    <SolidColorBrush x:Key="ComboBoxBorderBrushColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ComboBoxToggleButtonColor1" Color="#c4c4c4" />
+    <SolidColorBrush x:Key="ComboBoxTextFGColor1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="ComboBoxItemFGColor1" Color="#1A1A1A" />
+    <SolidColorBrush x:Key="ComboBoxItemBGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ComboBoxSelectItemBGColor1" Color="Blue" />
+    <SolidColorBrush x:Key="ComboBoxSelectItemFGColor1" Color="#FFFFFF" />
+
+    <!--  TOGGLE BUTTON COLORS  -->
+
+    <SolidColorBrush x:Key="ToggleButtonOffBGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonOnBGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonOffFGColor1" Color="#059bda" />
+    <SolidColorBrush x:Key="ToggleButtonOnFGColor1" Color="#059bda" />
+
+    <SolidColorBrush x:Key="ToggleButtonOffTextFGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonOnTextFGColor1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="ToggleButtonMenuBGColor1" Color="#6F86D6" />
+    <SolidColorBrush x:Key="ToggleButtonMenuFGColor1" Color="#FFFFFF" />
+
+    <!--  RADIO BUTTON COLORS  -->
+
+    <SolidColorBrush x:Key="RadioButtonBGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="RadioButtonFGColor1" Color="#059bda" />
+    <SolidColorBrush x:Key="RadioButtonFGColor2" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="RadioButtonTextFGColor1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="RadioButtonBorderBrushColor2" Color="#E3AE09" />
+
+    <SolidColorBrush x:Key="RadioButtonSelectedBGColor3" Color="#E3AE09" />
+    <SolidColorBrush x:Key="RadioButtonBGColor3" Color="#000000" />
+
+    <SolidColorBrush x:Key="RadioButtonBulletColor4" Color="#E3AE09" />
+    <SolidColorBrush x:Key="RadioButtonFGColor4" Color="#FFFFFF" />
+
+    <!--  RADIO BUTTON COLORS  -->
+    <SolidColorBrush x:Key="RepeatButtonColor1" Color="#E3AE09" />
+
+    <!--  CONTENT CONTROL COLORS  -->
+    <SolidColorBrush x:Key="ContentControlBorderColor1" Color="#FFFFFF" />
+
+    <!--  DATAGRID COLORS  -->
+    <SolidColorBrush x:Key="DataGridBGColor1" Color="Transparent" />
+
+    <SolidColorBrush x:Key="ColumnHeaderBGColor1" Color="Transparent" />
+    <SolidColorBrush x:Key="ColumnHeaderFGColor1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="RowBGColor1" Color="#000000" />
+    <SolidColorBrush x:Key="RowFGColor1" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="RowBGColor2" Color="Transparent" />
+    <SolidColorBrush x:Key="RowFGColor2" Color="#FFFFFF" />
+
+    <!--  BUBBLE CHAT COLORS  -->
+    <SolidColorBrush x:Key="BubbleChatBGColor1" Color="#333333" />
+    <SolidColorBrush x:Key="BubbleChatFGColor1" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="BubbleChatBGColor2" Color="#E3AE09" />
+    <SolidColorBrush x:Key="BubbleChatFGColor2" Color="#FFFFFF" />
+
+    <!--  PC TYPE COLORS  -->
+
+    <SolidColorBrush x:Key="PCRegular" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="PCVip" Color="#E3AE09" />
+
+    <SolidColorBrush x:Key="PcPremium" Color="#008080" />
+
+    <!--  PC STATUS COLORS  -->
+
+    <SolidColorBrush x:Key="PCAvailable" Color="#90C23E" />
+    <SolidColorBrush x:Key="PCOccupied" Color="#FF7F00" />
+    <SolidColorBrush x:Key="PCOnLock" Color="#34D1BF" />
+    <SolidColorBrush x:Key="PCUnderMaintenance" Color="#FF5A5F" />
+    <SolidColorBrush x:Key="PCOff" Color="#000000" />
+
+    <!--  BORDER BREAKLINE COLORS  -->
+    <SolidColorBrush x:Key="BorderDashedColor1" Color="#FFFFFF" />
+</ResourceDictionary>

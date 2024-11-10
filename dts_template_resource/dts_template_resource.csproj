@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F3DAD9B-E293-47E4-A190-DF3F7A92FDBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dts_template_resource</RootNamespace>
+    <AssemblyName>dts_template_resource</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks, Version=2.3.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.IconPacks.2.3.0\lib\net45\MahApps.Metro.IconPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converters\HalfConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\FontFiles\HindMadurai-Regular.ttf" />
+    <Resource Include="Fonts\FontFiles\Password-Asterisk.ttf" />
+    <Resource Include="Fonts\FontFiles\Poppins-Bold.otf" />
+    <Resource Include="Fonts\FontFiles\Poppins-Medium.otf" />
+    <Resource Include="Fonts\FontFiles\Poppins-Regular.otf" />
+    <Resource Include="Fonts\FontFiles\Poppins-SemiBold.otf" />
+    <Resource Include="Fonts\FontFiles\Roboto-Bold.ttf" />
+    <Resource Include="Fonts\FontFiles\Roboto-Italic.ttf" />
+    <Resource Include="Fonts\FontFiles\Roboto-Medium.ttf" />
+    <Resource Include="Fonts\FontFiles\Roboto-Regular.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BitmapGraphics\ImageResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Colors\Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Colors\Default.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Fonts\FontResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Animation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\BorderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ButtonTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\CheckBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ComboBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ContentControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\CustomStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\DataGridStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\DatePickerStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\LabelStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\RadioButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\RepeatButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ScrollBarStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TextBlockStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TextBlockTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TextBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\WindowStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SVGs\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SVGs\Shapes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BitmapGraphics\Images\advertise-image1.png" />
+    <Resource Include="BitmapGraphics\Images\advertise-image2.jpg" />
+    <Resource Include="BitmapGraphics\Images\bad-wolf-logo.png" />
+    <Resource Include="BitmapGraphics\Images\banner-cafe.png" />
+    <Resource Include="BitmapGraphics\Images\CAFE DEFAULT.bmp" />
+    <Resource Include="BitmapGraphics\Images\cafe-logo.png" />
+    <Resource Include="BitmapGraphics\Images\cashier-brand-bg.png" />
+    <Resource Include="BitmapGraphics\Images\cashier-center-bg.png" />
+    <Resource Include="BitmapGraphics\Images\cashier-desktop-bg.png" />
+    <Resource Include="BitmapGraphics\Images\cashier-error-icon.png" />
+    <Resource Include="BitmapGraphics\Images\cashier-success-icon.png" />
+    <Resource Include="BitmapGraphics\Images\contact-support-icon.png" />
+    <Resource Include="BitmapGraphics\Images\design-image1.png" />
+    <Resource Include="BitmapGraphics\Images\design-image2.png" />
+    <Resource Include="BitmapGraphics\Images\eloadbackground.png" />
+    <Resource Include="BitmapGraphics\Images\icon-addaccount.png" />
+    <Resource Include="BitmapGraphics\Images\icon-arrowdown.png" />
+    <Resource Include="BitmapGraphics\Images\icon-balance.png" />
+    <Resource Include="BitmapGraphics\Images\icon-bell.png" />
+    <Resource Include="BitmapGraphics\Images\icon-cashier.png" />
+    <Resource Include="BitmapGraphics\Images\icon-close-red.png" />
+    <Resource Include="BitmapGraphics\Images\icon-close.png" />
+    <Resource Include="BitmapGraphics\Images\icon-coin.png" />
+    <Resource Include="BitmapGraphics\Images\icon-configure.png" />
+    <Resource Include="BitmapGraphics\Images\icon-coupon.png" />
+    <Resource Include="BitmapGraphics\Images\icon-date.png" />
+    <Resource Include="BitmapGraphics\Images\icon-discount.png" />
+    <Resource Include="BitmapGraphics\Images\icon-eye.png" />
+    <Resource Include="BitmapGraphics\Images\icon-grid.png" />
+    <Resource Include="BitmapGraphics\Images\icon-home.png" />
+    <Resource Include="BitmapGraphics\Images\icon-inventory.png" />
+    <Resource Include="BitmapGraphics\Images\icon-medal.png" />
+    <Resource Include="BitmapGraphics\Images\icon-message.png" />
+    <Resource Include="BitmapGraphics\Images\icon-message2.png" />
+    <Resource Include="BitmapGraphics\Images\icon-minimize.png" />
+    <Resource Include="BitmapGraphics\Images\icon-newuser.png" />
+    <Resource Include="BitmapGraphics\Images\icon-notes.png" />
+    <Resource Include="BitmapGraphics\Images\icon-pencil.png" />
+    <Resource Include="BitmapGraphics\Images\icon-promo.png" />
+    <Resource Include="BitmapGraphics\Images\icon-question.png" />
+    <Resource Include="BitmapGraphics\Images\icon-refresh.png" />
+    <Resource Include="BitmapGraphics\Images\icon-shift.png" />
+    <Resource Include="BitmapGraphics\Images\icon-shop.png" />
+    <Resource Include="BitmapGraphics\Images\icon-store.png" />
+    <Resource Include="BitmapGraphics\Images\icon-store2.png" />
+    <Resource Include="BitmapGraphics\Images\icon-support.png" />
+    <Resource Include="BitmapGraphics\Images\icon-topupokto.png" />
+    <Resource Include="BitmapGraphics\Images\icon-transaction.png" />
+    <Resource Include="BitmapGraphics\Images\icon-vaingames.png" />
+    <Resource Include="BitmapGraphics\Images\logo-nexus.png" />
+    <Resource Include="BitmapGraphics\Images\logo-okto.png" />
+    <Resource Include="BitmapGraphics\Images\NIMBUS_SQUARE.png" />
+    <Resource Include="BitmapGraphics\Images\photo-unavailable.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,450 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../SVGs/Icons.xaml" />
+        <ResourceDictionary Source="TextBlockStyle.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <!--  GENERIC  -->
+
+    <!--  Template  -->
+    <Style x:Key="ComboBoxButtonTemplate" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor1}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonFGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{StaticResource Colour3}"
+                        BorderThickness="1"
+                        CornerRadius="20">
+                        <Grid>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <Path
+                                Width="10"
+                                Height="5"
+                                Margin="0,0,15,0"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Data="{StaticResource ArrowDown1}"
+                                Fill="{StaticResource Colour3}" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonPictureStyle" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="Transparent"
+                        BorderThickness="1"
+                        CornerRadius="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonTextStyle" TargetType="{x:Type Button}">
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor1}" />
+        <Setter Property="Foreground" Value="{StaticResource NormalButtonFGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0"
+                        CornerRadius="5">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="{TemplateBinding Foreground}"
+                            Style="{StaticResource HeaderText3}">
+                            <ContentPresenter />
+                        </TextBlock>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor2}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBoxBGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0"
+                        CornerRadius="0,0,5,5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle3" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding Foreground}"
+                        BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle5" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor2}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonFGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding Foreground}"
+                        BorderThickness="2"
+                        CornerRadius="25">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Border.IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.7" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle6" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor1}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonFGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect
+                    BlurRadius="10"
+                    Direction="270"
+                    ShadowDepth="3"
+                    Color="Black" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0"
+                        CornerRadius="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle7" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor2}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonFGColor2}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="Width" Value="180" />
+        <Setter Property="Height" Value="140" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0"
+                        CornerRadius="5,5,0,0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Border.IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.7" />
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle8" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor1}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonFGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{StaticResource Colour3}"
+                        BorderThickness="1"
+                        CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonStyle10" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0">
+                        <TextBlock
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            Foreground="{TemplateBinding Foreground}"
+                            Style="{StaticResource NormalText}">
+                            <ContentPresenter />
+                        </TextBlock>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SignOutButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource ButtonBGColor1}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonFGColor1}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0"
+                        CornerRadius="25">
+                        <StackPanel
+                            Margin="0,0,15,0"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                            <Path
+                                Grid.Column="0"
+                                Width="20"
+                                Height="20"
+                                Margin="8,0,30,0"
+                                Data="{StaticResource SignOut}"
+                                Fill="{TemplateBinding Foreground}"
+                                Stretch="Uniform" />
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  CUSTOM  -->
+
+    <Style
+        x:Key="WarningButton"
+        BasedOn="{StaticResource ButtonTextStyle}"
+        TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource WarningBGButtonColor}" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+    <Style
+        x:Key="PrimaryButton"
+        BasedOn="{StaticResource ButtonTextStyle}"
+        TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource PrimaryBGButtonColor}" />
+        <Setter Property="Foreground" Value="{StaticResource SecondaryTextColor}" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style
+        x:Key="CheckOutButton"
+        BasedOn="{StaticResource ButtonTextStyle}"
+        TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource CheckOutBGButtonColor}" />
+        <Setter Property="Foreground" Value="{StaticResource SecondaryTextColor}" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style
+        x:Key="CloseButton"
+        BasedOn="{StaticResource ButtonTextStyle}"
+        TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource CloseButtonBackgroundColor}" />
+        <Setter Property="Foreground" Value="{StaticResource SecondaryTextColor}" />
+        <Setter Property="Width" Value="21" />
+        <Setter Property="Height" Value="21" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid
+                        Width="{TemplateBinding Width}"
+                        Height="{TemplateBinding Height}"
+                        Background="{TemplateBinding Background}">
+                        <!--<iconPacks:PackIconFontAwesome Kind="TimesSolid"
+                                                   Width="10"
+                                                   Height="10"
+                                                   Foreground="{TemplateBinding Foreground}"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"/>-->
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonHighlighIcon" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="0"
+                        CornerRadius="0 0 5 5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource ColourGradient1}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

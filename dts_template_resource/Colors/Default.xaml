@@ -1,0 +1,27 @@
+﻿
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <LinearGradientBrush x:Key="NIMBUS GRADIENT" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0" Color="#FF7F00" />
+        <GradientStop Offset="0.8515" Color="#E7A708" />
+        <GradientStop Offset="1" Color="#E3AE09" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="WHITE" Color="#FFF" />
+    <SolidColorBrush x:Key="BRIGHT YELLOW" Color="#E3AE09" />
+    <SolidColorBrush x:Key="ORANGE" Color="#FF7F00" />
+    <SolidColorBrush x:Key="DARKGREYTWENTYFOUR" Color="#383838" />
+    <SolidColorBrush x:Key="DARKGREYTHREE" Color="#252525" />
+    <SolidColorBrush x:Key="DARK GREY" Color="#121212" />
+    <SolidColorBrush x:Key="PALE CARMINE" Color="#BB4430" />
+    <SolidColorBrush x:Key="VALID" Color="#90C23E" />
+    <SolidColorBrush x:Key="BLACK" Color="#000000" />
+    <SolidColorBrush x:Key="TIFFANY BLUE" Color="#17BEBB" />
+
+    <Color x:Key="COLOR WHITE">#FFF</Color>
+    <Color x:Key="COLOR DARKGREY">#121212</Color>
+    <Color x:Key="COLOR DARKGREYTWENTYFOUR">#383838</Color>
+    <Color x:Key="COLOR PALE CARMINE">#BB4430</Color>
+    <Color x:Key="COLOR VALID">#90C23E</Color>
+    <Color x:Key="COLOR ORANGE">#FF7F00</Color>
+
+</ResourceDictionary>

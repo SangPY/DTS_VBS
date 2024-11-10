@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <BitmapImage x:Key="CafeLogo" UriSource="Images/CAFE DEFAULT.bmp" />
+    <BitmapImage x:Key="CafeLogoSquare" UriSource="Images/NIMBUS_SQUARE.png" />
+    <BitmapImage x:Key="Advertise1" UriSource="Images/advertise-image1.png" />
+    <BitmapImage x:Key="Advertise2" UriSource="Images/advertise-image2.jpg" />
+    <BitmapImage x:Key="BannerCafe" UriSource="Images/banner-cafe.png" />
+    <BitmapImage x:Key="DesignImage1" UriSource="Images/design-image1.png" />
+    <BitmapImage x:Key="DesignImage2" UriSource="Images/design-image2.png" />
+    <BitmapImage x:Key="IconAddAccount" UriSource="Images/icon-addaccount.png" />
+    <BitmapImage x:Key="IconArrowDown" UriSource="Images/icon-arrowdown.png" />
+    <BitmapImage x:Key="IconBalance" UriSource="Images/icon-balance.png" />
+    <BitmapImage x:Key="IconBell" UriSource="Images/icon-bell.png" />
+    <BitmapImage x:Key="IconCashier" UriSource="Images/icon-cashier.png" />
+    <BitmapImage x:Key="IconClose" UriSource="Images/icon-close.png" />
+    <BitmapImage x:Key="IconCloseRed" UriSource="Images/icon-close-red.png" />
+    <BitmapImage x:Key="IconCoin" UriSource="Images/icon-coin.png" />
+    <BitmapImage x:Key="IconConfiguration" UriSource="Images/icon-configure.png" />
+    <BitmapImage x:Key="IconCoupon" UriSource="Images/icon-coupon.png" />
+    <BitmapImage x:Key="IconDate" UriSource="Images/icon-date.png" />
+    <BitmapImage x:Key="IconDiscount" UriSource="Images/icon-discount.png" />
+    <BitmapImage x:Key="IconEye" UriSource="Images/icon-eye.png" />
+    <BitmapImage x:Key="IconGrid" UriSource="Images/icon-grid.png" />
+    <BitmapImage x:Key="IconHome" UriSource="Images/icon-home.png" />
+    <BitmapImage x:Key="IconInventory" UriSource="Images/icon-inventory.png" />
+    <BitmapImage x:Key="IconMedal" UriSource="Images/icon-medal.png" />
+    <BitmapImage x:Key="IconMessage" UriSource="Images/icon-message.png" />
+    <BitmapImage x:Key="IconMessage2" UriSource="Images/icon-message2.png" />
+    <BitmapImage x:Key="IconMinimize" UriSource="Images/icon-minimize.png" />
+    <BitmapImage x:Key="IconNewUser" UriSource="Images/icon-newuser.png" />
+    <BitmapImage x:Key="IconNotes" UriSource="Images/icon-notes.png" />
+    <BitmapImage x:Key="IconPencil" UriSource="Images/icon-pencil.png" />
+    <BitmapImage x:Key="IconPromo" UriSource="Images/icon-promo.png" />
+    <BitmapImage x:Key="IconQuestion" UriSource="Images/icon-question.png" />
+    <BitmapImage x:Key="IconRefresh" UriSource="Images/icon-refresh.png" />
+    <BitmapImage x:Key="IconShift" UriSource="Images/icon-shift.png" />
+    <BitmapImage x:Key="IconShop" UriSource="Images/icon-shop.png" />
+    <BitmapImage x:Key="IconStore" UriSource="Images/icon-store.png" />
+    <BitmapImage x:Key="IconStore2" UriSource="Images/icon-store2.png" />
+    <BitmapImage x:Key="IconSupport" UriSource="Images/icon-support.png" />
+    <BitmapImage x:Key="IconTopUpOkto" UriSource="Images/icon-topupokto.png" />
+    <BitmapImage x:Key="IconTransaction" UriSource="Images/icon-transaction.png" />
+    <BitmapImage x:Key="IconVainGames" UriSource="Images/icon-vaingames.png" />
+    <BitmapImage x:Key="LogoNexus" UriSource="Images/logo-nexus.png" />
+    <BitmapImage x:Key="LogoOKTO" UriSource="Images/logo-okto.png" />
+
+
+    <!--  Cashier  -->
+    <BitmapImage x:Key="CashierDesktopBG" UriSource="Images/cashier-desktop-bg.png" />
+    <BitmapImage x:Key="CashierCenterBG" UriSource="Images/cashier-center-bg.png" />
+    <BitmapImage x:Key="CashierBrandBG" UriSource="Images/cashier-brand-bg.png" />
+    <BitmapImage x:Key="BadWolfLogo" UriSource="Images/bad-wolf-logo.png" />
+    <BitmapImage x:Key="IconContactSupport" UriSource="Images/contact-support-icon.png" />
+    <BitmapImage x:Key="PhotoUnavailable" UriSource="Images/photo-unavailable.png" />
+    <BitmapImage x:Key="CashierSuccessIcon" UriSource="Images/cashier-success-icon.png" />
+    <BitmapImage x:Key="CashierErrorIcon" UriSource="Images/cashier-error-icon.png" />
+    <BitmapImage x:Key="EloadBackground" UriSource="Images/eloadbackground.png" />
+
+</ResourceDictionary>

@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily x:Key="Roboto">FontFiles/#Roboto</FontFamily>
+    <FontFamily x:Key="Poppins">FontFiles/#Poppins</FontFamily>
+    <FontFamily x:Key="Hind Madurai">FontFiles/#Hind Madurai</FontFamily>
+    <FontFamily x:Key="PasswordAsterisk">FontFiles/#Password Asterisk</FontFamily>
+
+</ResourceDictionary>

@@ -1,0 +1,133 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="TextBlockTemplate.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  GENERIC  -->
+
+    <Style x:Key="TextBoxTextStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <Style x:Key="DialogTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+    <Style x:Key="DialogTextBoxAreaStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+        <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+    </Style>
+
+    <Style x:Key="ChatTextInputStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+        <Setter Property="AcceptsReturn" Value="True" />
+    </Style>
+
+    <Style x:Key="WindowSearchInputStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="FontSize" Value="19" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+
+
+    <!--  CUSTOM  -->
+
+    <Style
+        x:Key="LoginTextBox"
+        BasedOn="{StaticResource TextBoxTextStyle}"
+        TargetType="{x:Type TextBox}">
+        <Setter Property="CaretBrush" Value="{StaticResource CarretBrushColor}" />
+        <Setter Property="Background" Value="{StaticResource TextBoxBGColor}" />
+        <Setter Property="Foreground" Value="{StaticResource SecondaryTextColor}" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style
+        x:Key="DialogTextBox"
+        BasedOn="{StaticResource DialogTextBoxStyle}"
+        TargetType="{x:Type TextBox}">
+        <Setter Property="CaretBrush" Value="{StaticResource DialogCarretBrushColor}" />
+        <Setter Property="Background" Value="{StaticResource DialogTextBoxBGColor}" />
+        <Setter Property="Foreground" Value="{StaticResource DialogTextBoxFGColor}" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style
+        x:Key="DialogTextBoxArea"
+        BasedOn="{StaticResource DialogTextBoxAreaStyle}"
+        TargetType="{x:Type TextBox}">
+        <Setter Property="CaretBrush" Value="{StaticResource DialogCarretBrushColor}" />
+        <Setter Property="Background" Value="{StaticResource DialogTextBoxBGColor}" />
+        <Setter Property="Foreground" Value="{StaticResource DialogTextBoxFGColor}" />
+        <Setter Property="TextAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
+    </Style>
+
+    <Style
+        x:Key="ChatTextInput"
+        BasedOn="{StaticResource ChatTextInputStyle}"
+        TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground" Value="{StaticResource SecondaryTextColor}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="CaretBrush" Value="{StaticResource SecondaryTextColor}" />
+    </Style>
+
+    <Style
+        x:Key="WindowSearchInput"
+        BasedOn="{StaticResource WindowSearchInputStyle}"
+        TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground" Value="{StaticResource WindowSearchBarFGColor}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="CaretBrush" Value="{StaticResource WindowSearchBarFGColor}" />
+    </Style>
+
+    <!--  OLD  -->
+
+    <!--  Textbox Default  -->
+    <Style x:Key="DefaultTextbox" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#FFF" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight" Value="500" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border
+                        x:Name="Bd"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        OpacityMask="{x:Null}">
+                        <ScrollViewer
+                            x:Name="PART_ContentHost"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                            Template="{DynamicResource ScrollViewerControlTemplate1}" />
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

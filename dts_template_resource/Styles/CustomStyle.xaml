@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    
+    <Style x:Key="ShapePCUnit" TargetType="Button">
+        <Setter Property="Width" Value="57" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Background" Value="{StaticResource RegularPCGradientColor}" />
+        <Setter Property="Foreground" Value="{StaticResource AvailablePCColor}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <StackPanel Width="40"
+                                Height="40"
+                                HorizontalAlignment="Center"
+                                Margin="0 10 0 0">
+                        <Border Height="26"
+                                Width="36"
+                                CornerRadius="3"
+                                Background="{TemplateBinding Background}">
+                            <Rectangle Height="20" Width="30"
+                                       Fill="{TemplateBinding Foreground}">
+                            </Rectangle>
+                        </Border>
+                        <Path Data="M0,16 L32,16 L24,0 L8,0" 
+                              HorizontalAlignment="Center" 
+                              Height="7" 
+                              Margin="0,1,0,0" 
+                              Stretch="Fill" 
+                              Width="26"
+                              Fill="{TemplateBinding Background}"/>
+
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="PCControlTemplate">
+        <StackPanel Width="40"
+                                Height="40"
+                                HorizontalAlignment="Center"
+                                Margin="0 10 0 0">
+            <Border Height="26"
+                                Width="36"
+                                CornerRadius="3"
+                                Background="{TemplateBinding Background}">
+                <Rectangle Height="20" Width="30"
+                                       Fill="{TemplateBinding Foreground}">
+                </Rectangle>
+            </Border>
+            <Path Data="M0,16 L32,16 L24,0 L8,0" 
+                              HorizontalAlignment="Center" 
+                              Height="7" 
+                              Margin="0,1,0,0" 
+                              Stretch="Fill" 
+                              Width="26"
+                              Fill="{TemplateBinding Background}"/>
+        </StackPanel>
+    </ControlTemplate>
+
+</ResourceDictionary>

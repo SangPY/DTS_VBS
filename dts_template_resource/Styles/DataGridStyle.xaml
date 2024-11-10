@@ -1,0 +1,292 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  GENERIC  -->
+
+    <Style x:Key="DataGridCellTemplate" TargetType="{x:Type DataGridCell}">
+        <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="BorderBrush" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="#fff" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="DataGridColumnHeaderTemplate" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="Background" Value="{StaticResource Colour1}" />
+        <Setter Property="Foreground" Value="{StaticResource ColumnHeaderFGColor1}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="MinHeight" Value="30" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="DataGridRowTemplate" TargetType="{x:Type DataGridRow}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="{StaticResource Colour8}" />
+                <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+            </Trigger>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                <Setter Property="Background" Value="{StaticResource Colour6}" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{StaticResource ColourGradient1}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="DataGridRowTemplate2" TargetType="{x:Type DataGridRow}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="{StaticResource Colour8}" />
+                <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+            </Trigger>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                <Setter Property="Background" Value="{StaticResource Colour6}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="DataGridRowTemplate3" TargetType="{x:Type DataGridRow}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="Foreground" Value="{StaticResource Colour3}" />
+        <Setter Property="Background" Value="{StaticResource Colour11}" />
+    </Style>
+
+    <Style x:Key="DataGridStyleTemplate" TargetType="{x:Type DataGrid}">
+        <Setter Property="CanUserSortColumns" Value="False" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="CanUserReorderColumns" Value="False" />
+        <Setter Property="MinRowHeight" Value="40" />
+        <Setter Property="CanUserAddRows" Value="false" />
+        <Setter Property="CanUserResizeColumns" Value="False" />
+        <Setter Property="CanUserDeleteRows" Value="false" />
+        <Setter Property="SelectionUnit" Value="FullRow" />
+        <Setter Property="IsReadOnly" Value="true" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource DataGridColumnHeaderTemplate}" />
+        <Setter Property="RowStyle" Value="{StaticResource DataGridRowTemplate}" />
+        <Setter Property="CellStyle" Value="{StaticResource DataGridCellTemplate}" />
+    </Style>
+
+    <!--  CUSTOM  -->
+
+    <Style x:Key="DataGridTheme" TargetType="{x:Type DataGrid}">
+        <Setter Property="Background" Value="{StaticResource DataGridBGColor}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="GridLinesVisibility" Value="None" />
+        <Setter Property="MinRowHeight" Value="41" />
+        <Setter Property="CanUserAddRows" Value="false" />
+        <Setter Property="CanUserDeleteRows" Value="false" />
+        <Setter Property="SelectionUnit" Value="FullRow" />
+        <Setter Property="IsReadOnly" Value="true" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="ColumnHeaderStyle">
+            <Setter.Value>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background"  Value="Transparent" />
+                    <Setter Property="Foreground"  Value="{StaticResource DataGridColumnHeaderFGColor}" />
+                    <Setter Property="FontSize"  Value="12" />
+                    <Setter Property="FontFamily"  Value="{StaticResource Roboto}" />
+                    <Setter Property="FontWeight"  Value="Normal" />
+                    <Setter Property="Margin"  Value="15,13,0,13" />
+                    <Setter Property="VerticalAlignment"  Value="Center" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="RowStyle">
+            <Setter.Value>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="Foreground" Value="{StaticResource DataGridRowFGColor}" />
+                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+
+                    <Style.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                            <Setter Property="Background" Value="{StaticResource DataGridRowBGColor1}" />
+                        </Trigger>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="{StaticResource DataGridRowBGColor2}" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="CellStyle">
+            <Setter.Value>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Setter Property="Margin" Value="12,0,0,0" />
+                    <Setter Property="VerticalAlignment" Value="center" />
+                    <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{x:Null}" />
+                            <Setter Property="BorderBrush" Value="{x:Null}" />
+                            <Setter Property="Foreground" Value="{StaticResource DataGridRowFGColor}" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    <!-- OLD -->
+    <!--Cashier Dashboard-->
+    <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="CashierDashboardColumnHeader">
+        <Setter Property="Background"  Value="#00AEEF" />
+        <Setter Property="Foreground"  Value="#fff" />
+        <Setter Property="FontSize"  Value="16" />
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="FontFamily"  Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight"  Value="Bold" />
+        <Setter Property="VerticalAlignment"  Value="Center" />
+    </Style>
+    <Style x:Key="CashierDashboardRow" TargetType="{x:Type DataGridRow}">
+        <Setter Property="Foreground" Value="#000" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="#CEDFE8" />
+            </Trigger>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                <Setter Property="Background" Value="#FFF" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CashierDashboardCell" TargetType="{x:Type DataGridCell}">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="BorderBrush" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="#fff" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CashierDashboardDataGrid" TargetType="{x:Type DataGrid}">
+        <Setter Property="Background" Value="#00AEEF" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="GridLinesVisibility" Value="None" />
+        <Setter Property="MinRowHeight" Value="60" />
+        <Setter Property="CanUserResizeColumns" Value="False" />
+        <Setter Property="ColumnWidth" Value="*" />
+        <Setter Property="CanUserAddRows" Value="false" />
+        <Setter Property="CanUserDeleteRows" Value="false" />
+        <Setter Property="SelectionUnit" Value="FullRow" />
+        <Setter Property="IsReadOnly" Value="true" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource CashierDashboardColumnHeader}" />
+        <Setter Property="RowStyle" Value="{StaticResource CashierDashboardRow}" />
+        <Setter Property="CellStyle" Value="{StaticResource CashierDashboardCell}" />
+    </Style>
+
+    <!--  DataGridStyle1  -->
+    <Style x:Key="DataGridColumnHeader1" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="Background" Value="{StaticResource PanelBGColor3}" />
+        <Setter Property="Foreground" Value="{StaticResource ColumnHeaderFGColor1}" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="MinHeight" Value="40" />
+        <Setter Property="FontFamily"  Value="{StaticResource Roboto}" />
+        <Setter Property="FontWeight"  Value="Medium" />
+        <Setter Property="Margin"  Value="15,0,0,0" />
+        <Setter Property="VerticalAlignment"  Value="Center" />
+    </Style>
+
+    <Style x:Key="DataGridRow1" TargetType="{x:Type DataGridRow}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="{StaticResource RowBGColor1}" />
+                <Setter Property="Foreground" Value="{StaticResource RowFGColor1}" />
+            </Trigger>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                <Setter Property="Background" Value="{StaticResource RowBGColor2}" />
+                <Setter Property="Foreground" Value="{StaticResource RowFGColor2}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="DataGridRow2" TargetType="{x:Type DataGridRow}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="{StaticResource Roboto}" />
+        <Setter Property="Background" Value="{StaticResource RowBGColor1}" />
+        <Setter Property="Foreground" Value="{StaticResource RowFGColor1}" />
+    </Style>
+    <Style x:Key="DataGridCell1" TargetType="{x:Type DataGridCell}">
+        <Setter Property="Margin" Value="12,0,0,0" />
+        <Setter Property="VerticalAlignment" Value="center" />
+        <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="BorderBrush" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="#fff" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+    <Style x:Key="DataGridStyle1" TargetType="{x:Type DataGrid}">
+        <Setter Property="Background" Value="{StaticResource DataGridBGColor1}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="GridLinesVisibility" Value="None" />
+        <Setter Property="MinRowHeight" Value="40" />
+        <Setter Property="CanUserAddRows" Value="false" />
+        <Setter Property="CanUserDeleteRows" Value="false" />
+        <Setter Property="SelectionUnit" Value="FullRow" />
+        <Setter Property="IsReadOnly" Value="true" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource DataGridColumnHeader1}" />
+        <Setter Property="RowStyle" Value="{StaticResource DataGridRow1}" />
+        <Setter Property="CellStyle" Value="{StaticResource DataGridCell1}" />
+    </Style>
+
+    <Style x:Key="DataGridStyle2" TargetType="{x:Type DataGrid}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="GridLinesVisibility" Value="None" />
+        <Setter Property="MinRowHeight" Value="40" />
+        <Setter Property="CanUserAddRows" Value="false" />
+        <Setter Property="CanUserDeleteRows" Value="false" />
+        <Setter Property="SelectionUnit" Value="FullRow" />
+        <Setter Property="IsReadOnly" Value="true" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource DataGridColumnHeader1}" />
+        <Setter Property="RowStyle" Value="{StaticResource DataGridRow2}" />
+        <Setter Property="CellStyle" Value="{StaticResource DataGridCell1}" />
+    </Style>
+
+</ResourceDictionary>
