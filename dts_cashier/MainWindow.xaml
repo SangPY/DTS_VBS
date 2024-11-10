@@ -4,6 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:local="clr-namespace:dts_cashier"
         xmlns:mahapps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
@@ -20,6 +21,12 @@
     <mahapps:MetroWindow.Background>
         <SolidColorBrush Color="Transparent" />
     </mahapps:MetroWindow.Background>
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction Command="{Binding ClosingCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
 
     <Viewbox Stretch="Fill">
         <Grid Width="1920" Height="1080">
@@ -42,6 +49,62 @@
                          <Run Text="{Binding CurrentDateTime}" />
                 </TextBlock>
             </Grid>
+            <StackPanel Margin="0,0,20,0"
+                         HorizontalAlignment="Right"
+                         Orientation="Horizontal">
+                <Path Width="27"
+                        Height="27"
+                        Margin="0,5,20,0"
+                        Fill="{StaticResource IconFGColor1}"
+                        Stretch="Uniform">
+                    <Path.Style>
+                        <Style TargetType="Path">
+                            <Setter Property="Data" Value="{StaticResource NimbusOnline}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsOfflineMode}" Value="True">
+                                    <Setter Property="Data" Value="{StaticResource NimbusOffline}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Path.Style>
+                </Path>
+
+                <!--Minimum-->
+                <Button Width="20"
+                        Height="20"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Command="{Binding MinimizeCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"
+                        Cursor="Hand"
+                        IsTabStop="False">
+                    <Path Width="15"
+                            Height="15"
+                            VerticalAlignment="Bottom"
+                            Data="{StaticResource Minimize}"
+                            Fill="{StaticResource IconFGColor1}"
+                          Stretch="Uniform" />
+                </Button>
+
+                <!--Maximum-->
+                <Button Width="20"
+                          Height="20"
+                          Margin="10,0,0,0"
+                          Background="Transparent"
+                          BorderBrush="Transparent"
+                          BorderThickness="0"
+                          Command="{Binding CloseCommand}"
+                          Cursor="Hand"
+                          IsTabStop="False">
+                    <Path Width="15"
+                          Height="15"
+                          Data="{StaticResource WindowClose}"
+                          Fill="{StaticResource IconFGColor1}"
+                          Stretch="Uniform" />
+                </Button>
+            </StackPanel>
         </Grid>
+        <!--<view:CashierMainControl Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />-->
     </Viewbox>
 </mahapps:MetroWindow>
