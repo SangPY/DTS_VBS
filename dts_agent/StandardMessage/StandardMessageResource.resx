@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CloseLabel" xml:space="preserve">
+    <value>Close</value>
+    <comment>GenericDialogWindow</comment>
+  </data>
+  <data name="ConfirmationPassword" xml:space="preserve">
+    <value>Please enter your password to complete your order.</value>
+    <comment>TransactionConfirmationPasswordViewModel</comment>
+  </data>
+  <data name="ErrorAdmintrativeLogin" xml:space="preserve">
+    <value>Invalid credential!</value>
+    <comment>AdministratorLoginViewModel</comment>
+  </data>
+  <data name="ErrorAskAssistanceFromCashier" xml:space="preserve">
+    <value>Server connection issue. Please proceed to cashier for assistance.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="ErrorAvailPromoWithActivePromo" xml:space="preserve">
+    <value>Existing promo in use. To avail a new promo, you have to end your promo in cashier.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="ErrorConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Confirm password field is required.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorConfirmPinCodeRequired" xml:space="preserve">
+    <value>Please confirm your pin code</value>
+  </data>
+  <data name="ErrorConnectionIssue" xml:space="preserve">
+    <value>Cannot {0} right now due to {1} connection issue. Please proceed to cashier for assistance.</value>
+    <comment>CouponViewModel, PromosViewModel, MyAccountControlViewModel, LoginViewModel, PromosViewModel</comment>
+  </data>
+  <data name="ErrorCPAllPasswordFieldIsEmpty" xml:space="preserve">
+    <value>Fields should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Confirm password should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPCurrentConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Current password and confirm new password should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPCurrentNewPasswordIsEmpty" xml:space="preserve">
+    <value>Current password and new password should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPCurrentPasswordIsEmpty" xml:space="preserve">
+    <value>Current password should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPNewConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>New password and confirm new password should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPNewPasswordIsEmpty" xml:space="preserve">
+    <value>New password should not be empty.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorDoesntAgreeTNC" xml:space="preserve">
+    <value>Please read and accept the terms and condition.</value>
+    <comment>TermsAndConditionOnlyViewModel;</comment>
+  </data>
+  <data name="ErrorEloadCode" xml:space="preserve">
+    <value>OUT OF STOCK</value>
+    <comment>EShopViewModel</comment>
+  </data>
+  <data name="ErrorFieldIsEmpty" xml:space="preserve">
+    <value>This field is required.</value>
+    <comment>LockPopupViewModel, CouponViewModel</comment>
+  </data>
+  <data name="ErrorIncorrectCredential" xml:space="preserve">
+    <value>Invalid credential.</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="ErrorInstanceAlreadyRunning" xml:space="preserve">
+    <value>An instance of GO-CAFE Agent is already running.</value>
+    <comment>Startup</comment>
+  </data>
+  <data name="ErrorInsufficientBalanceOnLogin" xml:space="preserve">
+    <value>You have insufficient balance. Please topup to login.</value>
+  </data>
+  <data name="ErrorInsufficientFund" xml:space="preserve">
+    <value>Insufficient funds. Topup now to proceed with your transaction.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="ErrorInsuficientBalanceOrZeroBalance" xml:space="preserve">
+    <value>Insufficient funds. Topup now to login.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="ErrorInvalidPin" xml:space="preserve">
+    <value>Invalid pin</value>
+    <comment>LockViewModel</comment>
+  </data>
+  <data name="ErrorNeedHelpFromCashier" xml:space="preserve">
+    <value>Something went wrong. Please proceed to cashier for assistance.</value>
+  </data>
+  <data name="ErrorNewPasswordIsEmpty" xml:space="preserve">
+    <value>New password field is required.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorNoAvailableCashier" xml:space="preserve">
+    <value>No Available Cashier!</value>
+    <comment>ChatViewModel</comment>
+  </data>
+  <data name="ErrorNoSelectedPromo" xml:space="preserve">
+    <value>Please select a promo from the list.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="ErrorNotMember" xml:space="preserve">
+    <value>This feature is for members only. Sign up now to enjoy member privileges.</value>
+    <comment>StoreViewModel</comment>
+  </data>
+  <data name="ErrorOrderRejected" xml:space="preserve">
+    <value>Your order has been rejected.</value>
+  </data>
+  <data name="ErrorPasswordAndConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>New password and confirm password fields are required.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorPasswordAndConfirmPasswordIsNotEqual" xml:space="preserve">
+    <value>New password and confirm password do not match.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorPasswordIsEmpty" xml:space="preserve">
+    <value>Password field should not be empty.</value>
+    <comment>MyAccountControlViewModel, LoginViewModel</comment>
+  </data>
+  <data name="ErrorPasswordIsInvalid" xml:space="preserve">
+    <value>Incorrect old password.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorPasswordLessThan4" xml:space="preserve">
+    <value>Password must be at least 4 characters</value>
+  </data>
+  <data name="ErrorPasswordNotMatchedToNewPassword" xml:space="preserve">
+    <value>New password and confirm password do not match.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorPasswordNotMeetRequiredFields" xml:space="preserve">
+    <value>Cannot contain white space at the beginning or at the end.</value>
+    <comment>MyAccountControlViewModel, ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorPinCodeRequired" xml:space="preserve">
+    <value>Please enter your pin code</value>
+  </data>
+  <data name="ErrorPinLockIsLess4Character" xml:space="preserve">
+    <value>Pin should be 4 characters long.</value>
+    <comment>LockPopupViewModel</comment>
+  </data>
+  <data name="ErrorPinLockIsNotEqualToConfirmPin" xml:space="preserve">
+    <value>Your pin codes do not match.</value>
+    <comment>LockPopupViewModel</comment>
+  </data>
+  <data name="ErrorRequestTimedOut" xml:space="preserve">
+    <value>Internet connection issue. Please ask assistance from the cashier.</value>
+  </data>
+  <data name="ErrorStationNotProperlyRegistered" xml:space="preserve">
+    <value>This PC hasn't been configured properly. Please contact the Cashier for assistance and click on the retry button.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="ErrorUnableToLogout" xml:space="preserve">
+    <value>Unable to logout. Please proceed to cashier for assistance.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorUnexpected" xml:space="preserve">
+    <value>An unexpected error occurred. Please proceed to cashier for assistance.</value>
+  </data>
+  <data name="ErrorUsernameIsEmpty" xml:space="preserve">
+    <value>Username field is required.</value>
+    <comment>LoginModel</comment>
+  </data>
+  <data name="ErrorUsernameLessThan4" xml:space="preserve">
+    <value>Username must be at least 4 characters</value>
+  </data>
+  <data name="ErrorValidateStock" xml:space="preserve">
+    <value>Stock reach its limit!</value>
+    <comment>FoodInventory</comment>
+  </data>
+  <data name="NoActiveCashierMessage" xml:space="preserve">
+    <value>Store is currently unavailable. Please proceed to cashier for assistance.</value>
+    <comment>DashboardControlViewModel</comment>
+  </data>
+  <data name="OrderSuccesfulMessage" xml:space="preserve">
+    <value>Your order has been submitted successfully</value>
+    <comment>ShoppingBagViewModel</comment>
+  </data>
+  <data name="PriceLabel" xml:space="preserve">
+    <value>Price: </value>
+    <comment>BaseModel</comment>
+  </data>
+  <data name="RetryPinCode" xml:space="preserve">
+    <value>Second pin code is required</value>
+  </data>
+  <data name="StoreItemCategoryBeverage" xml:space="preserve">
+    <value>Beverage</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="StoreItemCategoryEloadEpins" xml:space="preserve">
+    <value>ELOAD/EPINS</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="StoreItemCategoryFood" xml:space="preserve">
+    <value>Food</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="StoreItemCategoryOthers" xml:space="preserve">
+    <value>Others</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="SuccessCashierTopup" xml:space="preserve">
+    <value>Cashier Top-up Successful!</value>
+  </data>
+  <data name="SuccessELoadPurchase" xml:space="preserve">
+    <value>Purchase completed. Your pin has been sent to your email and can be viewed in your transaction history.</value>
+    <comment>EShopViewModel</comment>
+  </data>
+  <data name="SuccessOrderAccepted" xml:space="preserve">
+    <value>Your order has been accepted.</value>
+  </data>
+  <data name="SuccessProceedOrder" xml:space="preserve">
+    <value>Your order has been placed. Please give the cashier a few minutes to process your request.</value>
+    <comment>FoodAndBeveragesWithCardViewModel</comment>
+  </data>
+  <data name="SuccessProcess" xml:space="preserve">
+    <value>Successfully {0} your {1}.</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="SuccessPromoPurchase" xml:space="preserve">
+    <value>You have successfully purchased {0}</value>
+  </data>
+  <data name="SuccessRedeemedCoupon" xml:space="preserve">
+    <value>Coupon successfully redeemed</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="SuccessRedeemedCoupon2" xml:space="preserve">
+    <value>You have successfully redeemed a coupon. {0}(Note: Coupon time will not be visible if redeemed while using a promo)</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="SuccessUpdateInformation" xml:space="preserve">
+    <value>Successfully updated your information.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactBranchRegisterIsNull" xml:space="preserve">
+    <value>Not specified</value>
+    <comment>MyAccountControlViewModel,CouponViewModel</comment>
+  </data>
+  <data name="TransactionWordAccount" xml:space="preserve">
+    <value>account</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactionWordAppliedPromoTo" xml:space="preserve">
+    <value>applied promo to</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactOrderAccepted" xml:space="preserve">
+    <value>Accepted</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderPending" xml:space="preserve">
+    <value>Pending</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderReadyToDeliver" xml:space="preserve">
+    <value>ReadyToDeliver</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderReceived" xml:space="preserve">
+    <value>Received</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderReject" xml:space="preserve">
+    <value>Rejected</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactWordApply" xml:space="preserve">
+    <value>apply</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactWordApplyPromo" xml:space="preserve">
+    <value>apply promo</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactWordChangePassword" xml:space="preserve">
+    <value>change password</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="TransactWordConnect" xml:space="preserve">
+    <value>connect</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordCoupon" xml:space="preserve">
+    <value>coupon</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="TransactWordForPlural" xml:space="preserve">
+    <value>s</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="TransactWordInformation" xml:space="preserve">
+    <value>information</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordInternet" xml:space="preserve">
+    <value>Internet</value>
+    <comment>CouponViewModel, PromosViewModel, MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordOffline" xml:space="preserve">
+    <value>OFFLINE</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="TransactWordPassword" xml:space="preserve">
+    <value>password</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordPromo" xml:space="preserve">
+    <value>promo</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactWordRedeem" xml:space="preserve">
+    <value>redeem</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="TransactWordSaved" xml:space="preserve">
+    <value>saved</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordServer" xml:space="preserve">
+    <value>server</value>
+    <comment>LoginViewModel, PromosViewModel</comment>
+  </data>
+  <data name="TransactWordUpdated" xml:space="preserve">
+    <value>updated</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordVoidStatus" xml:space="preserve">
+    <value>Void Status</value>
+    <comment>HistoryViewModel</comment>
+  </data>
+  <data name="WarningCancelRequests" xml:space="preserve">
+    <value>Your previous request MAY get canceled if you move to other pages. Are you sure you want to proceed?</value>
+  </data>
+  <data name="WarningConfirmationApplication" xml:space="preserve">
+    <value>Are you sure you want to {0} this {1}? Only one {1} at a time can be active, previously claimed or unused {1} will be lost.</value>
+    <comment>CouponViewModel, PromosViewModel</comment>
+  </data>
+  <data name="WarningConfirmationBonusLoadUsage" xml:space="preserve">
+    <value>You have been granted bonus airtime using your bonus load.</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningConfirmationLogoutUser" xml:space="preserve">
+    <value>Are you sure you want to logout?</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+  <data name="WarningConfirmationRestartPC" xml:space="preserve">
+    <value>Are you sure you want to restart this PC?</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="WarningConfirmationShutdownPC" xml:space="preserve">
+    <value>Are you sure you want to shutdown this PC?</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="WarningDisableSecurityPolicy" xml:space="preserve">
+    <value>Are you sure do you want to disable security features? This PC will restart upon applying changes.</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+  <data name="WarningDuringButtonCoolDown" xml:space="preserve">
+    <value>Try again in {0}.</value>
+    <comment>UITimer</comment>
+  </data>
+  <data name="WarningEnableSecurityPolicy" xml:space="preserve">
+    <value>This PC will restart upon applying changes.</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+  <data name="WarningHideAirtimeNotification" xml:space="preserve">
+    <value>Are you sure you want to hide airtime status?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningHideBonusLoadStatus" xml:space="preserve">
+    <value>Are you sure you want to hide bonus load status?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningHideOrderStatus" xml:space="preserve">
+    <value>Are you sure you want to hide order status?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningLogout" xml:space="preserve">
+    <value>Are you sure you want to logout?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningNumberAttempts" xml:space="preserve">
+    <value>{0} attempt{1} remaining.</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="WarningPromoWhenHaveCoupon" xml:space="preserve">
+    <value>Warning, you still have an active coupon.  System will continue consuming it even when you avail a promo.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="WarningRemoveShoppingBag1" xml:space="preserve">
+    <value>Are you sure you want to remove</value>
+    <comment>ShoppingBagViewModel</comment>
+  </data>
+  <data name="WarningRemoveShoppingBag2" xml:space="preserve">
+    <value>from your shopping bag?</value>
+    <comment>ShoppingBagViewModel</comment>
+  </data>
+  <data name="WarningRetryReconnection" xml:space="preserve">
+    <value>Network connection error. Please contact the Cashier for assisstance and click on the retry button.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="WarningUninstall" xml:space="preserve">
+    <value>Are you sure do you want to uninstall the agent app?</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+</root>

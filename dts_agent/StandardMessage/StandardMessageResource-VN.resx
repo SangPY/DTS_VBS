@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CloseLabel" xml:space="preserve">
+    <value>Đóng</value>
+    <comment>GenericDialogWindow</comment>
+  </data>
+  <data name="ConfirmationPassword" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu của bạn để hoàn thành đơn hàng.</value>
+    <comment>TransactionConfirmationPasswordViewModel</comment>
+  </data>
+  <data name="ErrorAdmintrativeLogin" xml:space="preserve">
+    <value>Chứng chỉ không hợp lệ!</value>
+    <comment>AdministratorLoginViewModel</comment>
+  </data>
+  <data name="ErrorAskAssistanceFromCashier" xml:space="preserve">
+    <value>Có sự cố kết nối máy chủ. Vui lòng tới thu ngân để được hỗ trợ.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="ErrorAvailPromoWithActivePromo" xml:space="preserve">
+    <value>Quảng cáo hiện có trong sử dụng. Để tận dụng một quảng cáo mới, bạn phải kết thúc quảng cáo của mình trong quầy thu ngân.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="ErrorConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Xác nhận mật khẩu là bắt buộc.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorConfirmPinCodeRequired" xml:space="preserve">
+    <value>Vui lòng xác nhận mã pin của bạn</value>
+  </data>
+  <data name="ErrorConnectionIssue" xml:space="preserve">
+    <value>Không thể {0} ngay bây giờ do sự cố kết nối {1}. Vui lòng tới thu ngân để được hỗ trợ.</value>
+    <comment>CouponViewModel, PromosViewModel, MyAccountControlViewModel, LoginViewModel, PromosViewModel</comment>
+  </data>
+  <data name="ErrorCPAllPasswordFieldIsEmpty" xml:space="preserve">
+    <value>Không được để trống trường này.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Xác nhận mật khẩu không được để trống.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPCurrentConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu hiện tại và xác nhận mật khẩu mới không được để trống.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPCurrentNewPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu hiện tại và mật khẩu mới không được để trống.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPCurrentPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu hiện tại không được để trống.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPNewConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu mới và xác nhận mật khẩu mới không được để trống.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorCPNewPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu mới không được để trống.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorDoesntAgreeTNC" xml:space="preserve">
+    <value>Xin vui lòng đọc và chấp nhận các điều khoản và điều kiện.</value>
+    <comment>TermsAndConditionOnlyViewModel;</comment>
+  </data>
+  <data name="ErrorEloadCode" xml:space="preserve">
+    <value>HẾT HÀNG</value>
+    <comment>EShopViewModel</comment>
+  </data>
+  <data name="ErrorFieldIsEmpty" xml:space="preserve">
+    <value>Lĩnh vực này là bắt buộc.</value>
+    <comment>LockPopupViewModel, CouponViewModel</comment>
+  </data>
+  <data name="ErrorIncorrectCredential" xml:space="preserve">
+    <value>Chứng chỉ không hợp lệ.</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="ErrorInstanceAlreadyRunning" xml:space="preserve">
+    <value>Một phiên bản của Đại lý GO-CAFE đã chạy.</value>
+    <comment>Startup</comment>
+  </data>
+  <data name="ErrorInsufficientBalanceOnLogin" xml:space="preserve">
+    <value>Bạn có đủ số dư. Vui lòng nạp tiền để đăng nhập.</value>
+  </data>
+  <data name="ErrorInsufficientFund" xml:space="preserve">
+    <value>Không đủ tiền. Nạp tiền ngay bây giờ để tiến hành giao dịch của bạn.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="ErrorInsuficientBalanceOrZeroBalance" xml:space="preserve">
+    <value>Không đủ tiền. Nạp tiền ngay để đăng nhập.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="ErrorInvalidPin" xml:space="preserve">
+    <value>Pin không hợp lệ</value>
+    <comment>LockViewModel</comment>
+  </data>
+  <data name="ErrorNeedHelpFromCashier" xml:space="preserve">
+    <value>Đã xảy ra lỗi. Vui lòng tới thu ngân để được hỗ trợ.</value>
+  </data>
+  <data name="ErrorNewPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu mới là bắt buộc.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorNoAvailableCashier" xml:space="preserve">
+    <value>Không có nhân viên thu ngân!</value>
+    <comment>ChatViewModel</comment>
+  </data>
+  <data name="ErrorNoSelectedPromo" xml:space="preserve">
+    <value>Vui lòng chọn một quảng cáo từ danh sách.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="ErrorNotMember" xml:space="preserve">
+    <value>Tính năng này chỉ dành cho thành viên. Đăng ký ngay để tận hưởng đặc quyền thành viên.</value>
+    <comment>StoreViewModel</comment>
+  </data>
+  <data name="ErrorOrderRejected" xml:space="preserve">
+    <value>Đơn hàng của bạn đã bị từ chối.</value>
+  </data>
+  <data name="ErrorPasswordAndConfirmPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu mới và xác nhận lại mật khẩu mới .</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorPasswordAndConfirmPasswordIsNotEqual" xml:space="preserve">
+    <value>Mật khẩu mới và mật khẩu xác nhận không khớp.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorPasswordIsEmpty" xml:space="preserve">
+    <value>Mật khẩu không được để trống.</value>
+    <comment>MyAccountControlViewModel, LoginViewModel</comment>
+  </data>
+  <data name="ErrorPasswordIsInvalid" xml:space="preserve">
+    <value>Mật khẩu cũ không chính xác.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorPasswordLessThan4" xml:space="preserve">
+    <value>Mật khẩu phải có ít nhất 4 ký tự</value>
+  </data>
+  <data name="ErrorPasswordNotMatchedToNewPassword" xml:space="preserve">
+    <value>Mật khẩu mới và mật khẩu xác nhận không khớp.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="ErrorPasswordNotMeetRequiredFields" xml:space="preserve">
+    <value>Không thể chứa khoảng trắng ở đầu hoặc cuối.</value>
+    <comment>MyAccountControlViewModel, ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorPinCodeRequired" xml:space="preserve">
+    <value>Vui lòng nhập mã pin của bạn</value>
+  </data>
+  <data name="ErrorPinLockIsLess4Character" xml:space="preserve">
+    <value>Pin phải dài 4 ký tự.</value>
+    <comment>LockPopupViewModel</comment>
+  </data>
+  <data name="ErrorPinLockIsNotEqualToConfirmPin" xml:space="preserve">
+    <value>Mã pin của bạn không khớp.</value>
+    <comment>LockPopupViewModel</comment>
+  </data>
+  <data name="ErrorRequestTimedOut" xml:space="preserve">
+    <value>Vấn đề kết nối Internet. Xin liên hệ nhân viên thu ngân để được giúp đỡ.</value>
+  </data>
+  <data name="ErrorStationNotProperlyRegistered" xml:space="preserve">
+    <value>PC này chưa được cấu hình đúng. Vui lòng liên hệ với Thu ngân để được hỗ trợ và nhấp vào nút thử lại.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="ErrorUnableToLogout" xml:space="preserve">
+    <value>Không thể đăng xuất. Vui lòng tớithu ngân để được hỗ trợ.</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="ErrorUnexpected" xml:space="preserve">
+    <value>Đã xảy ra lỗi không mong muốn. Vui lòng tới thu ngân để được hỗ trợ.</value>
+  </data>
+  <data name="ErrorUsernameIsEmpty" xml:space="preserve">
+    <value>Tên người dùng là bắt buộc.</value>
+    <comment>LoginModel</comment>
+  </data>
+  <data name="ErrorUsernameLessThan4" xml:space="preserve">
+    <value>Tên người dùng phải có ít nhất 4 ký tự</value>
+  </data>
+  <data name="ErrorValidateStock" xml:space="preserve">
+    <value>Đã đạt tới giới hạn.</value>
+    <comment>FoodInventory</comment>
+  </data>
+  <data name="NoActiveCashierMessage" xml:space="preserve">
+    <value>Cửa hàng hiện không có sẵn. Vui lòng tới thu ngân để được hỗ trợ.</value>
+    <comment>DashboardControlViewModel</comment>
+  </data>
+  <data name="OrderSuccesfulMessage" xml:space="preserve">
+    <value>Đơn hàng của bạn đã được gửi thành công</value>
+    <comment>ShoppingBagViewModel</comment>
+  </data>
+  <data name="PriceLabel" xml:space="preserve">
+    <value>Giá:</value>
+    <comment>BaseModel</comment>
+  </data>
+  <data name="RetryPinCode" xml:space="preserve">
+    <value>Mã pin thứ hai là bắt buộc</value>
+  </data>
+  <data name="StoreItemCategoryBeverage" xml:space="preserve">
+    <value>Đồ uống</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="StoreItemCategoryEloadEpins" xml:space="preserve">
+    <value>ELOAD/EPINS</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="StoreItemCategoryFood" xml:space="preserve">
+    <value>Đồ ăn</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="StoreItemCategoryOthers" xml:space="preserve">
+    <value>Khác</value>
+    <comment>CartItemModel</comment>
+  </data>
+  <data name="SuccessCashierTopup" xml:space="preserve">
+    <value>Thu ngân nạp tiền thành công!</value>
+  </data>
+  <data name="SuccessELoadPurchase" xml:space="preserve">
+    <value>Mua xong. Mã pin của bạn đã được gửi đến email của bạn và có thể xem được trong lịch sử giao dịch của bạn.</value>
+    <comment>EShopViewModel</comment>
+  </data>
+  <data name="SuccessOrderAccepted" xml:space="preserve">
+    <value>Đơn hàng của bạn đã được chấp nhận.</value>
+  </data>
+  <data name="SuccessProceedOrder" xml:space="preserve">
+    <value>Đơn hàng của bạn đã được đặt. Vui lòng cho nhân viên thu ngân một vài phút để xử lý yêu cầu của bạn.</value>
+    <comment>FoodAndBeveragesWithCardViewModel</comment>
+  </data>
+  <data name="SuccessProcess" xml:space="preserve">
+    <value>Thành công {0} {1} của bạn.</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="SuccessPromoPurchase" xml:space="preserve">
+    <value>Bạn đã mua thành công {0}</value>
+  </data>
+  <data name="SuccessRedeemedCoupon" xml:space="preserve">
+    <value>Phiếu giảm giá được sử dụng thành công</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="SuccessRedeemedCoupon2" xml:space="preserve">
+    <value>Bạn đã đổi thành công một phiếu giảm giá. {0} (Lưu ý: Thời gian phiếu sẽ không hiển thị nếu được đổi trong khi sử dụng quảng cáo)</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="SuccessUpdateInformation" xml:space="preserve">
+    <value>Cập nhật thành công thông tin của bạn.</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactBranchRegisterIsNull" xml:space="preserve">
+    <value>Không được chỉ định</value>
+    <comment>MyAccountControlViewModel,CouponViewModel</comment>
+  </data>
+  <data name="TransactionWordAccount" xml:space="preserve">
+    <value>tài khoản</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactionWordAppliedPromoTo" xml:space="preserve">
+    <value>áp dụng quảng cáo cho</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactOrderAccepted" xml:space="preserve">
+    <value>Đã được chấp nhận</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderPending" xml:space="preserve">
+    <value>Đang chờ xử lý</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderReadyToDeliver" xml:space="preserve">
+    <value>Sẵn sàng giao hàng</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderReceived" xml:space="preserve">
+    <value>Đã nhận</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactOrderReject" xml:space="preserve">
+    <value>Bị từ chối</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="TransactWordApply" xml:space="preserve">
+    <value>Áp dụng</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactWordApplyPromo" xml:space="preserve">
+    <value>Áp dụng khuyến mãi</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactWordChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+    <comment>ChangePasswordViewModel</comment>
+  </data>
+  <data name="TransactWordConnect" xml:space="preserve">
+    <value>Kết nối</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordCoupon" xml:space="preserve">
+    <value>Phiếu mua hàng</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="TransactWordForPlural" xml:space="preserve">
+    <value>s</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="TransactWordInformation" xml:space="preserve">
+    <value>Thông tin</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordInternet" xml:space="preserve">
+    <value>Mạng</value>
+    <comment>CouponViewModel, PromosViewModel, MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordOffline" xml:space="preserve">
+    <value>Ngoại tuyến</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="TransactWordPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordPromo" xml:space="preserve">
+    <value>Quảng cáo</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="TransactWordRedeem" xml:space="preserve">
+    <value>Chuộc lại</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="TransactWordSaved" xml:space="preserve">
+    <value>Đã lưu</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordServer" xml:space="preserve">
+    <value>Máy chủ</value>
+    <comment>LoginViewModel, PromosViewModel</comment>
+  </data>
+  <data name="TransactWordUpdated" xml:space="preserve">
+    <value>Đã cập nhật</value>
+    <comment>MyAccountControlViewModel</comment>
+  </data>
+  <data name="TransactWordVoidStatus" xml:space="preserve">
+    <value>Tình trạng trống</value>
+    <comment>HistoryViewModel</comment>
+  </data>
+  <data name="WarningCancelRequests" xml:space="preserve">
+    <value>Yêu cầu trước đó của bạn CÓ THỂ bị hủy nếu bạn chuyển sang các trang khác. Bạn có chắc muốn tiếp tục?</value>
+  </data>
+  <data name="WarningConfirmationApplication" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn {0} này {1} không? Chỉ một {1} tại một thời điểm có thể được kích hoạt, trước đây đã chọn hoặc không sử dụng {1} sẽ bị mất.</value>
+    <comment>CouponViewModel, PromosViewModel</comment>
+  </data>
+  <data name="WarningConfirmationBonusLoadUsage" xml:space="preserve">
+    <value>You have been granted bonus airtime using your bonus load.</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningConfirmationLogoutUser" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn thoát?</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+  <data name="WarningConfirmationRestartPC" xml:space="preserve">
+    <value>Are you sure you want to restart this PC?</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="WarningConfirmationShutdownPC" xml:space="preserve">
+    <value>Are you sure you want to shutdown this PC?</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="WarningDisableSecurityPolicy" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn tắt các tính năng bảo mật? PC này sẽ khởi động lại ngay khi áp dụng các thay đổi.</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+  <data name="WarningDuringButtonCoolDown" xml:space="preserve">
+    <value>Hãy thử lại trong {0}.</value>
+    <comment>UITimer</comment>
+  </data>
+  <data name="WarningEnableSecurityPolicy" xml:space="preserve">
+    <value>PC này sẽ khởi động lại ngay khi áp dụng các thay đổi.</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+  <data name="WarningHideAirtimeNotification" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn ẩn trạng thái thời gian?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningHideBonusLoadStatus" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn ẩn trạng thái thưởng?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningHideOrderStatus" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn ẩn trạng thái đơn hàng?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningLogout" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn thoát?</value>
+    <comment>DashboardViewModel</comment>
+  </data>
+  <data name="WarningNumberAttempts" xml:space="preserve">
+    <value>{0} cố gắng {1} còn lại.</value>
+    <comment>CouponViewModel</comment>
+  </data>
+  <data name="WarningPromoWhenHaveCoupon" xml:space="preserve">
+    <value>Cảnh báo, bạn vẫn có một phiếu giảm giá hoạt động. Hệ thống sẽ tiếp tục sử dụng nó ngay cả khi bạn tận dụng quảng cáo.</value>
+    <comment>PromosViewModel</comment>
+  </data>
+  <data name="WarningRemoveShoppingBag1" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn gỡ bỏ không</value>
+    <comment>ShoppingBagViewModel</comment>
+  </data>
+  <data name="WarningRemoveShoppingBag2" xml:space="preserve">
+    <value>từ túi mua sắm của bạn?</value>
+    <comment>ShoppingBagViewModel</comment>
+  </data>
+  <data name="WarningRetryReconnection" xml:space="preserve">
+    <value>Lỗi kết nối mạng. Vui lòng liên hệ với Nhân viên thu ngân để được hỗ trợ và nhấn vào nút thử lại.</value>
+    <comment>LoginViewModel</comment>
+  </data>
+  <data name="WarningUninstall" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn gỡ cài đặt ứng dụng đại lý?</value>
+    <comment>DashboardLeftControlViewModel</comment>
+  </data>
+</root>
