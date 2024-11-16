@@ -12,6 +12,7 @@ using dts_logger.Logger;
 using System.Threading;
 using dts_cryptography;
 using dts_agent.Helper;
+using dts_agent.Components.Login;
 
 namespace dts_agent
 {
@@ -47,15 +48,15 @@ namespace dts_agent
             // Instantiate first to generate a valid key.
             var configSecurity = new ConfigDataProtector();
 
-            //try
-            //{
-            //    ViewService.Instance.ShowView<LoginViewModel>();
-            //}
-            //catch (Exception ex)
-            //{
-            //    Thread.Sleep(2000);
-            //    System.Environment.Exit(0);
-            //}
+            try
+            {
+                ViewService.Instance.ShowView<LoginViewModel>();
+            }
+            catch (Exception ex)
+            {
+                Thread.Sleep(2000);
+                System.Environment.Exit(0);
+            }
         }
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
