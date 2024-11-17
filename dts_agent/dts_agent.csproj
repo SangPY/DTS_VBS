@@ -68,6 +68,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Components\Login\LoginModel.cs" />
     <Compile Include="Components\Login\LoginViewModel.cs" />
     <Compile Include="Components\Login\LoginWiew.xaml.cs">
       <DependentUpon>LoginWiew.xaml</DependentUpon>
@@ -83,6 +84,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StandardMessageResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelMediator\Mediator.cs" />
+    <Compile Include="ViewModelMediator\Messages.cs" />
+    <Compile Include="ViewModelMediator\MultiDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\DataCacheContext.cs" />
@@ -144,6 +148,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\Default Images\LOGIN AD.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
