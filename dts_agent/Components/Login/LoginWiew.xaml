@@ -18,6 +18,7 @@
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         WindowStyle="None">
-    <Grid>
-    </Grid>
+    <Window.Resources>
+        <ImageBrush x:Key="BackgroundImage" ImageSource="{StaticResource LoginBackground}" Stretch="Fill" />
+    </Window.Resources>
 </mahapps:MetroWindow>

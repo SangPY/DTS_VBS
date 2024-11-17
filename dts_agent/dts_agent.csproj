@@ -134,6 +134,10 @@
       <Project>{07b1af2c-777f-4f1a-b27c-46561bca3dfa}</Project>
       <Name>dts_logger</Name>
     </ProjectReference>
+    <ProjectReference Include="..\new_dts_lite_client_resources\new_dts_lite_client_resources.csproj">
+      <Project>{1d97fb5e-f9bf-4918-ae74-be000d5da96b}</Project>
+      <Name>new_dts_lite_client_resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="Components\Login\LoginWiew.xaml">
