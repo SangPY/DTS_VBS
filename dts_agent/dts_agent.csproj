@@ -73,6 +73,9 @@
     <Compile Include="Components\Login\LoginWiew.xaml.cs">
       <DependentUpon>LoginWiew.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helper\LanguageResources.cs" />
+    <Compile Include="Model\LanguageModel.cs" />
+    <Compile Include="ResponseMessageResource\DtsErrorMessageResource.cs" />
     <Compile Include="StandardMessage\DtsMessageResource.cs" />
     <Compile Include="StandardMessage\StandardMessageResource-VN.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -138,6 +141,10 @@
       <Project>{07b1af2c-777f-4f1a-b27c-46561bca3dfa}</Project>
       <Name>dts_logger</Name>
     </ProjectReference>
+    <ProjectReference Include="..\dts_shared\dts_shared.csproj">
+      <Project>{1396867b-c6d3-43fa-ad39-753891eaebe1}</Project>
+      <Name>dts_shared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\new_dts_lite_client_resources\new_dts_lite_client_resources.csproj">
       <Project>{1d97fb5e-f9bf-4918-ae74-be000d5da96b}</Project>
       <Name>new_dts_lite_client_resources</Name>
@@ -149,9 +156,17 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="NamedPipe\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Default Images\LOGIN AD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LanguageFlags\AmericanFlag.png" />
+    <Resource Include="Resources\LanguageFlags\IndonesiaFlag.png" />
+    <Resource Include="Resources\LanguageFlags\ThailandFlag.png" />
+    <Resource Include="Resources\LanguageFlags\VietnamFlag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

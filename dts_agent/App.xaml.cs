@@ -13,6 +13,7 @@ using System.Threading;
 using dts_cryptography;
 using dts_agent.Helper;
 using dts_agent.Components.Login;
+using dts_agent.StandardMessage;
 
 namespace dts_agent
 {
@@ -57,6 +58,25 @@ namespace dts_agent
                 Thread.Sleep(2000);
                 System.Environment.Exit(0);
             }
+        }
+
+        #region handel
+
+        public void ChangeLanguage(int selectedLanguage)
+        {
+            //foreach (ResourceDictionary dict in Resources.MergedDictionaries)
+            //{
+            //    if (dict is LanguageResources langDict)
+            //    {
+            //        langDict.UpdateSource();
+            //        DtsMessageResource.SetMessageResource(Language);
+            //        NimbusErrorMessageResource.SetMessageResource(Language);
+            //    }
+            //    else
+            //        dict.Source = dict.Source;
+            //}
+
+            //NamedPipeClientModel.Instance.SendToServer(Guid.NewGuid(), Messages.ChangeLanguage, selectedLanguage);
         }
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
@@ -104,5 +124,7 @@ namespace dts_agent
             //    NetworkClient.Instance.SendMessageToServer(NetworkMessageType.EXCEPTION_EVENT, networkMessage);
             //}
         }
+
+        #endregion handel
     }
 }

@@ -8,6 +8,9 @@ using dts_agent.Helper;
 using System.Windows;
 using dts_agent.ViewModelMediator;
 using System.Windows.Threading;
+using System.Collections.ObjectModel;
+using dts_agent.Model;
+using static dts_agent.App;
 
 namespace dts_agent.Components.Login
 {
@@ -42,8 +45,43 @@ namespace dts_agent.Components.Login
             SetIsProcessing(true);
 
             InitializeCurrentDateTimeTimer();
-            //InitializeLanguages();
+
+            InitializeLanguages();
         }
+
+        #region event handel
+
+        private void InitializeLanguages()
+        {
+            Languages = new ObservableCollection<LanguageModel>();
+            Languages.Add(new LanguageModel
+            {
+                IconSource = @"pack://application:,,,/Resources/LanguageFlags/AmericanFlag.png",
+                IsSelected = true,
+                Name = "English (EN)",
+                Sequence = 0,
+                LanguageValue = (int)App.LanguageType.EnUS
+            });
+            Languages.Add(new LanguageModel
+            {
+                IconSource = @"pack://application:,,,/Resources/LanguageFlags/VietnamFlag.png",
+                IsSelected = false,
+                Name = "Vietnamese (VN)",
+                Sequence = 1,
+                LanguageValue = (int)App.LanguageType.ViVN
+            });
+            Languages = new ObservableCollection<LanguageModel>(Languages.OrderBy(x => x.Sequence));
+            ChangeLanguage(Languages.Where(x => x.IsSelected == true).FirstOrDefault().LanguageValue);
+        }
+
+        private void ChangeLanguage(int selectedLanguage)
+        {
+            Language = (App.LanguageType)selectedLanguage;
+
+            (App.Current as App).ChangeLanguage(selectedLanguage);
+        }
+
+        #endregion event handel
 
         private void InitializeCurrentDateTimeTimer()
         {
@@ -77,7 +115,19 @@ namespace dts_agent.Components.Login
             }
         }
 
-        #region get set
+        #region get set properties
+
+        private ObservableCollection<LanguageModel> languages;
+
+        public ObservableCollection<LanguageModel> Languages
+        {
+            get { return languages; }
+            set
+            {
+                languages = value;
+                RaisePropertyChanged(nameof(Languages));
+            }
+        }
 
         private LoginModel loginModel;
 
@@ -91,6 +141,6 @@ namespace dts_agent.Components.Login
             }
         }
 
-        #endregion get set
+        #endregion get set properties
     }
 }

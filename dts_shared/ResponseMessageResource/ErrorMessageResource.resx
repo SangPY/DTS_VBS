@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsNotExist" xml:space="preserve">
+    <value>About Us does not exist.</value>
+    <comment>307</comment>
+  </data>
+  <data name="AccountDeactivated" xml:space="preserve">
+    <value>Your account is currently deactivated.</value>
+    <comment>2105</comment>
+  </data>
+  <data name="AccountExpired" xml:space="preserve">
+    <value>Your account has expired.</value>
+    <comment>2103</comment>
+  </data>
+  <data name="AccountHasNoBalance" xml:space="preserve">
+    <value>Account has no balance for this cybercafe. Please go to the cashier to do your first topup.</value>
+    <comment>2210</comment>
+  </data>
+  <data name="AddProductsFromInventory" xml:space="preserve">
+    <value>Please add products from your inventory.</value>
+    <comment>1401</comment>
+  </data>
+  <data name="AdjustmentOrderNotExist" xml:space="preserve">
+    <value>Adjustment Order does not exist.</value>
+    <comment>1402</comment>
+  </data>
+  <data name="AdjustmentProductNotExist" xml:space="preserve">
+    <value>Adjustment Product does not exist.</value>
+    <comment>1403</comment>
+  </data>
+  <data name="AmountGivenNotEqualToPromoPrice" xml:space="preserve">
+    <value>Amount given is not equal to the promo price.</value>
+    <comment>1501</comment>
+  </data>
+  <data name="AmountZeroOrNegative" xml:space="preserve">
+    <value>Amount should not be zero or negative.</value>
+    <comment>2208</comment>
+  </data>
+  <data name="ApprovalCodeEmpty" xml:space="preserve">
+    <value>Approval code is null or blank.</value>
+  </data>
+  <data name="BonusLoadWalletNotExist" xml:space="preserve">
+    <value>Bonus Load Wallet does not exist.</value>
+    <comment>2211</comment>
+  </data>
+  <data name="BranchAlreadyExist" xml:space="preserve">
+    <value>Branch already exists for the cybercafe.</value>
+    <comment>111</comment>
+  </data>
+  <data name="BranchAndSalesOrderNotMatch" xml:space="preserve">
+    <value>Branch from the transaction log and the sales order does not match.</value>
+    <comment>1908</comment>
+  </data>
+  <data name="BranchBalanceNotExist" xml:space="preserve">
+    <value>Branch Balance does not exist.</value>
+    <comment>107</comment>
+  </data>
+  <data name="BranchConfigurationNotExist" xml:space="preserve">
+    <value>Branch Configuration does not exist.</value>
+    <comment>108</comment>
+  </data>
+  <data name="BranchFeatureDeactivated" xml:space="preserve">
+    <value>This feature is currently deactivated for this branch.</value>
+    <comment>103</comment>
+  </data>
+  <data name="BranchGroupNotExist" xml:space="preserve">
+    <value>Branch Group does not exist.</value>
+    <comment>109</comment>
+  </data>
+  <data name="BranchIDAndMacAddressNull" xml:space="preserve">
+    <value>Branch ID and CCBoot Mac Address cannot be null at the same time.</value>
+    <comment>105</comment>
+  </data>
+  <data name="BranchInsufficientBalance" xml:space="preserve">
+    <value>Branch has insufficient balance.</value>
+    <comment>104</comment>
+  </data>
+  <data name="BranchInventoryNotExist" xml:space="preserve">
+    <value>Branch Inventory does not exist.</value>
+    <comment>1013</comment>
+  </data>
+  <data name="BranchNotExist" xml:space="preserve">
+    <value>Branch does not exist.</value>
+    <comment>102</comment>
+  </data>
+  <data name="BranchRetailPricingNotExist" xml:space="preserve">
+    <value>Branch Retail Pricing does not exist.</value>
+    <comment>1012</comment>
+  </data>
+  <data name="BranchVersionNotFound" xml:space="preserve">
+    <value>Branch version not found.</value>
+    <comment>110</comment>
+  </data>
+  <data name="BuffetAirtimeNotExist" xml:space="preserve">
+    <value>Buffet Airtime does not exist.</value>
+    <comment>1504</comment>
+  </data>
+  <data name="CannoRejectSalesOrderFromDifferentBranch" xml:space="preserve">
+    <value>Cannot reject sales order from different branch.</value>
+    <comment>1916</comment>
+  </data>
+  <data name="CannotAcceptSalesOrderFromDifferentBranch" xml:space="preserve">
+    <value>Cannot accept sales order from a different branch.</value>
+    <comment>1913</comment>
+  </data>
+  <data name="CannotAddOrderEmptySalesRetail" xml:space="preserve">
+    <value>Cannot add order with empty sales retail.</value>
+    <comment>1006</comment>
+  </data>
+  <data name="CannotProcessNonPendingInventoryAdjustmentOrder" xml:space="preserve">
+    <value>Cannot process a non-pending inventory adjustment order.</value>
+    <comment>1001</comment>
+  </data>
+  <data name="CannotProcessNonPendingSalesAdjustmentOrder" xml:space="preserve">
+    <value>Cannot process a non-pending sales adjustment order.</value>
+    <comment>1911</comment>
+  </data>
+  <data name="CashierGroupNotExist" xml:space="preserve">
+    <value>Cashier Group does not exist.</value>
+    <comment>202</comment>
+  </data>
+  <data name="CashierGroupPermissionNotExist" xml:space="preserve">
+    <value>Cashier Group Permission does not exist.</value>
+    <comment>203</comment>
+  </data>
+  <data name="CashierNotExist" xml:space="preserve">
+    <value>Cashier does not exist.</value>
+    <comment>201</comment>
+  </data>
+  <data name="CashierNotRegistered" xml:space="preserve">
+    <value>This cashier is not yet registered.</value>
+    <comment>213</comment>
+  </data>
+  <data name="CashierSessionLogNotExist" xml:space="preserve">
+    <value>Cashier Session Log does not exist.</value>
+    <comment>205</comment>
+  </data>
+  <data name="CashierSessionNotExist" xml:space="preserve">
+    <value>Cashier Session does not exist.</value>
+    <comment>204</comment>
+  </data>
+  <data name="CashierShiftNotEnded" xml:space="preserve">
+    <value>Cashier has not ended a shift yet.</value>
+    <comment>211</comment>
+  </data>
+  <data name="CashierStationNotExist" xml:space="preserve">
+    <value>Cashier Station does not exist.</value>
+    <comment>206</comment>
+  </data>
+  <data name="CityNotExist" xml:space="preserve">
+    <value>City does not exist.</value>
+    <comment>1101</comment>
+  </data>
+  <data name="ClientLoyaltyLogNotExist" xml:space="preserve">
+    <value>Client Loyalty Log does not exist</value>
+    <comment>1201</comment>
+  </data>
+  <data name="ClientSessionExpired" xml:space="preserve">
+    <value>The client's session has expired.</value>
+    <comment>830</comment>
+  </data>
+  <data name="CodeAlreadyExist" xml:space="preserve">
+    <value>The following code(s) already exist(s) on the system:</value>
+    <comment>608</comment>
+  </data>
+  <data name="CodeAlreadyUsedCantDelete" xml:space="preserve">
+    <value>Cannot delete a code that has already been used.</value>
+    <comment>609</comment>
+  </data>
+  <data name="CodeMultipleOccurence" xml:space="preserve">
+    <value>There are multiple occurences of the following code(s):</value>
+    <comment>607</comment>
+  </data>
+  <data name="CodeNotExist" xml:space="preserve">
+    <value>Code does not exist.</value>
+    <comment>601</comment>
+  </data>
+  <data name="CodeTypeNameAlreadyExist" xml:space="preserve">
+    <value>Code Type name already exists.</value>
+    <comment>604</comment>
+  </data>
+  <data name="CodeTypeNotExist" xml:space="preserve">
+    <value>Code Type does not exist</value>
+    <comment>611</comment>
+  </data>
+  <data name="CompanyConfigurationNotExist" xml:space="preserve">
+    <value>Company Configuration does not exist.</value>
+    <comment>302</comment>
+  </data>
+  <data name="CompanyMemberTypeNotExist" xml:space="preserve">
+    <value>Company Member Type Setup does not exist.</value>
+    <comment>1301</comment>
+  </data>
+  <data name="CompanyMemberTypeSetupNotConfigured" xml:space="preserve">
+    <value>Company member type setup is not configured.</value>
+    <comment>305</comment>
+  </data>
+  <data name="CompanyNotExist" xml:space="preserve">
+    <value>Company does not exist.</value>
+    <comment>301</comment>
+  </data>
+  <data name="CompositeProductComponentNotExist" xml:space="preserve">
+    <value>Composite product component does not exist.</value>
+    <comment>1408</comment>
+  </data>
+  <data name="CompositeProductNotExist" xml:space="preserve">
+    <value>Composite product does not exist.</value>
+    <comment>1407</comment>
+  </data>
+  <data name="CountryNotExist" xml:space="preserve">
+    <value>Country does not exist.</value>
+    <comment>1102</comment>
+  </data>
+  <data name="CouponAlreadyExpired" xml:space="preserve">
+    <value>Coupon has already expired.</value>
+    <comment>403</comment>
+  </data>
+  <data name="CouponInUsePurchaseRejected" xml:space="preserve">
+    <value>You still have a coupon in use. Purchase has been rejected.</value>
+    <comment>407</comment>
+  </data>
+  <data name="CouponNotApplicableOnStation" xml:space="preserve">
+    <value>The coupon you are about to use is not applicable for this station type.</value>
+    <comment>405</comment>
+  </data>
+  <data name="CouponNotExist" xml:space="preserve">
+    <value>Coupon does not exist.</value>
+    <comment>401</comment>
+  </data>
+  <data name="CouponNotHonored" xml:space="preserve">
+    <value>Coupon is not honored by this branch.</value>
+    <comment>404</comment>
+  </data>
+  <data name="CouponNotValid" xml:space="preserve">
+    <value>Coupon is not valid for this station type.</value>
+    <comment>405</comment>
+  </data>
+  <data name="CouponRedeemed" xml:space="preserve">
+    <value>Coupon has already been redeemed.</value>
+    <comment>402</comment>
+  </data>
+  <data name="CriticalErrorEncountered" xml:space="preserve">
+    <value>Critical error encountered. Please proceed to the cashier for help.</value>
+    <comment>813</comment>
+  </data>
+  <data name="CurrentMemberTypeNotExist" xml:space="preserve">
+    <value>Current Member Type does not exist.</value>
+    <comment>1302</comment>
+  </data>
+  <data name="CurrentSessionNotAllowedAnyActions" xml:space="preserve">
+    <value>Current session is not allowed to perform any actions.</value>
+    <comment>1603</comment>
+  </data>
+  <data name="CustomerAccountInsufficientBalance" xml:space="preserve">
+    <value>Customer account has insufficient balance for login or reload.</value>
+    <comment>2301</comment>
+  </data>
+  <data name="CustomerAccountInsufficientBalanceForLoginReload" xml:space="preserve">
+    <value>Customer account has insufficient balance for login or reload.</value>
+    <comment>827</comment>
+  </data>
+  <data name="CustomerAccountInsufficientBalanceToAvailProduct" xml:space="preserve">
+    <value>Customer account has insufficient balance to avail product.</value>
+    <comment>828</comment>
+  </data>
+  <data name="CustomerAccountPromoNotExist" xml:space="preserve">
+    <value>Customer Account Promo does not exist.</value>
+    <comment>1502</comment>
+  </data>
+  <data name="CustomerHasExistingWallet" xml:space="preserve">
+    <value>Customer has an existing wallet for this cybercafe.</value>
+    <comment>2209</comment>
+  </data>
+  <data name="CustomerNotExist" xml:space="preserve">
+    <value>Customer does not exist.</value>
+    <comment>501</comment>
+  </data>
+  <data name="CustomerNotHaveExistingPromo" xml:space="preserve">
+    <value>Customer does not have an existing promo.</value>
+    <comment>1512</comment>
+  </data>
+  <data name="CustomerNotMember" xml:space="preserve">
+    <value>Customer is not a member.</value>
+    <comment>506</comment>
+  </data>
+  <data name="CustomerSessionLogNotExist" xml:space="preserve">
+    <value>Customer Session Log does not exist.</value>
+    <comment>502</comment>
+  </data>
+  <data name="CustomerSessionNotExist" xml:space="preserve">
+    <value>Customer Session does not exist.</value>
+    <comment>503</comment>
+  </data>
+  <data name="CustomerSuccesfullyLoggedOut" xml:space="preserve">
+    <value>Customer has successfully logged out.</value>
+    <comment>508</comment>
+  </data>
+  <data name="CustomerTypeNotSupported" xml:space="preserve">
+    <value>Customer Type is not supported.</value>
+    <comment>505</comment>
+  </data>
+  <data name="CustomerWalletNotFound" xml:space="preserve">
+    <value>Customer wallet not found.</value>
+    <comment>2207</comment>
+  </data>
+  <data name="CybercafeNameTaken" xml:space="preserve">
+    <value>Cybercafe name is already taken.</value>
+    <comment>306</comment>
+  </data>
+  <data name="CyberCafeReferralNotExist" xml:space="preserve">
+    <value>Cyber Cafe Referral does not exist.</value>
+    <comment>303</comment>
+  </data>
+  <data name="DateIntervalInvalid" xml:space="preserve">
+    <value>Date interval is more than 6 days or invalid.</value>
+    <comment>821</comment>
+  </data>
+  <data name="DestinationAccountOverMaxAllowedBalance" xml:space="preserve">
+    <value>Destination account will go over the maximum allowed balance.</value>
+    <comment>2206</comment>
+  </data>
+  <data name="DivisionNotExist" xml:space="preserve">
+    <value>Division does not exist.</value>
+    <comment>1103</comment>
+  </data>
+  <data name="EloadTopupPartnerNotExist" xml:space="preserve">
+    <value>Eload Topup Partner does not exist.</value>
+    <comment>602</comment>
+  </data>
+  <data name="EloadTopupRequestNotExist" xml:space="preserve">
+    <value>Eload Topup Request does not exist.</value>
+    <comment>603</comment>
+  </data>
+  <data name="EmailAddressEnteredNotRegistered" xml:space="preserve">
+    <value>The email address you entered is not yet registered.</value>
+    <comment>2104</comment>
+  </data>
+  <data name="EmailAddressNotFound" xml:space="preserve">
+    <value>Email address not found.</value>
+    <comment>9922</comment>
+  </data>
+  <data name="EmailAddressRequired" xml:space="preserve">
+    <value>Email address is required to avail this feature. Please update your profile.</value>
+    <comment>1303</comment>
+  </data>
+  <data name="EmailDeliveryFailed" xml:space="preserve">
+    <value>Email delivery has failed.</value>
+    <comment>705</comment>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Invalid email address.</value>
+  </data>
+  <data name="EmailNotExist" xml:space="preserve">
+    <value>Non-existing email! Please use a working email.</value>
+  </data>
+  <data name="EmailParameterNotExist" xml:space="preserve">
+    <value>Email Parameter does not exist.</value>
+    <comment>701</comment>
+  </data>
+  <data name="EmailResetPasswordInstructionSent" xml:space="preserve">
+    <value>An email containing the instructions to reset your password has been sent to {0}.</value>
+    <comment>2102</comment>
+  </data>
+  <data name="EmailTemplateNotExist" xml:space="preserve">
+    <value>Email Template does not exist.</value>
+    <comment>702</comment>
+  </data>
+  <data name="EndShiftBranchInventoryDetailNotExist" xml:space="preserve">
+    <value>End Shift Branch Inventory Detail does not exist.</value>
+    <comment>207</comment>
+  </data>
+  <data name="EpaymentDisabled" xml:space="preserve">
+    <value>Epayment is disabled.</value>
+  </data>
+  <data name="EpaymentProviderNotExist" xml:space="preserve">
+    <value>Epayment provider does not exist.</value>
+  </data>
+  <data name="EpaymentProviderNull" xml:space="preserve">
+    <value>Epayment provider is null.</value>
+  </data>
+  <data name="ErrorParsingEmailTemplate" xml:space="preserve">
+    <value>An error occured during parsing of email template.</value>
+    <comment>703</comment>
+  </data>
+  <data name="ErrorSavingFile" xml:space="preserve">
+    <value>An error occurred saving file.</value>
+    <comment>2001</comment>
+  </data>
+  <data name="ErrorSendingClaimCode" xml:space="preserve">
+    <value>An error occurred while sending claim code to the email address. To get the code, please check the transaction history.</value>
+    <comment>605</comment>
+  </data>
+  <data name="ErrorSendingPasswordResetLink" xml:space="preserve">
+    <value>Error sending password reset link to your email. Please try again later.</value>
+    <comment>704</comment>
+  </data>
+  <data name="ErrorVoidingBranchTransactionNotExist" xml:space="preserve">
+    <value>The branch from the transaction does not exist anymore. The system could not proceed with the voiding.</value>
+    <comment>1902</comment>
+  </data>
+  <data name="ErrorVoidingCompanyTransactionNotExist" xml:space="preserve">
+    <value>The company from the transaction does not exist anymore. The system could not proceed with the voiding.</value>
+    <comment>1901</comment>
+  </data>
+  <data name="ErrorVoidingCustomerAccountTransactionNotExist" xml:space="preserve">
+    <value>The customer account from the transaction does not exist anymore. The system could not proceed with the voiding.</value>
+    <comment>1907</comment>
+  </data>
+  <data name="ErrorVoidingGuestTransactionNotExist" xml:space="preserve">
+    <value>The guest from the transaction does not exist anymore. The system could not proceed with the voiding.</value>
+    <comment>1904</comment>
+  </data>
+  <data name="ErrorVoidingMemberTransactionNotExist" xml:space="preserve">
+    <value>The member from the transaction does not exist anymore. The system could not proceed with the voiding.</value>
+    <comment>1903</comment>
+  </data>
+  <data name="ErrorVoidingSalesOrderTransactionNotExist" xml:space="preserve">
+    <value>The sales order from the transaction does not exist anymore. The system could not proceed with the voiding.</value>
+    <comment>1906</comment>
+  </data>
+  <data name="EShopCodeExceedMaxLength" xml:space="preserve">
+    <value>Eshop Code entered exceeded the allowed maximum length of 50 characters.</value>
+    <comment>610</comment>
+  </data>
+  <data name="EShopPictureNotExist" xml:space="preserve">
+    <value>EShop Picture does not exist.</value>
+    <comment>606</comment>
+  </data>
+  <data name="FAQNotExist" xml:space="preserve">
+    <value>FAQ does not exist</value>
+    <comment>807</comment>
+  </data>
+  <data name="FeatureNotAllowed" xml:space="preserve">
+    <value>You are not allowed to use this feature.</value>
+    <comment>816</comment>
+  </data>
+  <data name="FeatureOnlyAvailableToCybercafeMembers" xml:space="preserve">
+    <value>This feature is only available to cybercafe members.</value>
+    <comment>1308</comment>
+  </data>
+  <data name="FieldEmpty" xml:space="preserve">
+    <value>Field has an empty value</value>
+    <comment>823</comment>
+  </data>
+  <data name="FilenameCanOnlyBeUploadedOnce" xml:space="preserve">
+    <value>A filename can only be uploaded once per company.</value>
+    <comment>1310</comment>
+  </data>
+  <data name="FileSizeExceeded" xml:space="preserve">
+    <value>File size exceeded {0} bytes.</value>
+    <comment>2003</comment>
+  </data>
+  <data name="FullDeductionAirtimeNotExist" xml:space="preserve">
+    <value>Full Deduction Airtime does not exist.</value>
+    <comment>1505</comment>
+  </data>
+  <data name="GroupNotExist" xml:space="preserve">
+    <value>Group does not exist.</value>
+    <comment>810</comment>
+  </data>
+  <data name="GuestAccountAlreadyExpired" xml:space="preserve">
+    <value>Unable to proceed. Guest account already expired.</value>
+    <comment>901</comment>
+  </data>
+  <data name="GuestAirtimeNotExist" xml:space="preserve">
+    <value>Guest Airtime does not exist.</value>
+    <comment>902</comment>
+  </data>
+  <data name="GuestNotAllowedToLogin" xml:space="preserve">
+    <value>Guest not allowed to login to the specified branch.</value>
+    <comment>903</comment>
+  </data>
+  <data name="GuestNotExist" xml:space="preserve">
+    <value>Guest does not exist</value>
+    <comment>904</comment>
+  </data>
+  <data name="IncorrectChargingType" xml:space="preserve">
+    <value>Incorrect charging type found in customer session.</value>
+    <comment>1307</comment>
+  </data>
+  <data name="IncorrectUsernamePassword" xml:space="preserve">
+    <value>Incorrect username/password.</value>
+    <comment>2112</comment>
+  </data>
+  <data name="InsufficientAvailableStockInventory" xml:space="preserve">
+    <value>Insufficient available stock in inventory.</value>
+    <comment>1003</comment>
+  </data>
+  <data name="InsufficientBalance" xml:space="preserve">
+    <value>You have an insufficient balance.</value>
+    <comment>2203</comment>
+  </data>
+  <data name="InsufficientGuestBalance" xml:space="preserve">
+    <value>Insufficient guest balance. The guest may have already used the amount.</value>
+    <comment>1905</comment>
+  </data>
+  <data name="InsufficientLoyaltyPoints" xml:space="preserve">
+    <value>Cannot perform debit action. Insufficient loyalty points.</value>
+    <comment>1205</comment>
+  </data>
+  <data name="InsufficientPayment" xml:space="preserve">
+    <value>Insufficient payment. Promo price is {0}.</value>
+    <comment>1503</comment>
+  </data>
+  <data name="InsufficientTopupAmount" xml:space="preserve">
+    <value>Insufficient toupup amount. Membership fee is {0}.</value>
+    <comment>2205</comment>
+  </data>
+  <data name="InternalServerError" xml:space="preserve">
+    <value>Internal Server Error</value>
+    <comment>826</comment>
+  </data>
+  <data name="InternalServerError1" xml:space="preserve">
+    <value>Internal Server Error</value>
+    <comment>2303</comment>
+  </data>
+  <data name="InvalidCashierSession" xml:space="preserve">
+    <value>Invalid cashier session.</value>
+    <comment>210</comment>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Invalid email format.</value>
+    <comment>706</comment>
+  </data>
+  <data name="InvalidFieldValue" xml:space="preserve">
+    <value>Invalid field value.</value>
+    <comment>832</comment>
+  </data>
+  <data name="InvalidImageFormat" xml:space="preserve">
+    <value>Invalid image format.</value>
+    <comment>2002</comment>
+  </data>
+  <data name="InvalidIPAddressFormat" xml:space="preserve">
+    <value>Invalid IP Address format.</value>
+    <comment>1708</comment>
+  </data>
+  <data name="InvalidLoginCredentials" xml:space="preserve">
+    <value>Invalid login credentials.</value>
+    <comment>2101</comment>
+  </data>
+  <data name="InvalidMACAddressFormat" xml:space="preserve">
+    <value>Invalid MAC Address format.</value>
+    <comment>1709</comment>
+  </data>
+  <data name="InvalidPageNumber" xml:space="preserve">
+    <value>Invalid page number.</value>
+    <comment>809</comment>
+  </data>
+  <data name="InvalidPasswordResetToken" xml:space="preserve">
+    <value>Invalid password reset token.</value>
+    <comment>1313</comment>
+  </data>
+  <data name="InvalidPaymentType" xml:space="preserve">
+    <value>Invalid payment type.</value>
+    <comment>1923</comment>
+  </data>
+  <data name="InvalidPCNameLength" xml:space="preserve">
+    <value>Invalid PC name length.</value>
+    <comment>1707</comment>
+  </data>
+  <data name="InvalidPDFFile" xml:space="preserve">
+    <value>Invalid PDF File.</value>
+    <comment>831</comment>
+  </data>
+  <data name="InvalidRedemptionCode" xml:space="preserve">
+    <value>Invalid redemption code.</value>
+    <comment>1206</comment>
+  </data>
+  <data name="InvalidSession" xml:space="preserve">
+    <value>Invalid session.</value>
+    <comment>1609</comment>
+  </data>
+  <data name="InvalidStatusCode" xml:space="preserve">
+    <value>Invalid status code.</value>
+    <comment>1010</comment>
+  </data>
+  <data name="InvalidTransferToken" xml:space="preserve">
+    <value>Invalid transfer token.</value>
+    <comment>1604</comment>
+  </data>
+  <data name="ItemNotAvailableForRedemption" xml:space="preserve">
+    <value>This item is not available for redemption.</value>
+    <comment>1405</comment>
+  </data>
+  <data name="KeyNull" xml:space="preserve">
+    <value>Key is null.</value>
+    <comment>818</comment>
+  </data>
+  <data name="LicenseKeyInvalid" xml:space="preserve">
+    <value>License key is invalid.</value>
+    <comment>101</comment>
+  </data>
+  <data name="LoggedOut" xml:space="preserve">
+    <value>You have logged out.</value>
+    <comment>1602</comment>
+  </data>
+  <data name="LoginNotAllowed" xml:space="preserve">
+    <value>You are not allowed to login to this branch.</value>
+    <comment>1607</comment>
+  </data>
+  <data name="LogoutSuccessful" xml:space="preserve">
+    <value>Logout successful.</value>
+    <comment>1608</comment>
+  </data>
+  <data name="MACAddressAlreadyInUse" xml:space="preserve">
+    <value>MAC address: {0} already in use in {1} branch.</value>
+    <comment>214</comment>
+  </data>
+  <data name="MACAddressUsedByMultipleCashierStation" xml:space="preserve">
+    <value>MAC address {0} used by multiple cashier station.</value>
+  </data>
+  <data name="MaxTopupAmountExceeded" xml:space="preserve">
+    <value>Topup amount has exceeded the cybercafe's maximum topup amount.</value>
+    <comment>2204</comment>
+  </data>
+  <data name="MaxTopupAmountNotDefined" xml:space="preserve">
+    <value>Maximum topup amount setting is not yet defined for this cybercafe.</value>
+    <comment>2202</comment>
+  </data>
+  <data name="MeasurementUnitNotExist" xml:space="preserve">
+    <value>Measurement Unit does not exist.</value>
+    <comment>801</comment>
+  </data>
+  <data name="MemberAirtimeNotExist" xml:space="preserve">
+    <value>Member Airtime does not exist.</value>
+    <comment>1304</comment>
+  </data>
+  <data name="MemberAlreadyAcceptedTNC" xml:space="preserve">
+    <value>Member has already accepted tnc!</value>
+    <comment>1306</comment>
+  </data>
+  <data name="MemberEmailNotVerified" xml:space="preserve">
+    <value>Member email is not verified.</value>
+    <comment>1316</comment>
+  </data>
+  <data name="MemberHoursPlayedNotFound" xml:space="preserve">
+    <value>Member Hours Played not found.</value>
+    <comment>1305</comment>
+  </data>
+  <data name="MemberLoyaltyLogNotExist" xml:space="preserve">
+    <value>Member Loyalty Log does not exist.</value>
+    <comment>1203</comment>
+  </data>
+  <data name="MemberLoyaltyNotExist" xml:space="preserve">
+    <value>Member Loyalty does not exist.</value>
+    <comment>1204</comment>
+  </data>
+  <data name="MemberNotExist" xml:space="preserve">
+    <value>Member does not exist.</value>
+    <comment>1314</comment>
+  </data>
+  <data name="MemberNotHaveRegisteredEmail" xml:space="preserve">
+    <value>Member do not have registered email.</value>
+    <comment>1315</comment>
+  </data>
+  <data name="MemberNotYetEnrolled" xml:space="preserve">
+    <value>Member is not yet enrolled with this cybercafe. Please topup first.</value>
+    <comment>1317</comment>
+  </data>
+  <data name="MigratedFileNotExist" xml:space="preserve">
+    <value>Migrated File does not exist.</value>
+    <comment>1311</comment>
+  </data>
+  <data name="MigratedMemberNotExist" xml:space="preserve">
+    <value>Migrated Member does not exist.</value>
+    <comment>1312</comment>
+  </data>
+  <data name="MissingDataPerPage" xml:space="preserve">
+    <value>Missing Data Per Page or Page No fields.</value>
+    <comment>820</comment>
+  </data>
+  <data name="NewPasswordConfirmNewPasswordNotMatch" xml:space="preserve">
+    <value>New password and confirm new password doesn't match.</value>
+    <comment>2113</comment>
+  </data>
+  <data name="NewPasswordMatchOldPassword" xml:space="preserve">
+    <value>New password should be different from the old password.</value>
+    <comment>2107</comment>
+  </data>
+  <data name="NoAirtimeRemaining" xml:space="preserve">
+    <value>No airtime remaining.</value>
+    <comment>829</comment>
+  </data>
+  <data name="NoCouponAvailable" xml:space="preserve">
+    <value>No coupon available.</value>
+    <comment>406</comment>
+  </data>
+  <data name="NoMoreCodesAvailable" xml:space="preserve">
+    <value>There are no more codes available for the selected code type and denomination.</value>
+    <comment>1009</comment>
+  </data>
+  <data name="NonExistingEmail" xml:space="preserve">
+    <value>Non existing email. Please enter a working email address.</value>
+    <comment>2106</comment>
+  </data>
+  <data name="NotepadNotExist" xml:space="preserve">
+    <value>Notepad does not exist.</value>
+    <comment>806</comment>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+    <comment>824</comment>
+  </data>
+  <data name="OldPasswordIncorrect" xml:space="preserve">
+    <value>Old password is incorrect.</value>
+  </data>
+  <data name="OrderAlreadyAccepted" xml:space="preserve">
+    <value>Order was already accepted.</value>
+    <comment>1914</comment>
+  </data>
+  <data name="OtherExpenseLogNotExist" xml:space="preserve">
+    <value>Other Expense Log does not exist.</value>
+    <comment>1002</comment>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>{0} is out of stock.</value>
+    <comment>1007</comment>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Password successfully changed.</value>
+    <comment>2111</comment>
+  </data>
+  <data name="PCNotProperlyConfigured" xml:space="preserve">
+    <value>This PC has not been properly configured. Please contact cashier for assistance.</value>
+    <comment>1705</comment>
+  </data>
+  <data name="PendingOrderNotExist" xml:space="preserve">
+    <value>Pending Order does not exist.</value>
+    <comment>1915</comment>
+  </data>
+  <data name="PhoneNumberInvalid" xml:space="preserve">
+    <value>Please enter a valid phone number.</value>
+  </data>
+  <data name="ProblemEncounteredWhileProcessingRequest" xml:space="preserve">
+    <value>A problem was encountered while processing your request. Please contact the administrator.</value>
+    <comment>822</comment>
+  </data>
+  <data name="ProblemGivenData" xml:space="preserve">
+    <value>There were problems with the given data.</value>
+    <comment>812</comment>
+  </data>
+  <data name="ProductIDNotAvailable" xml:space="preserve">
+    <value>Product Id {0} is not available in branch's inventory.</value>
+    <comment>1011</comment>
+  </data>
+  <data name="ProductNotExist" xml:space="preserve">
+    <value>Product does not exist.</value>
+    <comment>1406</comment>
+  </data>
+  <data name="PromoAlreadyUsedCantCancel" xml:space="preserve">
+    <value>Could not cancel promo bacause it is already used.</value>
+    <comment>1510</comment>
+  </data>
+  <data name="PromoInUsePurchaseRejected" xml:space="preserve">
+    <value>You still have a promo in use. Purchase has been rejected.</value>
+    <comment>1508</comment>
+  </data>
+  <data name="PromoNotApplicableForCustomerType" xml:space="preserve">
+    <value>Promo is not applicable for this customer type.</value>
+    <comment>1509</comment>
+  </data>
+  <data name="PromoNotEndedCashierNotAvailable" xml:space="preserve">
+    <value>Promo was not ended because a cashier is not available.</value>
+    <comment>1514</comment>
+  </data>
+  <data name="PromoNotExist" xml:space="preserve">
+    <value>Promo does not eixst.</value>
+    <comment>1506</comment>
+  </data>
+  <data name="PromoRefundedSuccesfully" xml:space="preserve">
+    <value>Promo has been refunded successfully.</value>
+    <comment>1511</comment>
+  </data>
+  <data name="PromoTransactionLogNotExist" xml:space="preserve">
+    <value>Promo Transaction Log does not exist.</value>
+    <comment>1507</comment>
+  </data>
+  <data name="PromoTypeNotSupported" xml:space="preserve">
+    <value>Promo type is not supported.</value>
+    <comment>1513</comment>
+  </data>
+  <data name="ProvideExpirationDate" xml:space="preserve">
+    <value>Please provide an expiration date that is after today's date.</value>
+    <comment>815</comment>
+  </data>
+  <data name="QuantityZero" xml:space="preserve">
+    <value>Quantity should not be 0.</value>
+    <comment>1404</comment>
+  </data>
+  <data name="QuestionAlreadyExist" xml:space="preserve">
+    <value>Question already exists.</value>
+    <comment>808</comment>
+  </data>
+  <data name="RateNotConfigured" xml:space="preserve">
+    <value>Rate is not configured for this station type.</value>
+    <comment>2304</comment>
+  </data>
+  <data name="RateNotExist" xml:space="preserve">
+    <value>Rate does not exist.</value>
+    <comment>106</comment>
+  </data>
+  <data name="ReasonMaxLength" xml:space="preserve">
+    <value>Reason must be less than {0} characters.</value>
+    <comment>811</comment>
+  </data>
+  <data name="RegionNotExist" xml:space="preserve">
+    <value>Region does not exist.</value>
+    <comment>1104</comment>
+  </data>
+  <data name="RejectionReasonRequired" xml:space="preserve">
+    <value>Rejection reason is required.</value>
+    <comment>1910</comment>
+  </data>
+  <data name="RequestDenied" xml:space="preserve">
+    <value>Request denied.</value>
+    <comment>817</comment>
+  </data>
+  <data name="RequestingMemberNotOwnCode" xml:space="preserve">
+    <value>The requesting member do not own this code.</value>
+    <comment>1207</comment>
+  </data>
+  <data name="RequiredPointsNotEqualToServer" xml:space="preserve">
+    <value>Required points is not equal with the server.</value>
+    <comment>1202</comment>
+  </data>
+  <data name="RetailIDNotForSale" xml:space="preserve">
+    <value>The retail id {0} is not for sale in branch: {1}.</value>
+    <comment>1005</comment>
+  </data>
+  <data name="RetailNotExist" xml:space="preserve">
+    <value>Retail does not exist.</value>
+    <comment>1004</comment>
+  </data>
+  <data name="SalesAdjustmentNotExist" xml:space="preserve">
+    <value>Sales Adjustment does not exist.</value>
+    <comment>1909</comment>
+  </data>
+  <data name="SalesOrderNotExist" xml:space="preserve">
+    <value>Sales Order does not exist.</value>
+    <comment>1912</comment>
+  </data>
+  <data name="SalesRetailNotExist" xml:space="preserve">
+    <value>SalesRetail does not exist.</value>
+    <comment>1008</comment>
+  </data>
+  <data name="SelectedFileNotImage" xml:space="preserve">
+    <value>Selected file is not an image.</value>
+    <comment>2005</comment>
+  </data>
+  <data name="SessionAlreadyReplaced" xml:space="preserve">
+    <value>This session has already been replaced.</value>
+    <comment>1606</comment>
+  </data>
+  <data name="SessionNotExist" xml:space="preserve">
+    <value>Session does not exist.</value>
+    <comment>1610</comment>
+  </data>
+  <data name="ShiftAlreadyEnded" xml:space="preserve">
+    <value>Your shift has already ended.</value>
+    <comment>212</comment>
+  </data>
+  <data name="ShiftDetailNotExist" xml:space="preserve">
+    <value>Shift Detail does not exist.</value>
+    <comment>209</comment>
+  </data>
+  <data name="ShiftNotExist" xml:space="preserve">
+    <value>Shift does not exist.</value>
+    <comment>208</comment>
+  </data>
+  <data name="ShopPictureNotExist" xml:space="preserve">
+    <value>Shop Picture does not exist.</value>
+    <comment>2004</comment>
+  </data>
+  <data name="ShopTransactionLogNotExist" xml:space="preserve">
+    <value>Shop Transaction Log does not exist</value>
+    <comment>1918</comment>
+  </data>
+  <data name="SoftwareVersionNotExist" xml:space="preserve">
+    <value>Software Version does not exist.</value>
+    <comment>805</comment>
+  </data>
+  <data name="StartDateEndDateDifferenceGreaterThan7Days" xml:space="preserve">
+    <value>Difference between Start Date and End Date should not be greater than 7 days.</value>
+    <comment>833</comment>
+  </data>
+  <data name="StartDateGreaterThanEndDate" xml:space="preserve">
+    <value>Start Date cannot be greater than End Date</value>
+    <comment>819</comment>
+  </data>
+  <data name="StationIPAlreadyExist" xml:space="preserve">
+    <value>Station with ip address {0} for Branch {1} of Company {2} already exists.</value>
+    <comment>1701</comment>
+  </data>
+  <data name="StationNameAlreadyExist" xml:space="preserve">
+    <value>Station with name " + {0} + " for Branch " + {1} + " of Company " + {2} + " already exists.</value>
+    <comment>1702</comment>
+  </data>
+  <data name="StationNotExist" xml:space="preserve">
+    <value>Station does not exist.</value>
+    <comment>1703</comment>
+  </data>
+  <data name="StationRateNotConfigured" xml:space="preserve">
+    <value>Station rates are not configured for this station and member type.</value>
+    <comment>1704</comment>
+  </data>
+  <data name="StationRegistrationSuccesful" xml:space="preserve">
+    <value>Station registration is successful.</value>
+    <comment>1706</comment>
+  </data>
+  <data name="StillLoggedIn" xml:space="preserve">
+    <value>You are still logged in to another PC on {0} - {1}.</value>
+    <comment>507</comment>
+  </data>
+  <data name="StillLoggedIn1" xml:space="preserve">
+    <value>You are still logged-in on a different computer.</value>
+    <comment>1601</comment>
+  </data>
+  <data name="SupportContactDetailNotExist" xml:space="preserve">
+    <value>Support Contact Detail does not exist.</value>
+    <comment>804</comment>
+  </data>
+  <data name="SystemConfigurationNotExist" xml:space="preserve">
+    <value>System Configuration does not exist.</value>
+    <comment>802</comment>
+  </data>
+  <data name="TechnicianNotAllowedToLogin" xml:space="preserve">
+    <value>Technician is not allowed to login to the specified branch</value>
+    <comment>1802</comment>
+  </data>
+  <data name="TechnicianNotExist" xml:space="preserve">
+    <value>Technician does not exist</value>
+    <comment>1801</comment>
+  </data>
+  <data name="TNCNotExist" xml:space="preserve">
+    <value>Terms and Conditions does not exist.</value>
+    <comment>803</comment>
+  </data>
+  <data name="TopupAmountInsufficient" xml:space="preserve">
+    <value>Insufficient toupup amount. Membership fee is {0} and promo price is {1}.</value>
+  </data>
+  <data name="TransactionAlreadyHasPendingAdjustmentRequest" xml:space="preserve">
+    <value>This transaction already has a pending adjustment request.</value>
+    <comment>1922</comment>
+  </data>
+  <data name="TransactionAlreadyVoided" xml:space="preserve">
+    <value>This transaction has already been voided.</value>
+    <comment>1921</comment>
+  </data>
+  <data name="TransactionLogNotExist" xml:space="preserve">
+    <value>Transaction Log does not exist</value>
+    <comment>1919</comment>
+  </data>
+  <data name="TransactionLogNotOwned" xml:space="preserve">
+    <value>Transaction Log not owned by user.</value>
+    <comment>1917</comment>
+  </data>
+  <data name="TransferTokenExpired" xml:space="preserve">
+    <value>Transfer token has expired.</value>
+    <comment>1605</comment>
+  </data>
+  <data name="TransferTokenNotExist" xml:space="preserve">
+    <value>Transfer Token does not exist.</value>
+    <comment>504</comment>
+  </data>
+  <data name="UnableToCommunicateToBackend" xml:space="preserve">
+    <value>Unable to communicate with backend server. Please proceed to the cashier for help.</value>
+    <comment>814</comment>
+  </data>
+  <data name="UserAccountDeactivated" xml:space="preserve">
+    <value>User account is deactivated.</value>
+    <comment>1309</comment>
+  </data>
+  <data name="UserGroupNotExist" xml:space="preserve">
+    <value>User Group does not exist</value>
+    <comment>2108</comment>
+  </data>
+  <data name="UsernameExist" xml:space="preserve">
+    <value>Username already exists.</value>
+    <comment>2109</comment>
+  </data>
+  <data name="UserNotExist" xml:space="preserve">
+    <value>User does not exist.</value>
+    <comment>2110</comment>
+  </data>
+  <data name="UserSessionRemoved" xml:space="preserve">
+    <value>Session of user from the station was successfully removed.</value>
+    <comment>1611</comment>
+  </data>
+  <data name="VoidingDisbaled" xml:space="preserve">
+    <value>Voiding has been disabled for this merchant.</value>
+    <comment>304</comment>
+  </data>
+  <data name="VoidTransactionNotAllowed" xml:space="preserve">
+    <value>You are not allowed to void this transaction.</value>
+    <comment>1920</comment>
+  </data>
+  <data name="WalletError" xml:space="preserve">
+    <value>Wallet error was encounted.</value>
+    <comment>825</comment>
+  </data>
+  <data name="WalletTransactionNotExist" xml:space="preserve">
+    <value>Wallet transaction log does not exist.</value>
+    <comment>2201</comment>
+  </data>
+</root>
