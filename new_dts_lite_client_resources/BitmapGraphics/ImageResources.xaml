@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <BitmapImage x:Key="CafeLogo" UriSource="Images/cafe-logo.bmp" />
+    <BitmapImage x:Key="LowPoly" UriSource="Images/low-poly-texture.png" />
+    <BitmapImage x:Key="PromoBackground" UriSource="Images/in-store-product.png" />
+    <BitmapImage x:Key="CouponBackground" UriSource="Images/coupon-background.jpg" />
+    <BitmapImage x:Key="MainMenuDesign" UriSource="Images/main-menu-design.png" />
+    <BitmapImage x:Key="EloadBackground" UriSource="Images/eloadbackground.png" />
+    <BitmapImage x:Key="BronzeTier" UriSource="Images/bronzetier.png" />
+    <BitmapImage x:Key="SilverTier" UriSource="Images/silvertier.png" />
+    <BitmapImage x:Key="GoldTier" UriSource="Images/goldtier.png" />
+    <BitmapImage x:Key="LoginBackground" UriSource="Images/loginbackground.jpg" />
+    <BitmapImage x:Key="DashboardBackground" UriSource="Images/dashboardbackground.jpg" />
+    <BitmapImage x:Key="GamePass" UriSource="Images/NIMBUS GAME PASS.png" />
+</ResourceDictionary>

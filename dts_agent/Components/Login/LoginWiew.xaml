@@ -1,0 +1,89 @@
+﻿<mahapps:MetroWindow x:Class="dts_agent.Components.Login.LoginWiew"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dts_agent.Components.Login"
+        xmlns:mahapps="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        x:Name="LoginWindow"
+        Background="Transparent"
+        BorderBrush="Black"
+        IgnoreTaskbarOnMaximize="True"
+        IsWindowDraggable="False"
+        ResizeMode="NoResize"
+        ShowInTaskbar="True"
+        Topmost="True"
+        UseNoneWindowStyle="True"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Window.Resources>
+        <ImageBrush x:Key="BackgroundImage" ImageSource="{StaticResource LoginBackground}" Stretch="Fill" />
+    </Window.Resources>
+
+    <!--<mahapps:MetroWindow.Flyouts>
+        <mahapps:FlyoutsControl>
+            <mahapps:Flyout
+               Background="{StaticResource Colour6}"
+               CloseButtonVisibility="Collapsed"
+               Header="Flyout"
+               IsOpen="True"
+               Position="Left"
+               TitleVisibility="Collapsed">
+                <mahapps:Flyout.Effect>
+                    <DropShadowEffect
+                         BlurRadius="50"
+                         Direction="0"
+                         Opacity=".35"
+                         ShadowDepth="6"
+                         Color="Black" />
+                </mahapps:Flyout.Effect>
+                <Viewbox Stretch="Uniform">
+                    <Grid Width="345" Height="1080">
+                        <Grid Grid.Column="0">
+                            <StackPanel>
+                                <StackPanel
+                                      Margin="0,40,0,0"
+                                      HorizontalAlignment="Center"
+                                      Orientation="Horizontal">
+                                    <Path
+                          Width="13"
+                          Height="15"
+                          Margin="0,0,17,0"
+                          Data="{StaticResource Calendar}"
+                          Fill="{StaticResource Colour3}"
+                          Stretch="Uniform" />
+                                    <TextBlock
+                          Margin="0,2,0,0"
+                          VerticalAlignment="Center"
+                          Foreground="{StaticResource Colour3}"
+                          Style="{StaticResource DetailText}"
+                          Text="{Binding LoginModel.CurrentDateTime}" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Viewbox>
+            </mahapps:Flyout>
+        </mahapps:FlyoutsControl>
+    </mahapps:MetroWindow.Flyouts>-->
+
+    <Grid>
+        <Viewbox Stretch="Fill">
+            <Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="345" />
+                        <ColumnDefinition Width="1575" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1" Background="Transparent">
+                        <Grid>
+                            <Image Source="pack://application:,,,/Resources/Default Images/LOGIN AD.jpg" Stretch="Fill" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</mahapps:MetroWindow>

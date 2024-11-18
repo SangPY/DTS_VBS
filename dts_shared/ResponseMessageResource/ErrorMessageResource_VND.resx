@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsNotExist" xml:space="preserve">
+    <value>Giới thiệu về chúng tôi không tồn tại</value>
+    <comment>307</comment>
+  </data>
+  <data name="AccountDeactivated" xml:space="preserve">
+    <value>Tài khoản của bạn hiện đang bị vô hiệu hóa.</value>
+    <comment>2105</comment>
+  </data>
+  <data name="AccountExpired" xml:space="preserve">
+    <value>Tài khoản của bạn đã hết hạn.</value>
+    <comment>2103</comment>
+  </data>
+  <data name="AccountHasNoBalance" xml:space="preserve">
+    <value>Tài khoản không có số dư cho an ninh mạng này. Hãy đến quầy thu ngân để làm topup đầu tiên của bạn.</value>
+    <comment>2210</comment>
+  </data>
+  <data name="AddProductsFromInventory" xml:space="preserve">
+    <value>Vui lòng thêm sản phẩm từ kho của bạn.</value>
+    <comment>1401</comment>
+  </data>
+  <data name="AdjustmentOrderNotExist" xml:space="preserve">
+    <value>Lệnh điều chỉnh không tồn tại.</value>
+    <comment>1402</comment>
+  </data>
+  <data name="AdjustmentProductNotExist" xml:space="preserve">
+    <value>Sản phẩm điều chỉnh không tồn tại.</value>
+    <comment>1403</comment>
+  </data>
+  <data name="AmountGivenNotEqualToPromoPrice" xml:space="preserve">
+    <value>Số tiền đưa ra không bằng giá khuyến mãi.</value>
+    <comment>1501</comment>
+  </data>
+  <data name="AmountZeroOrNegative" xml:space="preserve">
+    <value>Số tiền không nên bằng 0 hoặc âm.</value>
+    <comment>2208</comment>
+  </data>
+  <data name="ApprovalCodeEmpty" xml:space="preserve">
+    <value>Mã xác nhận hết hiệu lực hoặc trống</value>
+  </data>
+  <data name="BonusLoadWalletNotExist" xml:space="preserve">
+    <value>Ví tiền thưởng không tồn tại.</value>
+    <comment>2211</comment>
+  </data>
+  <data name="BranchAlreadyExist" xml:space="preserve">
+    <value>Chi nhánh này đã tồn tại cho cybercafe</value>
+    <comment>111</comment>
+  </data>
+  <data name="BranchAndSalesOrderNotMatch" xml:space="preserve">
+    <value>Chi nhánh từ nhật ký giao dịch và lệnh bán hàng không khớp.</value>
+    <comment>1908</comment>
+  </data>
+  <data name="BranchBalanceNotExist" xml:space="preserve">
+    <value>Số dư chi nhánh không tồn tại</value>
+    <comment>107</comment>
+  </data>
+  <data name="BranchConfigurationNotExist" xml:space="preserve">
+    <value>Cấu hình cơ sở không tồn tại</value>
+    <comment>108</comment>
+  </data>
+  <data name="BranchFeatureDeactivated" xml:space="preserve">
+    <value>Tính năng hiện đang bị vô hiệu hóa ở chi nhánh này</value>
+    <comment>103</comment>
+  </data>
+  <data name="BranchGroupNotExist" xml:space="preserve">
+    <value>Nhóm không tồn tại ở chi nhánh này</value>
+    <comment>109</comment>
+  </data>
+  <data name="BranchIDAndMacAddressNull" xml:space="preserve">
+    <value>Tên đăng nhập chi nhánh và địa chỉ mac không có giá trị cùng một lúc</value>
+    <comment>105</comment>
+  </data>
+  <data name="BranchInsufficientBalance" xml:space="preserve">
+    <value>Chi nhánh có số dư không đủ</value>
+    <comment>104</comment>
+  </data>
+  <data name="BranchInventoryNotExist" xml:space="preserve">
+    <value>Chi nhánh tồn kho không tồn tại.</value>
+    <comment>1013</comment>
+  </data>
+  <data name="BranchNotExist" xml:space="preserve">
+    <value>Chi nhánh không tồn tại</value>
+    <comment>102</comment>
+  </data>
+  <data name="BranchRetailPricingNotExist" xml:space="preserve">
+    <value>Giá bán lẻ chi nhánh không tồn tại.</value>
+    <comment>1012</comment>
+  </data>
+  <data name="BranchVersionNotFound" xml:space="preserve">
+    <value>Không tìm thấy phiên bản tại chi nhánh</value>
+    <comment>110</comment>
+  </data>
+  <data name="BuffetAirtimeNotExist" xml:space="preserve">
+    <value>Buffet Airtime không tồn tại.</value>
+    <comment>1504</comment>
+  </data>
+  <data name="CannoRejectSalesOrderFromDifferentBranch" xml:space="preserve">
+    <value>Không thể từ chối đơn đặt hàng từ các chi nhánh khác nhau.</value>
+    <comment>1916</comment>
+  </data>
+  <data name="CannotAcceptSalesOrderFromDifferentBranch" xml:space="preserve">
+    <value>Không thể chấp nhận đơn đặt hàng từ một chi nhánh khác.</value>
+    <comment>1913</comment>
+  </data>
+  <data name="CannotAddOrderEmptySalesRetail" xml:space="preserve">
+    <value>Không thể thêm đơn đặt hàng với bán lẻ trống.</value>
+    <comment>1006</comment>
+  </data>
+  <data name="CannotProcessNonPendingInventoryAdjustmentOrder" xml:space="preserve">
+    <value>Không thể xử lý một lệnh điều chỉnh hàng tồn kho không chờ xử lý.</value>
+    <comment>1001</comment>
+  </data>
+  <data name="CannotProcessNonPendingSalesAdjustmentOrder" xml:space="preserve">
+    <value>Không thể xử lý một lệnh điều chỉnh bán hàng không chờ xử lý.</value>
+    <comment>1911</comment>
+  </data>
+  <data name="CashierGroupNotExist" xml:space="preserve">
+    <value>Nhóm thu ngân này không tồn tại</value>
+    <comment>202</comment>
+  </data>
+  <data name="CashierGroupPermissionNotExist" xml:space="preserve">
+    <value>Giấy phép của nhóm thu ngân này không tồn tại</value>
+    <comment>203</comment>
+  </data>
+  <data name="CashierNotExist" xml:space="preserve">
+    <value>Thu ngân hiện không ở đây</value>
+    <comment>201</comment>
+  </data>
+  <data name="CashierNotRegistered" xml:space="preserve">
+    <value>Nhân viên thu ngân này chưa được đăng ký</value>
+    <comment>213</comment>
+  </data>
+  <data name="CashierSessionLogNotExist" xml:space="preserve">
+    <value>Nhật ký ca làm việc thu ngân không tồn tại</value>
+    <comment>205</comment>
+  </data>
+  <data name="CashierSessionNotExist" xml:space="preserve">
+    <value>Ca làm việc thu ngân này không tồn tại</value>
+    <comment>204</comment>
+  </data>
+  <data name="CashierShiftNotEnded" xml:space="preserve">
+    <value>Nhân viên thu ngân chưa kết thúc ca làm việc</value>
+    <comment>211</comment>
+  </data>
+  <data name="CashierStationNotExist" xml:space="preserve">
+    <value>Quyền thu ngân không tồn tại</value>
+    <comment>206</comment>
+  </data>
+  <data name="CityNotExist" xml:space="preserve">
+    <value>Thành phố không tồn tại.</value>
+    <comment>1101</comment>
+  </data>
+  <data name="ClientLoyaltyLogNotExist" xml:space="preserve">
+    <value>Nhật ký khách hàng thân thiết không tồn tại</value>
+    <comment>1201</comment>
+  </data>
+  <data name="ClientSessionExpired" xml:space="preserve">
+    <value>Phiên của khách hàng đã hết hạn.</value>
+    <comment>830</comment>
+  </data>
+  <data name="CodeAlreadyExist" xml:space="preserve">
+    <value>Các mã sau đã tồn tại (s) trên hệ thống:</value>
+    <comment>608</comment>
+  </data>
+  <data name="CodeAlreadyUsedCantDelete" xml:space="preserve">
+    <value>Không thể xóa một mã đã được sử dụng.</value>
+    <comment>609</comment>
+  </data>
+  <data name="CodeMultipleOccurence" xml:space="preserve">
+    <value>Có nhiều lần xuất hiện của các mã sau (s) :</value>
+    <comment>607</comment>
+  </data>
+  <data name="CodeNotExist" xml:space="preserve">
+    <value>Mã không tồn tại</value>
+    <comment>601</comment>
+  </data>
+  <data name="CodeTypeNameAlreadyExist" xml:space="preserve">
+    <value>Tên loại mã đã tồn tại.</value>
+    <comment>604</comment>
+  </data>
+  <data name="CodeTypeNotExist" xml:space="preserve">
+    <value>Loại mã không tồn tại</value>
+    <comment>611</comment>
+  </data>
+  <data name="CompanyConfigurationNotExist" xml:space="preserve">
+    <value>Cấu hình công ty này không tồn tại</value>
+    <comment>302</comment>
+  </data>
+  <data name="CompanyMemberTypeNotExist" xml:space="preserve">
+    <value>Thiết lập loại thành viên công ty không tồn tại.</value>
+    <comment>1301</comment>
+  </data>
+  <data name="CompanyMemberTypeSetupNotConfigured" xml:space="preserve">
+    <value>Thiết lập loại thành viên công ty không được cấu hình</value>
+    <comment>305</comment>
+  </data>
+  <data name="CompanyNotExist" xml:space="preserve">
+    <value>Công ty này không tồn tại</value>
+    <comment>301</comment>
+  </data>
+  <data name="CompositeProductComponentNotExist" xml:space="preserve">
+    <value>Thành phần sản phẩm tổng hợp không tồn tại.</value>
+    <comment>1408</comment>
+  </data>
+  <data name="CompositeProductNotExist" xml:space="preserve">
+    <value>Sản phẩm tổng hợp không tồn tại.</value>
+    <comment>1407</comment>
+  </data>
+  <data name="CountryNotExist" xml:space="preserve">
+    <value>Đất nước không tồn tại.</value>
+    <comment>1102</comment>
+  </data>
+  <data name="CouponAlreadyExpired" xml:space="preserve">
+    <value>Voucher đã hết hạn</value>
+    <comment>403</comment>
+  </data>
+  <data name="CouponInUsePurchaseRejected" xml:space="preserve">
+    <value>Bạn vẫn có 1 voucher đang sử dụng. Giao dịch bị từ chối</value>
+    <comment>407</comment>
+  </data>
+  <data name="CouponNotApplicableOnStation" xml:space="preserve">
+    <value>Phiếu giảm giá bạn sắp sử dụng không áp dụng cho loại máy trạm này.</value>
+    <comment>405</comment>
+  </data>
+  <data name="CouponNotExist" xml:space="preserve">
+    <value>Voucher không tồn tại</value>
+    <comment>401</comment>
+  </data>
+  <data name="CouponNotHonored" xml:space="preserve">
+    <value>Voucher không sử dụng được ở chi nhánh này</value>
+    <comment>404</comment>
+  </data>
+  <data name="CouponNotValid" xml:space="preserve">
+    <value>Voucher không hợp lệ cho lần này</value>
+    <comment>405</comment>
+  </data>
+  <data name="CouponRedeemed" xml:space="preserve">
+    <value>Voucher đã được sử dụng</value>
+    <comment>402</comment>
+  </data>
+  <data name="CriticalErrorEncountered" xml:space="preserve">
+    <value>Gặp lỗi nghiêm trọng. Vui lòng tiến hành thu ngân để được giúp đỡ.</value>
+    <comment>813</comment>
+  </data>
+  <data name="CurrentMemberTypeNotExist" xml:space="preserve">
+    <value>Loại thành viên hiện tại không tồn tại.</value>
+    <comment>1302</comment>
+  </data>
+  <data name="CurrentSessionNotAllowedAnyActions" xml:space="preserve">
+    <value>Phiên hiện tại không được phép thực hiện bất kỳ hành động.</value>
+    <comment>1603</comment>
+  </data>
+  <data name="CustomerAccountInsufficientBalance" xml:space="preserve">
+    <value>Tài khoản khách hàng không đủ số dư để đăng nhập hoặc tải lại.</value>
+    <comment>2301</comment>
+  </data>
+  <data name="CustomerAccountInsufficientBalanceForLoginReload" xml:space="preserve">
+    <value>Tài khoản khách hàng không đủ số dư để đăng nhập hoặc tải lại.</value>
+    <comment>827</comment>
+  </data>
+  <data name="CustomerAccountInsufficientBalanceToAvailProduct" xml:space="preserve">
+    <value>Tài khoản khách hàng không đủ số dư để tận dụng sản phẩm.</value>
+    <comment>828</comment>
+  </data>
+  <data name="CustomerAccountPromoNotExist" xml:space="preserve">
+    <value>Quảng cáo tài khoản khách hàng không tồn tại.</value>
+    <comment>1502</comment>
+  </data>
+  <data name="CustomerHasExistingWallet" xml:space="preserve">
+    <value>Khách hàng có một ví hiện có cho cybercafe này.</value>
+    <comment>2209</comment>
+  </data>
+  <data name="CustomerNotExist" xml:space="preserve">
+    <value>Khách hàng không tồn tại</value>
+    <comment>501</comment>
+  </data>
+  <data name="CustomerNotHaveExistingPromo" xml:space="preserve">
+    <value>Khách hàng không có quảng cáo hiện có.</value>
+    <comment>1512</comment>
+  </data>
+  <data name="CustomerNotMember" xml:space="preserve">
+    <value>Khách hàng không phải là thành viên</value>
+    <comment>506</comment>
+  </data>
+  <data name="CustomerSessionLogNotExist" xml:space="preserve">
+    <value>Nhật ký sử dụng khách hàng không tồn tại</value>
+    <comment>502</comment>
+  </data>
+  <data name="CustomerSessionNotExist" xml:space="preserve">
+    <value>thời gian đăng nhập của khách hàng không tồn tại</value>
+    <comment>503</comment>
+  </data>
+  <data name="CustomerSuccesfullyLoggedOut" xml:space="preserve">
+    <value>Khách hàng đã đăng xuất thành công</value>
+    <comment>508</comment>
+  </data>
+  <data name="CustomerTypeNotSupported" xml:space="preserve">
+    <value>Khách hàng này không được hỗ trợ</value>
+    <comment>505</comment>
+  </data>
+  <data name="CustomerWalletNotFound" xml:space="preserve">
+    <value>Không tìm thấy ví khách hàng.</value>
+    <comment>2207</comment>
+  </data>
+  <data name="CybercafeNameTaken" xml:space="preserve">
+    <value>Tên Cybercafe đã được sử dụng</value>
+    <comment>306</comment>
+  </data>
+  <data name="CyberCafeReferralNotExist" xml:space="preserve">
+    <value>Giới thiệu về cybercafe không tồn tại</value>
+    <comment>303</comment>
+  </data>
+  <data name="DateIntervalInvalid" xml:space="preserve">
+    <value>Khoảng thời gian hơn 6 ngày hoặc không hợp lệ.</value>
+    <comment>821</comment>
+  </data>
+  <data name="DestinationAccountOverMaxAllowedBalance" xml:space="preserve">
+    <value>Tài khoản đích sẽ đi qua số dư tối đa được phép.</value>
+    <comment>2206</comment>
+  </data>
+  <data name="DivisionNotExist" xml:space="preserve">
+    <value>Phân chia không tồn tại.</value>
+    <comment>1103</comment>
+  </data>
+  <data name="EloadTopupPartnerNotExist" xml:space="preserve">
+    <value>Khách hàng yêu cầu nạp tiền không tồn tại</value>
+    <comment>602</comment>
+  </data>
+  <data name="EloadTopupRequestNotExist" xml:space="preserve">
+    <value>Khách hàng yêu cầu nạp tiền không tồn tại</value>
+    <comment>603</comment>
+  </data>
+  <data name="EmailAddressEnteredNotRegistered" xml:space="preserve">
+    <value>Địa chỉ email bạn đã nhập chưa được đăng ký.</value>
+    <comment>2104</comment>
+  </data>
+  <data name="EmailAddressNotFound" xml:space="preserve">
+    <value>Không tìm thấy địa chỉ email</value>
+    <comment>9922</comment>
+  </data>
+  <data name="EmailAddressRequired" xml:space="preserve">
+    <value>Địa chỉ email là cần thiết để tận dụng tính năng này. Vui lòng cập nhật hồ sơ của bạn.</value>
+    <comment>1303</comment>
+  </data>
+  <data name="EmailDeliveryFailed" xml:space="preserve">
+    <value>Gửi email đã thất bại.</value>
+    <comment>705</comment>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>Địa chỉ email không hợp lệ</value>
+  </data>
+  <data name="EmailNotExist" xml:space="preserve">
+    <value>Email không tồn tại. Vui lòng nhập một địa chỉ email làm việc.</value>
+  </data>
+  <data name="EmailParameterNotExist" xml:space="preserve">
+    <value>Thông số email không tồn tại.</value>
+    <comment>701</comment>
+  </data>
+  <data name="EmailResetPasswordInstructionSent" xml:space="preserve">
+    <value>Một email chứa các hướng dẫn để đặt lại mật khẩu của bạn đã được gửi tới {0}.</value>
+    <comment>2102</comment>
+  </data>
+  <data name="EmailTemplateNotExist" xml:space="preserve">
+    <value>Mẫu email không tồn tại.</value>
+    <comment>702</comment>
+  </data>
+  <data name="EndShiftBranchInventoryDetailNotExist" xml:space="preserve">
+    <value>Thay đổi về mặt hàng tại chi nhánh này không tồn tại</value>
+    <comment>207</comment>
+  </data>
+  <data name="EpaymentDisabled" xml:space="preserve">
+    <value>Thanh toán điện tử bị vô hiệu hóa</value>
+  </data>
+  <data name="EpaymentProviderNotExist" xml:space="preserve">
+    <value>Nhà cung cấp dịch vụ không tồn tại</value>
+  </data>
+  <data name="EpaymentProviderNull" xml:space="preserve">
+    <value>Nhà cung cấp dịch vụ thanh toán là vô giá trị</value>
+  </data>
+  <data name="ErrorParsingEmailTemplate" xml:space="preserve">
+    <value>Đã xảy ra lỗi trong quá trình phân tích mẫu email.</value>
+    <comment>703</comment>
+  </data>
+  <data name="ErrorSavingFile" xml:space="preserve">
+    <value>Xảy ra lỗi lưu tập tin.</value>
+    <comment>2001</comment>
+  </data>
+  <data name="ErrorSendingClaimCode" xml:space="preserve">
+    <value>Đã xảy ra lỗi trong khi gửi mã yêu cầu đến địa chỉ email. Để lấy mã, vui lòng kiểm tra lịch sử giao dịch.</value>
+    <comment>605</comment>
+  </data>
+  <data name="ErrorSendingPasswordResetLink" xml:space="preserve">
+    <value>Lỗi gửi liên kết đặt lại mật khẩu đến email của bạn. Vui lòng thử lại sau.</value>
+    <comment>704</comment>
+  </data>
+  <data name="ErrorVoidingBranchTransactionNotExist" xml:space="preserve">
+    <value>Chi nhánh từ giao dịch không tồn tại nữa. Hệ thống không thể tiến hành hủy bỏ.</value>
+    <comment>1902</comment>
+  </data>
+  <data name="ErrorVoidingCompanyTransactionNotExist" xml:space="preserve">
+    <value>Công ty từ giao dịch không tồn tại nữa. Hệ thống không thể tiến hành hủy bỏ.</value>
+    <comment>1901</comment>
+  </data>
+  <data name="ErrorVoidingCustomerAccountTransactionNotExist" xml:space="preserve">
+    <value>Tài khoản khách hàng từ giao dịch không tồn tại nữa. Hệ thống không thể tiến hành hủy bỏ.</value>
+    <comment>1907</comment>
+  </data>
+  <data name="ErrorVoidingGuestTransactionNotExist" xml:space="preserve">
+    <value>Khách từ giao dịch không tồn tại nữa. Hệ thống không thể tiến hành hủy bỏ.</value>
+    <comment>1904</comment>
+  </data>
+  <data name="ErrorVoidingMemberTransactionNotExist" xml:space="preserve">
+    <value>Các thành viên từ giao dịch không tồn tại nữa. Hệ thống không thể tiến hành hủy bỏ.</value>
+    <comment>1903</comment>
+  </data>
+  <data name="ErrorVoidingSalesOrderTransactionNotExist" xml:space="preserve">
+    <value>Lệnh bán hàng từ giao dịch không còn tồn tại nữa. Hệ thống không thể tiến hành hủy bỏ.</value>
+    <comment>1906</comment>
+  </data>
+  <data name="EShopCodeExceedMaxLength" xml:space="preserve">
+    <value>Mã Eshop đã nhập vượt quá độ dài tối đa cho phép là 50 ký tự.</value>
+    <comment>610</comment>
+  </data>
+  <data name="EShopPictureNotExist" xml:space="preserve">
+    <value>Hình ảnh EShop không tồn tại.</value>
+    <comment>606</comment>
+  </data>
+  <data name="FAQNotExist" xml:space="preserve">
+    <value>Câu hỏi thường gặp không tồn tại</value>
+    <comment>807</comment>
+  </data>
+  <data name="FeatureNotAllowed" xml:space="preserve">
+    <value>Bạn không được phép sử dụng tính năng này.</value>
+    <comment>816</comment>
+  </data>
+  <data name="FeatureOnlyAvailableToCybercafeMembers" xml:space="preserve">
+    <value>Tính năng này chỉ dành cho các thành viên không gian mạng.</value>
+    <comment>1308</comment>
+  </data>
+  <data name="FieldEmpty" xml:space="preserve">
+    <value>Trường có giá trị trống</value>
+    <comment>823</comment>
+  </data>
+  <data name="FilenameCanOnlyBeUploadedOnce" xml:space="preserve">
+    <value>Tên tệp chỉ có thể được tải lên một lần cho mỗi công ty.</value>
+    <comment>1310</comment>
+  </data>
+  <data name="FileSizeExceeded" xml:space="preserve">
+    <value>Kích thước tệp vượt quá {0} byte.</value>
+    <comment>2003</comment>
+  </data>
+  <data name="FullDeductionAirtimeNotExist" xml:space="preserve">
+    <value>Khấu trừ hoàn toàn Thời gian phát sóng không tồn tại.</value>
+    <comment>1505</comment>
+  </data>
+  <data name="GroupNotExist" xml:space="preserve">
+    <value>Nhóm không tồn tại.</value>
+    <comment>810</comment>
+  </data>
+  <data name="GuestAccountAlreadyExpired" xml:space="preserve">
+    <value>Không thể tiến hành. Tài khoản khách đã hết hạn.</value>
+    <comment>901</comment>
+  </data>
+  <data name="GuestAirtimeNotExist" xml:space="preserve">
+    <value>Thời gian phát sóng của khách không tồn tại.</value>
+    <comment>902</comment>
+  </data>
+  <data name="GuestNotAllowedToLogin" xml:space="preserve">
+    <value>Khách không được phép đăng nhập vào chi nhánh được chỉ định.</value>
+    <comment>903</comment>
+  </data>
+  <data name="GuestNotExist" xml:space="preserve">
+    <value>Khách không tồn tại</value>
+    <comment>904</comment>
+  </data>
+  <data name="IncorrectChargingType" xml:space="preserve">
+    <value>Loại sạc không chính xác được tìm thấy trong phiên khách hàng.</value>
+    <comment>1307</comment>
+  </data>
+  <data name="IncorrectUsernamePassword" xml:space="preserve">
+    <value>Tên người dùng / mật khẩu không chính xác.</value>
+    <comment>2112</comment>
+  </data>
+  <data name="InsufficientAvailableStockInventory" xml:space="preserve">
+    <value>Không đủ hàng có sẵn trong kho.</value>
+    <comment>1003</comment>
+  </data>
+  <data name="InsufficientBalance" xml:space="preserve">
+    <value>Bạn có một số dư không đủ.</value>
+    <comment>2203</comment>
+  </data>
+  <data name="InsufficientGuestBalance" xml:space="preserve">
+    <value>Số dư khách không đủ. Khách có thể đã sử dụng số tiền.</value>
+    <comment>1905</comment>
+  </data>
+  <data name="InsufficientLoyaltyPoints" xml:space="preserve">
+    <value>Không thể thực hiện hành động ghi nợ. Điểm trung thành không đủ.</value>
+    <comment>1205</comment>
+  </data>
+  <data name="InsufficientPayment" xml:space="preserve">
+    <value>Thanh toán không đầy đủ. Giá khuyến mãi là {0}.</value>
+    <comment>1503</comment>
+  </data>
+  <data name="InsufficientTopupAmount" xml:space="preserve">
+    <value>Số lượng toupup không đủ. Phí thành viên là {0}.</value>
+    <comment>2205</comment>
+  </data>
+  <data name="InternalServerError" xml:space="preserve">
+    <value>Lỗi máy chủ nội bộ</value>
+    <comment>826</comment>
+  </data>
+  <data name="InternalServerError1" xml:space="preserve">
+    <value>Lỗi máy chủ nội bộ</value>
+    <comment>2303</comment>
+  </data>
+  <data name="InvalidCashierSession" xml:space="preserve">
+    <value>Ca làm việc thu ngân không hợp lệ</value>
+    <comment>210</comment>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Định dạng email không hợp lệ.</value>
+    <comment>706</comment>
+  </data>
+  <data name="InvalidFieldValue" xml:space="preserve">
+    <value>Giá trị trường không hợp lệ.</value>
+    <comment>832</comment>
+  </data>
+  <data name="InvalidImageFormat" xml:space="preserve">
+    <value>Định dạng hình ảnh không hợp lệ.</value>
+    <comment>2002</comment>
+  </data>
+  <data name="InvalidIPAddressFormat" xml:space="preserve">
+    <value>Định dạng địa chỉ IP không hợp lệ.</value>
+    <comment>1708</comment>
+  </data>
+  <data name="InvalidLoginCredentials" xml:space="preserve">
+    <value>Thông tin đăng nhập không hợp lệ.</value>
+    <comment>2101</comment>
+  </data>
+  <data name="InvalidMACAddressFormat" xml:space="preserve">
+    <value>Định dạng địa chỉ MAC không hợp lệ.</value>
+    <comment>1709</comment>
+  </data>
+  <data name="InvalidPageNumber" xml:space="preserve">
+    <value>Số trang không hợp lệ.</value>
+    <comment>809</comment>
+  </data>
+  <data name="InvalidPasswordResetToken" xml:space="preserve">
+    <value>Mã thông báo đặt lại mật khẩu không hợp lệ.</value>
+    <comment>1313</comment>
+  </data>
+  <data name="InvalidPaymentType" xml:space="preserve">
+    <value>Loại thanh toán không hợp lệ.</value>
+    <comment>1923</comment>
+  </data>
+  <data name="InvalidPCNameLength" xml:space="preserve">
+    <value>Độ dài tên PC không hợp lệ.</value>
+    <comment>1707</comment>
+  </data>
+  <data name="InvalidPDFFile" xml:space="preserve">
+    <value>Tệp PDF không hợp lệ.</value>
+    <comment>831</comment>
+  </data>
+  <data name="InvalidRedemptionCode" xml:space="preserve">
+    <value>Mã đổi quà không hợp lệ.</value>
+    <comment>1206</comment>
+  </data>
+  <data name="InvalidSession" xml:space="preserve">
+    <value>Phiên không hợp lệ.</value>
+    <comment>1609</comment>
+  </data>
+  <data name="InvalidStatusCode" xml:space="preserve">
+    <value>Mã trạng thái không hợp lệ.</value>
+    <comment>1010</comment>
+  </data>
+  <data name="InvalidTransferToken" xml:space="preserve">
+    <value>Mã thông báo chuyển không hợp lệ.</value>
+    <comment>1604</comment>
+  </data>
+  <data name="ItemNotAvailableForRedemption" xml:space="preserve">
+    <value>Mục này không có sẵn để mua lại.</value>
+    <comment>1405</comment>
+  </data>
+  <data name="KeyNull" xml:space="preserve">
+    <value>Khóa là null.</value>
+    <comment>818</comment>
+  </data>
+  <data name="LicenseKeyInvalid" xml:space="preserve">
+    <value>Mã bản quyền không hợp lệ</value>
+    <comment>101</comment>
+  </data>
+  <data name="LoggedOut" xml:space="preserve">
+    <value>Bạn đã đăng xuất.</value>
+    <comment>1602</comment>
+  </data>
+  <data name="LoginNotAllowed" xml:space="preserve">
+    <value>Bạn không được phép đăng nhập vào chi nhánh này.</value>
+    <comment>1607</comment>
+  </data>
+  <data name="LogoutSuccessful" xml:space="preserve">
+    <value>Thoát ra thành công.</value>
+    <comment>1608</comment>
+  </data>
+  <data name="MACAddressAlreadyInUse" xml:space="preserve">
+    <value>Địa chỉ MAC: {0} đã được sử dụng trong nhánh {1}</value>
+    <comment>214</comment>
+  </data>
+  <data name="MACAddressUsedByMultipleCashierStation" xml:space="preserve">
+    <value>Địa chỉ MAC {0} được sử dụng bởi nhiều máy thu ngân</value>
+  </data>
+  <data name="MaxTopupAmountExceeded" xml:space="preserve">
+    <value>Số tiền nạp tiền đã vượt quá số tiền nạp tối đa của cybercafe.</value>
+    <comment>2204</comment>
+  </data>
+  <data name="MaxTopupAmountNotDefined" xml:space="preserve">
+    <value>Cài đặt số tiền nạp tối đa chưa được xác định cho an ninh mạng này.</value>
+    <comment>2202</comment>
+  </data>
+  <data name="MeasurementUnitNotExist" xml:space="preserve">
+    <value>Đơn vị đo lường không tồn tại.</value>
+    <comment>801</comment>
+  </data>
+  <data name="MemberAirtimeNotExist" xml:space="preserve">
+    <value>Thành viên Airtime không tồn tại.</value>
+    <comment>1304</comment>
+  </data>
+  <data name="MemberAlreadyAcceptedTNC" xml:space="preserve">
+    <value>Thành viên đã chấp nhận tnc!</value>
+    <comment>1306</comment>
+  </data>
+  <data name="MemberEmailNotVerified" xml:space="preserve">
+    <value>Email thành viên không được xác minh.</value>
+    <comment>1316</comment>
+  </data>
+  <data name="MemberHoursPlayedNotFound" xml:space="preserve">
+    <value>Giờ thành viên chơi không tìm thấy.</value>
+    <comment>1305</comment>
+  </data>
+  <data name="MemberLoyaltyLogNotExist" xml:space="preserve">
+    <value>Nhật ký thành viên không tồn tại.</value>
+    <comment>1203</comment>
+  </data>
+  <data name="MemberLoyaltyNotExist" xml:space="preserve">
+    <value>Thành viên trung thành không tồn tại.</value>
+    <comment>1204</comment>
+  </data>
+  <data name="MemberNotExist" xml:space="preserve">
+    <value>Thành viên không tồn tại.</value>
+    <comment>1314</comment>
+  </data>
+  <data name="MemberNotHaveRegisteredEmail" xml:space="preserve">
+    <value>Thành viên chưa có email đăng ký.</value>
+    <comment>1315</comment>
+  </data>
+  <data name="MemberNotYetEnrolled" xml:space="preserve">
+    <value>Thành viên chưa được đăng ký với an ninh mạng này. Vui lòng nạp</value>
+    <comment>1317</comment>
+  </data>
+  <data name="MigratedFileNotExist" xml:space="preserve">
+    <value>Tệp di chuyển không tồn tại.</value>
+    <comment>1311</comment>
+  </data>
+  <data name="MigratedMemberNotExist" xml:space="preserve">
+    <value>Thành viên di cư không tồn tại.</value>
+    <comment>1312</comment>
+  </data>
+  <data name="MissingDataPerPage" xml:space="preserve">
+    <value>Thiếu dữ liệu trên mỗi trang hoặc trang Không có trường.</value>
+    <comment>820</comment>
+  </data>
+  <data name="NewPasswordConfirmNewPasswordNotMatch" xml:space="preserve">
+    <value>Mật khẩu mới và xác nhận mật khẩu mới không khớp.</value>
+    <comment>2113</comment>
+  </data>
+  <data name="NewPasswordMatchOldPassword" xml:space="preserve">
+    <value>Mật khẩu mới phải khác với mật khẩu cũ.</value>
+    <comment>2107</comment>
+  </data>
+  <data name="NoAirtimeRemaining" xml:space="preserve">
+    <value>Không có thời gian phát sóng còn lại.</value>
+    <comment>829</comment>
+  </data>
+  <data name="NoCouponAvailable" xml:space="preserve">
+    <value>Voucher này không có sẵn</value>
+    <comment>406</comment>
+  </data>
+  <data name="NoMoreCodesAvailable" xml:space="preserve">
+    <value>Không có thêm mã có sẵn cho loại mã và mệnh giá được chọn.</value>
+    <comment>1009</comment>
+  </data>
+  <data name="NonExistingEmail" xml:space="preserve">
+    <value>Email không tồn tại. Vui lòng nhập một địa chỉ email làm việc.</value>
+    <comment>2106</comment>
+  </data>
+  <data name="NotepadNotExist" xml:space="preserve">
+    <value>Notepad không tồn tại.</value>
+    <comment>806</comment>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>đồng ý</value>
+    <comment>824</comment>
+  </data>
+  <data name="OldPasswordIncorrect" xml:space="preserve">
+    <value>Mật khẩu cũ không chính xác</value>
+  </data>
+  <data name="OrderAlreadyAccepted" xml:space="preserve">
+    <value>Đơn hàng đã được chấp nhận.</value>
+    <comment>1914</comment>
+  </data>
+  <data name="OtherExpenseLogNotExist" xml:space="preserve">
+    <value>Nhật ký chi phí khác không tồn tại.</value>
+    <comment>1002</comment>
+  </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>{0} đã hết hàng.</value>
+    <comment>1007</comment>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Mật khẩu đã được thay đổi thành công.</value>
+    <comment>2111</comment>
+  </data>
+  <data name="PCNotProperlyConfigured" xml:space="preserve">
+    <value>PC này chưa được cấu hình đúng. Vui lòng liên hệ với thủ quỹ để được hỗ trợ.</value>
+    <comment>1705</comment>
+  </data>
+  <data name="PendingOrderNotExist" xml:space="preserve">
+    <value>Lệnh chờ không tồn tại.</value>
+    <comment>1915</comment>
+  </data>
+  <data name="PhoneNumberInvalid" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại hợp lệ</value>
+  </data>
+  <data name="ProblemEncounteredWhileProcessingRequest" xml:space="preserve">
+    <value>Một vấn đề đã gặp phải trong khi xử lý yêu cầu của bạn. Vui lòng liên hệ với quản trị viên.</value>
+    <comment>822</comment>
+  </data>
+  <data name="ProblemGivenData" xml:space="preserve">
+    <value>Có vấn đề với dữ liệu đã cho.</value>
+    <comment>812</comment>
+  </data>
+  <data name="ProductIDNotAvailable" xml:space="preserve">
+    <value>Id sản phẩm {0} không có sẵn trong kho của chi nhánh.</value>
+    <comment>1011</comment>
+  </data>
+  <data name="ProductNotExist" xml:space="preserve">
+    <value>Sản phẩm không tồn tại.</value>
+    <comment>1406</comment>
+  </data>
+  <data name="PromoAlreadyUsedCantCancel" xml:space="preserve">
+    <value>Không thể hủy bỏ quảng cáo vì nó đã được sử dụng.</value>
+    <comment>1510</comment>
+  </data>
+  <data name="PromoInUsePurchaseRejected" xml:space="preserve">
+    <value>Bạn vẫn có một quảng cáo trong sử dụng. Mua hàng đã bị từ chối.</value>
+    <comment>1508</comment>
+  </data>
+  <data name="PromoNotApplicableForCustomerType" xml:space="preserve">
+    <value>Quảng cáo không áp dụng cho loại khách hàng này.</value>
+    <comment>1509</comment>
+  </data>
+  <data name="PromoNotEndedCashierNotAvailable" xml:space="preserve">
+    <value>Quảng cáo chưa kết thúc vì không có nhân viên thu ngân.</value>
+    <comment>1514</comment>
+  </data>
+  <data name="PromoNotExist" xml:space="preserve">
+    <value>Quảng cáo không kết hợp.</value>
+    <comment>1506</comment>
+  </data>
+  <data name="PromoRefundedSuccesfully" xml:space="preserve">
+    <value>Quảng cáo đã được hoàn trả thành công.</value>
+    <comment>1511</comment>
+  </data>
+  <data name="PromoTransactionLogNotExist" xml:space="preserve">
+    <value>Nhật ký giao dịch quảng cáo không tồn tại.</value>
+    <comment>1507</comment>
+  </data>
+  <data name="PromoTypeNotSupported" xml:space="preserve">
+    <value>Loại quảng cáo không được hỗ trợ.</value>
+    <comment>1513</comment>
+  </data>
+  <data name="ProvideExpirationDate" xml:space="preserve">
+    <value>Vui lòng cung cấp ngày hết hạn sau ngày hôm nay.</value>
+    <comment>815</comment>
+  </data>
+  <data name="QuantityZero" xml:space="preserve">
+    <value>Số lượng không nên là 0.</value>
+    <comment>1404</comment>
+  </data>
+  <data name="QuestionAlreadyExist" xml:space="preserve">
+    <value>Câu hỏi đã tồn tại.</value>
+    <comment>808</comment>
+  </data>
+  <data name="RateNotConfigured" xml:space="preserve">
+    <value>Tỷ lệ không được cấu hình cho loại trạm này.</value>
+    <comment>2304</comment>
+  </data>
+  <data name="RateNotExist" xml:space="preserve">
+    <value>Đánh giá không tồn tại</value>
+    <comment>106</comment>
+  </data>
+  <data name="ReasonMaxLength" xml:space="preserve">
+    <value>Lý do phải ít hơn {0} ký tự.</value>
+    <comment>811</comment>
+  </data>
+  <data name="RegionNotExist" xml:space="preserve">
+    <value>Vùng không tồn tại.</value>
+    <comment>1104</comment>
+  </data>
+  <data name="RejectionReasonRequired" xml:space="preserve">
+    <value>Lý do từ chối là cần thiết.</value>
+    <comment>1910</comment>
+  </data>
+  <data name="RequestDenied" xml:space="preserve">
+    <value>Yêu cầu bị từ chối.</value>
+    <comment>817</comment>
+  </data>
+  <data name="RequestingMemberNotOwnCode" xml:space="preserve">
+    <value>Thành viên yêu cầu không sở hữu mã này.</value>
+    <comment>1207</comment>
+  </data>
+  <data name="RequiredPointsNotEqualToServer" xml:space="preserve">
+    <value>Điểm yêu cầu không bằng máy chủ.</value>
+    <comment>1202</comment>
+  </data>
+  <data name="RetailIDNotForSale" xml:space="preserve">
+    <value>Id bán lẻ {0} không được bán tại chi nhánh: {1}.</value>
+    <comment>1005</comment>
+  </data>
+  <data name="RetailNotExist" xml:space="preserve">
+    <value>Bán lẻ không tồn tại.</value>
+    <comment>1004</comment>
+  </data>
+  <data name="SalesAdjustmentNotExist" xml:space="preserve">
+    <value>Điều chỉnh bán hàng không tồn tại.</value>
+    <comment>1909</comment>
+  </data>
+  <data name="SalesOrderNotExist" xml:space="preserve">
+    <value>Lệnh bán hàng không tồn tại.</value>
+    <comment>1912</comment>
+  </data>
+  <data name="SalesRetailNotExist" xml:space="preserve">
+    <value>SalesRetail không tồn tại.</value>
+    <comment>1008</comment>
+  </data>
+  <data name="SelectedFileNotImage" xml:space="preserve">
+    <value>Tập tin được chọn không phải là một hình ảnh.</value>
+    <comment>2005</comment>
+  </data>
+  <data name="SessionAlreadyReplaced" xml:space="preserve">
+    <value>Phiên này đã được thay thế.</value>
+    <comment>1606</comment>
+  </data>
+  <data name="SessionNotExist" xml:space="preserve">
+    <value>Phiên không tồn tại.</value>
+    <comment>1610</comment>
+  </data>
+  <data name="ShiftAlreadyEnded" xml:space="preserve">
+    <value>Ca làm việc của bạn đã kết thúc</value>
+    <comment>212</comment>
+  </data>
+  <data name="ShiftDetailNotExist" xml:space="preserve">
+    <value>Chi tiết thay đổi này không tồn tại</value>
+    <comment>209</comment>
+  </data>
+  <data name="ShiftNotExist" xml:space="preserve">
+    <value>Sự thay đổi này không tồn tại</value>
+    <comment>208</comment>
+  </data>
+  <data name="ShopPictureNotExist" xml:space="preserve">
+    <value>Hình ảnh cửa hàng không tồn tại.</value>
+    <comment>2004</comment>
+  </data>
+  <data name="ShopTransactionLogNotExist" xml:space="preserve">
+    <value>Nhật ký giao dịch cửa hàng không tồn tại</value>
+    <comment>1918</comment>
+  </data>
+  <data name="SoftwareVersionNotExist" xml:space="preserve">
+    <value>Phiên bản phần mềm không tồn tại.</value>
+    <comment>805</comment>
+  </data>
+  <data name="StartDateEndDateDifferenceGreaterThan7Days" xml:space="preserve">
+    <value>Chênh lệch giữa Ngày bắt đầu và Ngày kết thúc không được lớn hơn 7 ngày.</value>
+    <comment>833</comment>
+  </data>
+  <data name="StartDateGreaterThanEndDate" xml:space="preserve">
+    <value>Ngày bắt đầu không thể lớn hơn Ngày kết thúc</value>
+    <comment>819</comment>
+  </data>
+  <data name="StationIPAlreadyExist" xml:space="preserve">
+    <value>Trạm có địa chỉ IP {0} cho Chi nhánh {1} của Công ty {2} đã tồn tại.</value>
+    <comment>1701</comment>
+  </data>
+  <data name="StationNameAlreadyExist" xml:space="preserve">
+    <value>Trạm có tên "+ {0} +" cho Chi nhánh "+ {1} +" của Công ty "+ {2} +" đã tồn tại.</value>
+    <comment>1702</comment>
+  </data>
+  <data name="StationNotExist" xml:space="preserve">
+    <value>Trạm không tồn tại.</value>
+    <comment>1703</comment>
+  </data>
+  <data name="StationRateNotConfigured" xml:space="preserve">
+    <value>Giá trạm không được cấu hình cho loại trạm này và loại thành viên.</value>
+    <comment>1704</comment>
+  </data>
+  <data name="StationRegistrationSuccesful" xml:space="preserve">
+    <value>Đăng ký trạm thành công.</value>
+    <comment>1706</comment>
+  </data>
+  <data name="StillLoggedIn" xml:space="preserve">
+    <value>Bạn đang đăng nhập vào một PC khác trên {0} - {1}</value>
+    <comment>507</comment>
+  </data>
+  <data name="StillLoggedIn1" xml:space="preserve">
+    <value>Bạn vẫn đang đăng nhập trên một máy tính khác.</value>
+    <comment>1601</comment>
+  </data>
+  <data name="SupportContactDetailNotExist" xml:space="preserve">
+    <value>Hỗ trợ chi tiết liên lạc không tồn tại.</value>
+    <comment>804</comment>
+  </data>
+  <data name="SystemConfigurationNotExist" xml:space="preserve">
+    <value>Cấu hình hệ thống không tồn tại.</value>
+    <comment>802</comment>
+  </data>
+  <data name="TechnicianNotAllowedToLogin" xml:space="preserve">
+    <value>Kỹ thuật viên không được phép đăng nhập vào chi nhánh được chỉ định</value>
+    <comment>1802</comment>
+  </data>
+  <data name="TechnicianNotExist" xml:space="preserve">
+    <value>Kỹ thuật viên không tồn tại</value>
+    <comment>1801</comment>
+  </data>
+  <data name="TNCNotExist" xml:space="preserve">
+    <value>Điều khoản và Điều kiện không tồn tại.</value>
+    <comment>803</comment>
+  </data>
+  <data name="TopupAmountInsufficient" xml:space="preserve">
+    <value>Số tiền nạp không đủ. Phí thành viên là {0} và giá khuyến mãi là {1}.</value>
+  </data>
+  <data name="TransactionAlreadyHasPendingAdjustmentRequest" xml:space="preserve">
+    <value>Giao dịch này đã có một yêu cầu điều chỉnh đang chờ xử lý.</value>
+    <comment>1922</comment>
+  </data>
+  <data name="TransactionAlreadyVoided" xml:space="preserve">
+    <value>Giao dịch này đã bị hủy.</value>
+    <comment>1921</comment>
+  </data>
+  <data name="TransactionLogNotExist" xml:space="preserve">
+    <value>Nhật ký giao dịch không tồn tại</value>
+    <comment>1919</comment>
+  </data>
+  <data name="TransactionLogNotOwned" xml:space="preserve">
+    <value>Nhật ký giao dịch không thuộc sở hữu của người dùng.</value>
+    <comment>1917</comment>
+  </data>
+  <data name="TransferTokenExpired" xml:space="preserve">
+    <value>Chuyển mã thông báo đã hết hạn.</value>
+    <comment>1605</comment>
+  </data>
+  <data name="TransferTokenNotExist" xml:space="preserve">
+    <value>Gửi mã thông báo không hợp lệ</value>
+    <comment>504</comment>
+  </data>
+  <data name="UnableToCommunicateToBackend" xml:space="preserve">
+    <value>Không thể liên lạc với máy chủ phụ trợ. Vui lòng tiến hành thu ngân để được giúp đỡ.</value>
+    <comment>814</comment>
+  </data>
+  <data name="UserAccountDeactivated" xml:space="preserve">
+    <value>Tài khoản người dùng bị vô hiệu hóa.</value>
+    <comment>1309</comment>
+  </data>
+  <data name="UserGroupNotExist" xml:space="preserve">
+    <value>Nhóm người dùng không tồn tại</value>
+    <comment>2108</comment>
+  </data>
+  <data name="UsernameExist" xml:space="preserve">
+    <value>Tên này đã có người dùng.</value>
+    <comment>2109</comment>
+  </data>
+  <data name="UserNotExist" xml:space="preserve">
+    <value>Người dùng không tồn tại.</value>
+    <comment>2110</comment>
+  </data>
+  <data name="UserSessionRemoved" xml:space="preserve">
+    <value>Phiên của người dùng từ trạm đã được gỡ bỏ thành công.</value>
+    <comment>1611</comment>
+  </data>
+  <data name="VoidingDisbaled" xml:space="preserve">
+    <value>Ô trống đã bị vô hiệu hóa cho thương gia này</value>
+    <comment>304</comment>
+  </data>
+  <data name="VoidTransactionNotAllowed" xml:space="preserve">
+    <value>Bạn không được phép làm mất hiệu lực giao dịch này.</value>
+    <comment>1920</comment>
+  </data>
+  <data name="WalletError" xml:space="preserve">
+    <value>Lỗi ví đã gặp phải.</value>
+    <comment>825</comment>
+  </data>
+  <data name="WalletTransactionNotExist" xml:space="preserve">
+    <value>Nhật ký giao dịch ví không tồn tại.</value>
+    <comment>2201</comment>
+  </data>
+</root>

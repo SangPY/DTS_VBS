@@ -1,0 +1,585 @@
+﻿<UserControl x:Class="dts_cashier.Components.Navigation.CashierLeftControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:dts_cashier.Components.Navigation"
+        xmlns:viewmodel="clr-namespace:dts_cashier.Components.Navigation"
+        xmlns:mahappsC="http://metro.mahapps.com/winfx/xaml/controls"
+        d:DesignWidth="320"
+        mc:Ignorable="d">
+
+    <!--<UserControl.DataContext>
+        <viewmodel:CashierLeftControlViewModel />
+    </UserControl.DataContext>-->
+
+    <UserControl.InputBindings>
+        <KeyBinding Key="F1" Command="{Binding TopUpManagerCommand}" />
+        <KeyBinding Key="F2" Command="{Binding StoreWindowCommand}" />
+        <KeyBinding Key="F3" Command="{Binding NewCustomerCommand}" />
+        <KeyBinding Key="F4" Command="{Binding ResetPasswordCommand}" />
+        <KeyBinding Key="F5" Command="{Binding InventoryManagerWindowCommand}" />
+        <KeyBinding Key="F6" Command="{Binding TransactionHistoryWindowCommand}" />
+        <KeyBinding Key="F7" Command="{Binding CurrentShiftCommand}" />
+    </UserControl.InputBindings>
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding WindowLoadedCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="580" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--Row 0-->
+            <Border Grid.Row="0" Background="{StaticResource ThemeBGColor4}">
+                <StackPanel Margin="20,10,20,10"
+                              VerticalAlignment="Center"
+                              Orientation="Horizontal">
+                    <Ellipse Width="70"
+                            Height="70"
+                            Fill="{StaticResource ThemeBGColor3}">
+                    </Ellipse>
+                    <StackPanel Margin="10,0,0,0" Orientation="Vertical">
+                        <TextBlock Foreground="{StaticResource TextFGColor1}"
+                                 Style="{StaticResource DetailText}"
+                                 Text="{DynamicResource CashierNameLanguage}" />
+                        <TextBlock Margin="0,0,0,5"
+                                 Foreground="{StaticResource TextFGColor2}"
+                                 Style="{StaticResource NormalText}"
+                                 Text="{Binding CashierName}" />
+                        <TextBlock Foreground="{StaticResource TextFGColor1}"
+                                 Style="{StaticResource DetailText}"
+                                 Text="{DynamicResource BranchLanguage}" />
+                        <TextBlock Foreground="{StaticResource TextFGColor2}"
+                                 Style="{StaticResource NormalText}"
+                                 Text="{Binding BranchName}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!--Row 1-->
+            <Border Grid.Row="1" Background="{StaticResource ThemeBGColor2}">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+
+                    <!--Message-->
+                    <Button Width="65"
+                           Height="70"
+                           Command="{Binding OpenChatWindowCommand}"
+                           IsTabStop="False"
+                           Style="{StaticResource ButtonPictureStyle}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="LostFocus">
+                                <i:InvokeCommandAction Command="{Binding LostFocusChatWindowCommand}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+
+                        <StackPanel HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Orientation="Vertical">
+
+                            <mahappsC:Badged Badge="{Binding UnreadChatCount}"
+                                             BadgeBackground="{StaticResource RejectButtonBGColor}"
+                                             IsTabStop="False">
+                                <mahappsC:Badged.Style>
+                                    <Style TargetType="mahappsC:Badged">
+                                        <Setter Property="Visibility" Value="Visible"></Setter>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding UnreadChatCount}" Value="0">
+                                                <Setter Property="Visibility" Value="Hidden"></Setter>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </mahappsC:Badged.Style>
+                            </mahappsC:Badged>
+
+                            <ContentControl Width="30"
+                                         Height="30"
+                                         Margin="5"
+                                         IsTabStop="False"
+                                         Style="{StaticResource Messenger}" />
+                            <TextBlock FontFamily="{StaticResource Roboto}"
+                                         Foreground="{StaticResource TextFGColor2}"
+                                         Text="{DynamicResource ChatLanguage}"
+                                         TextAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <!--Cashier-->
+                    <Button Width="65"
+                             Height="70"
+                             Command="{Binding ReceivedOrdersWindowCommand}"
+                             IsTabStop="False"
+                             Style="{StaticResource ButtonPictureStyle}">
+                        <StackPanel HorizontalAlignment="Center"
+                                 VerticalAlignment="Center"
+                                 Orientation="Vertical">
+                            <mahappsC:Badged Badge="{Binding PendingOrderCount}"
+                                         BadgeBackground="{StaticResource RejectButtonBGColor}"
+                                         IsTabStop="False">
+                                <mahappsC:Badged.Style>
+                                    <Style TargetType="mahappsC:Badged">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding PendingOrderCount}" Value="0">
+                                                <Setter Property="Visibility" Value="Hidden" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </mahappsC:Badged.Style>
+                            </mahappsC:Badged>
+                            <ContentControl Width="30"
+                                         Height="30"
+                                         Margin="5"
+                                         IsTabStop="False"
+                                         Style="{StaticResource Cashier}" />
+                            <TextBlock FontFamily="{StaticResource Roboto}"
+                                     Foreground="{StaticResource TextFGColor2}"
+                                     Text="{DynamicResource OrdersLanguage}"
+                                     TextAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <!--Note-->
+                    <Button Width="65"
+                         Height="70"
+                         Command="{Binding OpenNotesWindowCommand}"
+                         IsTabStop="False"
+                         Style="{StaticResource ButtonPictureStyle}">
+                        <StackPanel HorizontalAlignment="Center"
+                                 VerticalAlignment="Center"
+                                 Orientation="Vertical">
+                            <ContentControl Width="24"
+                                            Height="30"
+                                            Margin="5"
+                                            IsTabStop="False"
+                                            Style="{StaticResource Notes}" />
+                            <TextBlock FontFamily="{StaticResource Roboto}"
+                                     Foreground="{StaticResource TextFGColor2}"
+                                     Text="{DynamicResource NotesLanguage}"
+                                     TextAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <!--Support-->
+                    <Button Width="65"
+                            Height="70"
+                            Command="{Binding OpenCustomerSupportWindowCommand}"
+                            IsTabStop="False"
+                            Style="{StaticResource ButtonPictureStyle}">
+                        <StackPanel HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Orientation="Vertical">
+                            <ContentControl Width="26"
+                                        Height="30"
+                                        Margin="5"
+                                        IsTabStop="False"
+                                        Style="{StaticResource Support}" />
+                            <TextBlock FontFamily="{StaticResource Roboto}"
+                                    Foreground="{StaticResource TextFGColor2}"
+                                    Text="{DynamicResource SupportLanguage}"
+                                    TextAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+
+            <!--Row 2-->
+            <Grid Grid.Row="2" Margin="0,20,0,0">
+
+                <StackPanel Orientation="Vertical">
+                    <!--Top Up Account-->
+                    <RadioButton Height="50"
+                               Margin="0,26,0,8"
+                               HorizontalAlignment="Center"
+                               Command="{Binding TopUpManagerCommand}"
+                               Style="{StaticResource RadioButtonStyle2}">
+                        <StackPanel Width="275" Orientation="Horizontal">
+                            <Path Width="29.5"
+                                   Height="25"
+                                   Margin="21,0,0,0"
+                                   Data="{StaticResource TopUPLoadUp}"
+                                   Fill="{StaticResource IconFGColor1}"
+                                   Stretch="Uniform" />
+                            <TextBlock Margin="15,0,0,0"
+                                   VerticalAlignment="Center"
+                                   Foreground="{StaticResource TextFGColor2}"
+                                   Style="{StaticResource HeaderText3}"
+                                   Text="{DynamicResource TopUpAccountLanguage}" />
+                        </StackPanel>
+                    </RadioButton>
+
+                    <!--Store-->
+                    <RadioButton Height="50"
+                                Margin="0,0,0,8"
+                                HorizontalAlignment="Center"
+                                Style="{StaticResource RadioButtonStyle2}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding StoreWindowCommand}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <StackPanel Width="275" Orientation="Horizontal">
+                            <Path Width="29.5"
+                                Height="25"
+                                Margin="20,0,0,0"
+                                Data="{StaticResource Store2}"
+                                Fill="{StaticResource IconFGColor1}"
+                                Stretch="Uniform" />
+                            <TextBlock Margin="15,0,0,0"
+                                VerticalAlignment="Center"
+                                Foreground="{StaticResource TextFGColor2}"
+                                Style="{StaticResource HeaderText3}"
+                                Text="{DynamicResource StoreLanguage}" />
+                        </StackPanel>
+                    </RadioButton>
+
+                    <!--New Account-->
+                    <RadioButton Height="50"
+                                 Margin="0,0,0,8"
+                                 HorizontalAlignment="Center"
+                                 Style="{StaticResource RadioButtonStyle2}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding NewCustomerCommand}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <StackPanel Width="275" Orientation="Horizontal">
+                            <Path Width="29.5"
+                                 Height="25"
+                                 Margin="20,0,0,0"
+                                 Data="{StaticResource CreateNewAccount}"
+                                 Fill="{StaticResource IconFGColor1}"
+                                 Stretch="Uniform" />
+                            <TextBlock  Margin="15,0,0,0"
+                                 VerticalAlignment="Center"
+                                 Foreground="{StaticResource TextFGColor2}"
+                                 Style="{StaticResource HeaderText3}"
+                                 Text="{DynamicResource CreateNewAccountLanguage}" />
+                        </StackPanel>
+                    </RadioButton>
+
+                    <!--Add Money-->
+                    <RadioButton Height="50"
+                                 Margin="0,0,0,8"
+                                 HorizontalAlignment="Center"
+                                 Command="{Binding CouponManagerWindowCommand}"
+                                 Style="{StaticResource RadioButtonStyle2}"
+                                 Visibility="Collapsed">
+                        <StackPanel Width="275" Orientation="Horizontal">
+                            <Path Width="29.5"
+                                 Height="25"
+                                 Margin="20,0,0,0"
+                                 Data="{StaticResource AddCoupon}"
+                                 Fill="{StaticResource IconFGColor1}"
+                                 Stretch="Uniform" />
+                            <TextBlock Margin="15,0,0,0"
+                                 VerticalAlignment="Center"
+                                 Foreground="{StaticResource TextFGColor2}"
+                                 Style="{StaticResource HeaderText3}"
+                                 Text="GENERATE COUPON" />
+                        </StackPanel>
+                    </RadioButton>
+
+                    <!--Change Pass-->
+                    <RadioButton Height="50"
+                               Margin="0,0,0,8"
+                               HorizontalAlignment="Center"
+                               Command="{Binding ResetPasswordCommand}">
+                        <RadioButton.Style>
+                            <Style BasedOn="{StaticResource RadioButtonStyle2}" TargetType="RadioButton">
+                                <Setter Property="IsEnabled" Value="True" />
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <StackPanel Width="275" Orientation="Horizontal">
+                                            <Path Width="29.5"
+                                                   Height="25"
+                                                   Margin="20,0,0,0"
+                                                   Data="{StaticResource ResetPassword}"
+                                                   Fill="{StaticResource IconFGColor1}"
+                                                   Stretch="Uniform" />
+                                            <TextBlock Margin="15,0,0,0"
+                                                   VerticalAlignment="Center"
+                                                   Foreground="{StaticResource TextFGColor2}"
+                                                   Style="{StaticResource HeaderText3}"
+                                                   Text="{DynamicResource UserResetPasswordLanguage}" />
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsOfflineMode}" Value="True">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <StackPanel Width="275" Orientation="Horizontal">
+                                                    <Path Width="29.5"
+                                                           Height="25"
+                                                           Margin="20,0,0,0"
+                                                           Data="{StaticResource ResetPassword}"
+                                                           Fill="{StaticResource Colour7}"
+                                                           Stretch="Uniform" />
+                                                    <TextBlock Margin="15,0,0,0"
+                                                           VerticalAlignment="Center"
+                                                           Foreground="{StaticResource Colour7}"
+                                                           Style="{StaticResource HeaderText3}"
+                                                           Text="{DynamicResource UserResetPasswordLanguage}" />
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </RadioButton.Style>
+                    </RadioButton>
+
+                    <!--Inventory-->
+                    <RadioButton Height="50"
+                                Margin="0,0,0,8"
+                                HorizontalAlignment="Center">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding InventoryManagerWindowCommand}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <RadioButton.Style>
+                            <Style BasedOn="{StaticResource RadioButtonStyle2}" TargetType="RadioButton">
+                                <Setter Property="IsEnabled" Value="True" />
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <StackPanel Width="275" Orientation="Horizontal">
+                                            <ContentControl Width="25"
+                                                            Height="25"
+                                                            Margin="20,0,5,0"
+                                                            Style="{StaticResource Inventory}" />
+                                            <TextBlock Margin="15,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        Foreground="{StaticResource TextFGColor2}"
+                                                        Style="{StaticResource HeaderText3}"
+                                                        Text="{DynamicResource InventoryLanguage}" />
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsOfflineMode}" Value="True">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <StackPanel Width="275" Orientation="Horizontal">
+                                                    <ContentControl Width="25"
+                                                                    Height="25"
+                                                                    Margin="20,0,5,0"
+                                                                    Style="{StaticResource InventoryDisabled}" />
+                                                    <TextBlock Margin="15,0,0,0"
+                                                                VerticalAlignment="Center"
+                                                                Foreground="{StaticResource Colour7}"
+                                                                Style="{StaticResource HeaderText3}"
+                                                                Text="{DynamicResource InventoryLanguage}" />
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </RadioButton.Style>
+                    </RadioButton>
+
+                    <!--Transaction History-->
+                    <RadioButton Height="50"
+                                Margin="0,0,0,8"
+                                HorizontalAlignment="Center"
+                                Command="{Binding TransactionHistoryWindowCommand}"
+                                Style="{StaticResource RadioButtonStyle2}">
+                        <StackPanel Width="275" Orientation="Horizontal">
+                            <Path Width="29.5"
+                                Height="25"
+                                Margin="15,0,5,0"
+                                Data="{StaticResource TransactionHistory}"
+                                Fill="{StaticResource IconFGColor1}"
+                                Stretch="Uniform" />
+                            <TextBlock Margin="15,0,0,0"
+                                VerticalAlignment="Center"
+                                Foreground="{StaticResource TextFGColor2}"
+                                Style="{StaticResource HeaderText3}"
+                                Text="{DynamicResource TransactionHistoryLanguage}" />
+                        </StackPanel>
+                    </RadioButton>
+
+                    <!--Shift status-->
+                    <RadioButton Height="50"
+                                Margin="0,0,0,8"
+                                HorizontalAlignment="Center"
+                                Command="{Binding CurrentShiftCommand}">
+                        <RadioButton.Style>
+                            <Style BasedOn="{StaticResource RadioButtonStyle2}" TargetType="{x:Type RadioButton}">
+                                <Setter Property="IsEnabled" Value="True" />
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <StackPanel Width="275" Orientation="Horizontal">
+                                            <Path Width="29.5"
+                                                    Height="25"
+                                                    Margin="20,0,0,0"
+                                                    Data="{StaticResource ShiftStatus}"
+                                                    Fill="{StaticResource IconFGColor1}"
+                                                    Stretch="Uniform" />
+                                            <TextBlock Margin="15,0,0,0"
+                                                    VerticalAlignment="Center"
+                                                    Foreground="{StaticResource TextFGColor2}"
+                                                    Style="{StaticResource HeaderText3}"
+                                                    Text="{DynamicResource ShiftStatusLanguage}" />
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsShiftStatusHidden}" Value="true">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsOfflineMode}" Value="True">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <StackPanel Width="275" Orientation="Horizontal">
+                                                    <Path Width="29.5"
+                                                        Height="25"
+                                                        Margin="20,0,0,0"
+                                                        Data="{StaticResource ShiftStatus}"
+                                                        Fill="{StaticResource Colour7}"
+                                                        Stretch="Uniform" />
+                                                    <TextBlock Margin="15,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        Foreground="{StaticResource Colour7}"
+                                                        Style="{StaticResource HeaderText3}"
+                                                        Text="{DynamicResource ShiftStatusLanguage}" />
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </RadioButton.Style>
+                    </RadioButton>
+
+                    <!--haha-->
+                    <RadioButton Height="50"
+                                Margin="0,0,0,8"
+                                HorizontalAlignment="Center"
+                                Command="{Binding OpenMaliciousActivityWindowCoomand}"
+                                Style="{StaticResource RadioButtonStyle2}">
+                        <StackPanel Width="275" Orientation="Horizontal">
+                            <Path Width="29.5"
+                                    Height="25"
+                                    Margin="20,0,0,0"
+                                    Data="{StaticResource MaliciousActivities}"
+                                    Fill="{StaticResource IconFGColor1}"
+                                    Stretch="Uniform" />
+                            <TextBlock Margin="15,0,0,0"
+                                    VerticalAlignment="Center"
+                                    Foreground="{StaticResource TextFGColor2}"
+                                    Style="{StaticResource HeaderText3}"
+                                    Text="{DynamicResource MaliciousActivitiesLanguage}" />
+                            <mahappsC:Badged Margin="10,0,0,0"
+                                        Badge="!"
+                                        BadgeBackground="{StaticResource RejectButtonBGColor}">
+                                <mahappsC:Badged.Style>
+                                    <Style TargetType="{x:Type mahappsC:Badged}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding DoesMaliciousActivityExist}" Value="false">
+                                                <Setter Property="Visibility" Value="Hidden" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </mahappsC:Badged.Style>
+                            </mahappsC:Badged>
+                        </StackPanel>
+                    </RadioButton>
+
+                    <!--Other-->
+                    <RadioButton Height="50"
+                                Margin="0,0,0,8"
+                                HorizontalAlignment="Center"
+                                Command="{Binding OpenOtherExpensesWindowCoomand}">
+                        <RadioButton.Style>
+                            <Style BasedOn="{StaticResource RadioButtonStyle2}" TargetType="RadioButton">
+                                <Setter Property="IsEnabled" Value="True" />
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <StackPanel Width="275" Orientation="Horizontal">
+                                            <Path Width="29.5"
+                                                Height="25"
+                                                Margin="20,0,0,0"
+                                                Data="{StaticResource OtherExpenses}"
+                                                Fill="{StaticResource IconFGColor1}"
+                                                Stretch="Uniform" />
+                                            <TextBlock Margin="15,0,0,0"
+                                                VerticalAlignment="Center"
+                                                Foreground="{StaticResource TextFGColor2}"
+                                                Style="{StaticResource HeaderText3}"
+                                                Text="{DynamicResource AddOtherExpenseLanguage}" />
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsAddOtherExpensetStatusHidden}" Value="false">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsOfflineMode}" Value="True">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <StackPanel Width="275" Orientation="Horizontal">
+                                                    <Path Width="29.5"
+                                                        Height="25"
+                                                        Margin="20,0,0,0"
+                                                        Data="{StaticResource OtherExpenses}"
+                                                        Fill="{StaticResource Colour7}"
+                                                        Stretch="Uniform" />
+                                                    <TextBlock Margin="15,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        Foreground="{StaticResource Colour7}"
+                                                        Style="{StaticResource HeaderText3}"
+                                                        Text="{DynamicResource AddOtherExpenseLanguage}" />
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </RadioButton.Style>
+                    </RadioButton>
+                </StackPanel>
+            </Grid>
+
+            <!--Row 3-->
+            <ContentControl Width="280"
+                     Height="70"
+                     Margin="5,167,15,5"
+                     HorizontalAlignment="Right"
+                     VerticalAlignment="Top"
+                     Panel.ZIndex="1"
+                     Opacity="{Binding NotificationOpacity}">
+                <ContentControl.Style>
+                    <Style BasedOn="{StaticResource ToolTipPanel}" TargetType="ContentControl">
+                        <Setter Property="Visibility" Value="Hidden" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsChatNotAvailablePopupShown}" Value="true">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+                <TextBlock Foreground="{StaticResource TextFGColor1}"
+                     Style="{StaticResource HeaderText3}"
+                     Text="Chat is currently unavailable Coming soon!"
+                     TextAlignment="Center"
+                     TextWrapping="Wrap" />
+            </ContentControl>
+        </Grid>
+    </Grid>
+</UserControl>
