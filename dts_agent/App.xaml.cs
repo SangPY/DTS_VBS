@@ -14,6 +14,7 @@ using dts_cryptography;
 using dts_agent.Helper;
 using dts_agent.Components.Login;
 using dts_agent.StandardMessage;
+using dts_agent.ResponseMessageResource;
 
 namespace dts_agent
 {
@@ -64,17 +65,17 @@ namespace dts_agent
 
         public void ChangeLanguage(int selectedLanguage)
         {
-            //foreach (ResourceDictionary dict in Resources.MergedDictionaries)
-            //{
-            //    if (dict is LanguageResources langDict)
-            //    {
-            //        langDict.UpdateSource();
-            //        DtsMessageResource.SetMessageResource(Language);
-            //        NimbusErrorMessageResource.SetMessageResource(Language);
-            //    }
-            //    else
-            //        dict.Source = dict.Source;
-            //}
+            foreach (ResourceDictionary dict in Resources.MergedDictionaries)
+            {
+                if (dict is LanguageResources langDict)
+                {
+                    langDict.UpdateSource();
+                    DtsMessageResource.SetMessageResource(Language);
+                    DtsErrorMessageResource.SetMessageResource(Language);
+                }
+                else
+                    dict.Source = dict.Source;
+            }
 
             //NamedPipeClientModel.Instance.SendToServer(Guid.NewGuid(), Messages.ChangeLanguage, selectedLanguage);
         }
