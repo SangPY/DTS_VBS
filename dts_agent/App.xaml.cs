@@ -15,6 +15,8 @@ using dts_agent.Helper;
 using dts_agent.Components.Login;
 using dts_agent.StandardMessage;
 using dts_agent.ResponseMessageResource;
+using dts_agent.NamedPipe;
+using dts_agent.ViewModelMediator;
 
 namespace dts_agent
 {
@@ -77,7 +79,7 @@ namespace dts_agent
                     dict.Source = dict.Source;
             }
 
-            //NamedPipeClientModel.Instance.SendToServer(Guid.NewGuid(), Messages.ChangeLanguage, selectedLanguage);
+            NamedPipeClientModel.Instance.SendToServer(Guid.NewGuid(), Messages.ChangeLanguage, selectedLanguage);
         }
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
