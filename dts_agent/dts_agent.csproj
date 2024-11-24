@@ -48,6 +48,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -76,16 +77,34 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Components\Global\GenericDialogWindow.xaml.cs">
+      <DependentUpon>GenericDialogWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Global\GenericDialogWindowViewModel.cs" />
     <Compile Include="Components\Login\LoginModel.cs" />
     <Compile Include="Components\Login\LoginViewModel.cs" />
     <Compile Include="Components\Login\LoginWiew.xaml.cs">
       <DependentUpon>LoginWiew.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataModel\Advertisement\AdvertisementPicturesDataModel.cs" />
+    <Compile Include="DataModel\Advertisement\BranchPicturesDataModel.cs" />
+    <Compile Include="DataModel\Advertisement\GoCafePicture.cs" />
+    <Compile Include="DataModel\BranchConfigurationDataModel.cs" />
+    <Compile Include="DataModel\CompanyDataModel.cs" />
+    <Compile Include="DataModel\CurrencyDataModel.cs" />
+    <Compile Include="DataModel\StationBranchDataModel.cs" />
+    <Compile Include="DataModel\StationInformationDataModel.cs" />
     <Compile Include="Helper\LanguageResources.cs" />
     <Compile Include="Helper\TimerServiceMonitor.cs" />
+    <Compile Include="Manager\AppSettingManager.cs" />
     <Compile Include="Model\LanguageModel.cs" />
     <Compile Include="NamedPipe\NamedPipeClientModel.cs" />
     <Compile Include="ResponseMessageResource\DtsErrorMessageResource.cs" />
+    <Compile Include="RouteAddress\RouteResource.cs" />
+    <Compile Include="ServiceProvider\AnalyticsServiceProvider.cs" />
+    <Compile Include="ServiceProvider\IAnalyticsServiceProvider.cs" />
+    <Compile Include="ServiceProvider\ServiceProvider.cs" />
+    <Compile Include="ServiceProvider\ServiceProviderBase.cs" />
     <Compile Include="StandardMessage\DtsMessageResource.cs" />
     <Compile Include="StandardMessage\StandardMessageResource-VN.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -97,6 +116,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StandardMessageResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="TaskManager\TaskManagerModel.cs" />
+    <Compile Include="TaskManager\TaskModel.cs" />
+    <Compile Include="Util\AdsUtil.cs" />
     <Compile Include="ViewModelMediator\Mediator.cs" />
     <Compile Include="ViewModelMediator\Messages.cs" />
     <Compile Include="ViewModelMediator\MultiDictionary.cs" />
@@ -151,6 +173,10 @@
       <Project>{07b1af2c-777f-4f1a-b27c-46561bca3dfa}</Project>
       <Name>dts_logger</Name>
     </ProjectReference>
+    <ProjectReference Include="..\dts_service\dts_service.csproj">
+      <Project>{18164d83-34af-4e4b-a9b9-fac439b88554}</Project>
+      <Name>dts_service</Name>
+    </ProjectReference>
     <ProjectReference Include="..\dts_shared\dts_shared.csproj">
       <Project>{1396867b-c6d3-43fa-ad39-753891eaebe1}</Project>
       <Name>dts_shared</Name>
@@ -161,6 +187,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Components\Global\GenericDialogWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Components\Login\LoginWiew.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1396867B-C6D3-43FA-AD39-753891EAEBE1}</ProjectGuid>
+    <ProjectGuid>{18164D83-34AF-4E4B-A9B9-FAC439B88554}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>dts_shared</RootNamespace>
-    <AssemblyName>dts_shared</AssemblyName>
+    <RootNamespace>dts_service</RootNamespace>
+    <AssemblyName>dts_service</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -38,9 +38,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -57,16 +54,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataModel\AccountDataModel.cs" />
-    <Compile Include="DataModel\AirtimeBreakdownDataModel.cs" />
-    <Compile Include="DataModel\BaseDataModel.cs" />
-    <Compile Include="DataModel\PortDataModel.cs" />
-    <Compile Include="Dispatcher\DispatcherManager.cs" />
-    <Compile Include="Enum\FolderNameEnum.cs" />
-    <Compile Include="Enum\GenderEnum.cs" />
-    <Compile Include="Model\AccountDetailsModel.cs" />
-    <Compile Include="Model\NamedPipeMessageModel.cs" />
-    <Compile Include="Model\ResponseModel.cs" />
+    <Compile Include="AnalyticsService.cs" />
+    <Compile Include="IAnalyticsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -80,36 +69,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ResponseMessageResource\ErrorMessageResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ErrorMessageResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ResponseMessageResource\ErrorMessageResource_VND.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ErrorMessageResource_VND.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Utilities\ServerConnectionUtility.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResponseMessageResource\ErrorMessageResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ErrorMessageResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ResponseMessageResource\ErrorMessageResource_VND.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ErrorMessageResource_VND.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <None Include="App.config" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\dts_shared\dts_shared.csproj">
+      <Project>{1396867b-c6d3-43fa-ad39-753891eaebe1}</Project>
+      <Name>dts_shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

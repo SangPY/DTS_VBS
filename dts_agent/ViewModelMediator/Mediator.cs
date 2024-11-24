@@ -51,5 +51,25 @@ namespace dts_agent.ViewModelMediator
         {
             internalList.Clear();
         }
+
+        public void NotifyViewModel(string viewModelName, string message, object args, int id = 0)
+        {
+            var viewModelsToNotify = internalList.Where(t => t.Key.Item1 == viewModelName && t.Key.Item2 == id);
+
+            if (viewModelsToNotify != null)
+            {
+                try
+                {
+                    foreach (var model in viewModelsToNotify)
+                    {
+                        foreach (var viewModel in model.Value)
+                        {
+                            viewModel.SendData(message, args);
+                        }
+                    }
+                }
+                catch { }
+            }
+        }
     }
 }

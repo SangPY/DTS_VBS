@@ -20,6 +20,7 @@ using dts_agent.ViewModelMediator;
 using System.Diagnostics;
 using dts_shared.Utilities;
 using dts_agent.Analytics;
+using dts_agent.Util;
 
 namespace dts_agent
 {
@@ -40,10 +41,8 @@ namespace dts_agent
 
         public enum LanguageType
         {
-            ThTHA = 0,
             EnUS = 1,
-            ViVN = 2,
-            IdIND = 3
+            ViVN = 2
         }
 
         protected override void OnStartup(StartupEventArgs e)
@@ -77,6 +76,7 @@ namespace dts_agent
                 SetForegroundWindow(runningProcess.MainWindowHandle);
             }
 
+            //Phân tích
             InitializeAnalyticsSendingTimer();
             // theo dõi  tiến trình shutdown
             TimerServiceMonitor.Initialize();
@@ -86,44 +86,44 @@ namespace dts_agent
 
         private void InitializeAnalyticsSendingTimer()
         {
-            //analyticsSendingTimer.Tick += SendAdActivities;
+            analyticsSendingTimer.Tick += SendAdActivities;
             analyticsSendingTimer.Interval = new TimeSpan(0, 30, 0);
             analyticsSendingTimer.Start();
         }
 
-        //private void SendAdActivities(object sender, EventArgs e)
-        //{
-        //    if (ServerConnectionUtility.IsOfflineMode)
-        //    {
-        //        return;
-        //    }
+        private void SendAdActivities(object sender, EventArgs e)
+        {
+            if (ServerConnectionUtility.IsOfflineMode)
+            {
+                return;
+            }
 
-        //    foreach (int adId in DataCacheContext.ActivatedAds)
-        //    {
-        //        int clickCount = 0;
-        //        int impressionCount = 0;
-        //        int viewCount = 0;
+            foreach (int adId in DataCacheContext.ActivatedAds)
+            {
+                int clickCount = 0;
+                int impressionCount = 0;
+                int viewCount = 0;
 
-        //        if (DataCacheContext.AdsImpressionCounts.ContainsKey(adId))
-        //        {
-        //            impressionCount = DataCacheContext.AdsImpressionCounts[adId];
-        //        }
+                if (DataCacheContext.AdsImpressionCounts.ContainsKey(adId))
+                {
+                    impressionCount = DataCacheContext.AdsImpressionCounts[adId];
+                }
 
-        //        if (DataCacheContext.AdsViewCounts.ContainsKey(adId))
-        //        {
-        //            viewCount = DataCacheContext.AdsViewCounts[adId];
-        //        }
+                if (DataCacheContext.AdsViewCounts.ContainsKey(adId))
+                {
+                    viewCount = DataCacheContext.AdsViewCounts[adId];
+                }
 
-        //        if (viewCount > 0 || impressionCount > 0)
-        //        {
-        //            Task.Run(async () =>
-        //            {
-        //                AnalyticsClient.Instance.SendAdAnalytics(adId, clickCount, impressionCount, viewCount);
-        //            });
-        //        }
-        //    }
-        //    AdsUtil.ClearAllCounts();
-        //}
+                if (viewCount > 0 || impressionCount > 0)
+                {
+                    Task.Run(async () =>
+                    {
+                        AnalyticsClient.Instance.SendAdAnalytics(adId, clickCount, impressionCount, viewCount);
+                    });
+                }
+            }
+            AdsUtil.ClearAllCounts();
+        }
 
         public void ChangeLanguage(int selectedLanguage)
         {
