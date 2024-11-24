@@ -21,6 +21,9 @@ using System.Diagnostics;
 using dts_shared.Utilities;
 using dts_agent.Analytics;
 using dts_agent.Util;
+using System.Windows.Controls.Primitives;
+using dts_agent.WindowsUtil;
+using dts_agent.Manager;
 
 namespace dts_agent
 {
@@ -80,9 +83,15 @@ namespace dts_agent
             InitializeAnalyticsSendingTimer();
             // theo dõi  tiến trình shutdown
             TimerServiceMonitor.Initialize();
+            HttpRequestUtility.SetLocalServer(CAFE_SERVER);
         }
 
         #region handel
+
+        private void Application_Exit(object sender, ExitEventArgs e)
+        {
+            Taskbar.Show();
+        }
 
         private void InitializeAnalyticsSendingTimer()
         {
@@ -189,5 +198,22 @@ namespace dts_agent
         }
 
         #endregion handel
+
+        #region paramater
+
+        private string CAFE_SERVER
+        {
+            get
+            {
+#if DEBUG
+                return AppSettingManager.Instance[AppSettingKey.CAFE_SERVER];
+#endif
+#if RELEASE
+                return Decrypt(AppSettingManager.Instance[AppSettingKey.CAFE_SERVER]);
+#endif
+            }
+        }
+
+        #endregion paramater
     }
 }

@@ -122,6 +122,7 @@
     <Compile Include="ViewModelMediator\Mediator.cs" />
     <Compile Include="ViewModelMediator\Messages.cs" />
     <Compile Include="ViewModelMediator\MultiDictionary.cs" />
+    <Compile Include="WindowsUtil\Taskbar.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\DataCacheContext.cs" />
