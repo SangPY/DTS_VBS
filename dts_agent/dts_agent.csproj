@@ -49,6 +49,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -70,6 +71,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Analytics\AnalyticsClient.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -80,6 +82,7 @@
       <DependentUpon>LoginWiew.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helper\LanguageResources.cs" />
+    <Compile Include="Helper\TimerServiceMonitor.cs" />
     <Compile Include="Model\LanguageModel.cs" />
     <Compile Include="NamedPipe\NamedPipeClientModel.cs" />
     <Compile Include="ResponseMessageResource\DtsErrorMessageResource.cs" />

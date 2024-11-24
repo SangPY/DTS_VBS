@@ -87,6 +87,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ErrorMessageResource_VND.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\ServerConnectionUtility.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

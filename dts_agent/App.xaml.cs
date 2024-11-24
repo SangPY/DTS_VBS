@@ -17,6 +17,9 @@ using dts_agent.StandardMessage;
 using dts_agent.ResponseMessageResource;
 using dts_agent.NamedPipe;
 using dts_agent.ViewModelMediator;
+using System.Diagnostics;
+using dts_shared.Utilities;
+using dts_agent.Analytics;
 
 namespace dts_agent
 {
@@ -26,8 +29,8 @@ namespace dts_agent
     public partial class App : Application
     {
         private const string DriveDirectory = @"C:\Windows\";
-        private const string FromAddress = "oktocafelogsender@gmail.com";
-        private const string ToAddress = "gocafesupport@godigitalcorp.com";
+        private const string FromAddress = "no-reply@vikings.com.vn";
+        private const string ToAddress = "dev@vikings.com.vn";
         private DispatcherTimer analyticsSendingTimer = new DispatcherTimer();
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
@@ -61,9 +64,66 @@ namespace dts_agent
                 Thread.Sleep(2000);
                 System.Environment.Exit(0);
             }
+            Process currentProcess = Process.GetCurrentProcess();
+            var runningProcess = (from process in Process.GetProcesses()
+                                  where
+                                    process.Id != currentProcess.Id &&
+                                    process.ProcessName.Equals(
+                                      currentProcess.ProcessName,
+                                      StringComparison.Ordinal)
+                                  select process).FirstOrDefault();
+            if (runningProcess != null)
+            {
+                SetForegroundWindow(runningProcess.MainWindowHandle);
+            }
+
+            InitializeAnalyticsSendingTimer();
+            // theo dõi  tiến trình shutdown
+            TimerServiceMonitor.Initialize();
         }
 
         #region handel
+
+        private void InitializeAnalyticsSendingTimer()
+        {
+            //analyticsSendingTimer.Tick += SendAdActivities;
+            analyticsSendingTimer.Interval = new TimeSpan(0, 30, 0);
+            analyticsSendingTimer.Start();
+        }
+
+        //private void SendAdActivities(object sender, EventArgs e)
+        //{
+        //    if (ServerConnectionUtility.IsOfflineMode)
+        //    {
+        //        return;
+        //    }
+
+        //    foreach (int adId in DataCacheContext.ActivatedAds)
+        //    {
+        //        int clickCount = 0;
+        //        int impressionCount = 0;
+        //        int viewCount = 0;
+
+        //        if (DataCacheContext.AdsImpressionCounts.ContainsKey(adId))
+        //        {
+        //            impressionCount = DataCacheContext.AdsImpressionCounts[adId];
+        //        }
+
+        //        if (DataCacheContext.AdsViewCounts.ContainsKey(adId))
+        //        {
+        //            viewCount = DataCacheContext.AdsViewCounts[adId];
+        //        }
+
+        //        if (viewCount > 0 || impressionCount > 0)
+        //        {
+        //            Task.Run(async () =>
+        //            {
+        //                AnalyticsClient.Instance.SendAdAnalytics(adId, clickCount, impressionCount, viewCount);
+        //            });
+        //        }
+        //    }
+        //    AdsUtil.ClearAllCounts();
+        //}
 
         public void ChangeLanguage(int selectedLanguage)
         {
